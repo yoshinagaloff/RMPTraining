@@ -20,5 +20,512 @@
   "explanation_vi": "Đáp án đúng: **C. Probability distributions, sensitivity analysis, modeling and simulation, and probability and impact matrix**.\n\n📌 Giải thích:\nTrong quản lý rủi ro theo PMI, **xác suất (probability)** và **mức độ ảnh hưởng (impact)** của rủi ro được truyền đạt bằng cả công cụ **định tính** và **định lượng**:\n\n- **Probability & Impact Matrix**: công cụ cốt lõi để **xếp hạng và ưu tiên rủi ro**.\n- **Probability distributions**: mô tả mức độ bất định của rủi ro.\n- **Sensitivity analysis**: xác định rủi ro nào ảnh hưởng mạnh nhất.\n- **Modeling & simulation (ví dụ Monte Carlo)**: đánh giá tác động tổng hợp của rủi ro lên cost/schedule.\n\n🧠 Mẹo thi RMP:\n👉 Hễ thấy hỏi về **communicate probability & impact** → nghĩ ngay tới **P-I Matrix + Simulation / Distribution tools**.\n\n❌ Các đáp án khác sai vì:\n- A: Checklist và regression không phải công cụ truyền đạt probability & impact.\n- B, D: Nhầm **process** với **tools & techniques**.",
   "reference": "PMBOK Guide 6th Edition – Perform Qualitative Risk Analysis & Perform Quantitative Risk Analysis"
 }
+,
+{
+  "QuestionID": "RMP_ExamTopic_02",
+  "question": "When using the risk register to manage the cost risk analysis, which of the following models the way correlation arises, and avoids the need to estimate the correlation coefficients?",
+  "options": [
+    "Risk Monte Carlo analysis",
+    "Risk driver method",
+    "Risk scatter diagram",
+    "Risk RACI matrix"
+  ],
+  "correct": [0],
+  "difficulty": "Expert",
+  "domain": "Process – Risk Management",
+  "pmbok6_knowledge_area": "Project Risk Management",
+  "pmbok6_process": "Perform Quantitative Risk Analysis",
+  "pmbok6_process_group": "Planning",
+  "short": "Correlation for cost risk → Monte Carlo handles dependency at scale.",
+  "explanation_en": "Correct answer: A (Risk Monte Carlo analysis).\n\nIn cost risk analysis, correlation matters because multiple risks can move costs together (positively or negatively). Monte Carlo simulation is used in quantitative risk analysis to model uncertainty across many variables and can incorporate dependencies/correlation structures when simulating cost outcomes. This allows the analysis to reflect how correlation emerges in combined cost behavior without relying on simplistic, manual correlation coefficient estimation for every pair of risks.\n\nWhy the others are incorrect:\n- B Risk driver method: useful for identifying key cost drivers, but it is not the primary quantitative simulation technique used to model correlation behavior.\n- C Risk scatter diagram: helps visualize relationship between two variables; it does not perform probabilistic modeling of correlated outcomes.\n- D Risk RACI matrix: assigns responsibilities; unrelated to cost correlation modeling.",
+  "explanation_vi": "Đáp án đúng: **A. Risk Monte Carlo analysis**.\n\n📌 Ý chính (chuẩn RMP/PMI):\nTrong **cost risk analysis**, điều khó là **các biến/rủi ro không độc lập** (có *correlation*). Ví dụ: thời tiết xấu vừa làm **tăng chi phí** vừa làm **trễ tiến độ**, kéo theo chi phí tăng tiếp.\n\n✅ **Monte Carlo simulation** là công cụ định lượng chuẩn để:\n- mô phỏng phân phối kết quả chi phí theo hàng nghìn kịch bản,\n- phản ánh hành vi phụ thuộc (dependency/correlation) trong mô hình tổng thể,\n- giúp đánh giá cost exposure thực tế hơn thay vì tính tay từng hệ số tương quan.\n\n❌ Vì sao các đáp án khác sai:\n- **B Risk driver method**: thiên về nhận diện *driver* chính, không phải kỹ thuật mô phỏng định lượng tiêu chuẩn để mô hình hóa correlation.\n- **C Risk scatter diagram**: chỉ là biểu đồ để nhìn mối quan hệ 2 biến, không mô phỏng xác suất.\n- **D Risk RACI matrix**: phân công trách nhiệm, không liên quan correlation/cost analysis.\n\n🧠 Mẹo thi RMP:\n👉 Hễ thấy câu hỏi có từ khóa **\"cost risk analysis\" + \"correlation\" + \"modeling\"** → ưu tiên **Monte Carlo**.",
+  "reference": "PMBOK Guide 6th Edition – Perform Quantitative Risk Analysis (Monte Carlo simulation for cost/schedule uncertainty)"
+}
+,
+{
+  "QuestionID": "RMP_ExamTopic_03",
+  "question": "Which of the following characteristics would a risk tolerant person or group demonstrate?",
+  "options": [
+    "Adaptable and resourceful; not afraid to take action; thrill seeking",
+    "Discomfort with uncertainty; low tolerance for ambiguity; seeks security and resolution in the face of risk",
+    "Risk taking is a price worth paying for future payoffs; seeks strategies and tactics that have high future payoffs; thinks abstractly and creatively envisioning possibilities, and not afraid of change or unknowns",
+    "Reasonable comfort with most uncertainty; accepts risk as a normal feature of projects and business, and takes uncertainty in stride with no apparent or significant influence on their behavior"
+  ],
+  "correct": [3],
+  "difficulty": "Moderate",
+  "domain": "Process – Risk Management",
+  "pmbok6_knowledge_area": "Project Risk Management",
+  "pmbok6_process": "Plan Risk Management",
+  "pmbok6_process_group": "Planning",
+  "short": "Risk tolerant = comfortable with uncertainty, neutral behavior.",
+  "explanation_en": "Correct answer: D.\n\nA risk tolerant person or group demonstrates a reasonable comfort with uncertainty and accepts risk as a normal aspect of projects and business. Their behavior is not significantly altered by the presence of uncertainty. They neither actively seek risk nor strongly avoid it.\n\nWhy the others are incorrect:\n- A describes a risk-seeking (risk-loving) attitude, characterized by thrill seeking and aggressive action.\n- B describes a risk-averse attitude, where uncertainty causes discomfort and a strong desire for security.\n- C also represents a risk-seeking attitude, focused on high future payoffs and willingness to embrace uncertainty for potential gain.",
+  "explanation_vi": "Đáp án đúng: **D**.\n\n📌 Khái niệm chuẩn PMI/RMP:\nNgười hoặc nhóm **risk tolerant (chịu được rủi ro)** có:\n- mức độ thoải mái hợp lý với sự không chắc chắn,\n- xem rủi ro là điều bình thường trong kinh doanh và dự án,\n- **không thay đổi hành vi một cách đáng kể** chỉ vì có rủi ro.\n\nHọ **không né rủi ro quá mức** nhưng cũng **không chủ động tìm rủi ro**.\n\n❌ Vì sao các đáp án khác sai:\n- **A**: mô tả **risk seeking / risk loving** (ưa mạo hiểm, tìm cảm giác mạnh).\n- **B**: mô tả **risk averse** (né rủi ro, khó chịu với bất định).\n- **C**: cũng là **risk seeking**, chấp nhận rủi ro lớn để đổi lấy lợi ích tương lai.\n\n🧠 Mẹo thi RMP:\n👉 Gặp cụm từ **\"risk tolerant\"** → nghĩ tới: *chấp nhận rủi ro như trạng thái bình thường*, **thái độ trung dung**, không cực đoan.\n\n📘 PMBOK 6:\n- Risk attitude gồm: risk averse, risk tolerant, risk seeking\n- Là input quan trọng cho Plan Risk Management",
+  "reference": "PMBOK Guide 6th Edition – Risk Attitudes & Plan Risk Management"
+}
+,
+{
+  "QuestionID": "RMP_ExamTopic_04",
+  "question": "The risk manager organizes a stakeholder meeting to obtain agreement on project risk response strategies. At the conclusion of this meeting, the risk response strategies should be which of the following?",
+  "options": [
+    "Scheduled, budgeted, and easy for project stakeholders to understand",
+    "Cost-effective, validated by Monte Carlo analysis, and assigned",
+    "Iterative, scaled to the project, and addressing threats and opportunities",
+    "Timely, cost-effective, agreed-upon, and accepted"
+  ],
+  "correct": [3],
+  "difficulty": "Moderate",
+  "domain": "Process – Risk Management",
+  "pmbok6_knowledge_area": "Project Risk Management",
+  "pmbok6_process": "Plan Risk Responses",
+  "pmbok6_process_group": "Planning",
+  "short": "Good risk responses = timely, cost-effective, agreed and accepted.",
+  "explanation_en": "Correct answer: D.\n\nAt the conclusion of a stakeholder meeting intended to obtain agreement on risk response strategies, those strategies must be:\n- Timely (can be executed when needed),\n- Cost-effective (value-justified),\n- Agreed-upon (stakeholders align on the approach),\n- Accepted (commitment exists to implement them).\n\nPMI emphasizes that risk responses are only effective if stakeholders understand, support, and accept them. Agreement and acceptance are critical outcomes of stakeholder engagement in risk response planning.\n\nWhy the other options are incorrect:\n- A: Scheduling and budgeting are important, but agreement and acceptance are more fundamental.\n- B: Monte Carlo validation is optional and not required for all risks.\n- C: Iterative and scalable describe the risk management approach, not the required state of agreed responses.",
+  "explanation_vi": "Đáp án đúng: **D**.\n\n📌 Theo chuẩn PMI/RMP, sau cuộc họp với stakeholder để thống nhất **risk response strategies**, kết quả bắt buộc phải là:\n- **Timely**: có thể triển khai đúng thời điểm,\n- **Cost-effective**: chi phí hợp lý so với lợi ích,\n- **Agreed-upon**: các bên liên quan đã thống nhất,\n- **Accepted**: có sự cam kết thực hiện.\n\n👉 Nếu stakeholder **không đồng ý hoặc không chấp nhận**, thì dù kế hoạch hay đến đâu cũng **không thể triển khai hiệu quả**.\n\n❌ Vì sao các đáp án khác sai:\n- **A**: nói về lập kế hoạch, nhưng thiếu yếu tố đồng thuận và cam kết.\n- **B**: Monte Carlo **không bắt buộc** cho mọi risk response.\n- **C**: mô tả đặc tính của *risk management approach*, không phải trạng thái cuối của response.\n\n🧠 Mẹo thi RMP:\n👉 Gặp câu hỏi có từ khóa **\"stakeholder agreement\"**, **\"response strategies should be\"** → ưu tiên đáp án có **agreed / accepted**.\n\n📘 PMBOK 6:\n- Plan Risk Responses\n- Stakeholder engagement là yếu tố sống còn của risk response effectiveness",
+  "reference": "PMBOK Guide 6th Edition – Plan Risk Responses"
+}
+,
+{
+  "QuestionID": "RMP_ExamTopic_05",
+  "question": "A new resource is added to the project team from a matrix organization. How should the project's risk manager familiarize the new team member with the project's risk management process?",
+  "options": [
+    "The functional manager is responsible for providing the training.",
+    "Provide project specific risk training and mentor through the risk process.",
+    "Send the new team member the risk management plan to read.",
+    "Provide the new team member with a copy of the risk register and latest status report."
+  ],
+  "correct": [2],
+  "difficulty": "Moderate",
+  "domain": "Process – Risk Management",
+  "pmbok6_knowledge_area": "Project Risk Management",
+  "pmbok6_process": "Plan Risk Management",
+  "pmbok6_process_group": "Planning",
+  "short": "Onboard via Risk Management Plan = rules, roles, thresholds.",
+  "explanation_en": "Correct answer: C.\n\nThe Risk Management Plan defines **how risk management is performed on the project**, including:\n- Roles and responsibilities,\n- Risk thresholds and appetite,\n- Processes, tools, and reporting formats,\n- Frequency of risk activities.\n\nWhen a new team member joins—especially from a matrix organization—the most effective and PMI-aligned way to familiarize them with the project's risk management approach is to provide the Risk Management Plan. This ensures alignment with project-specific rules rather than general or informal practices.\n\nWhy the other options are incorrect:\n- A: Functional managers handle functional training, not project-specific risk processes.\n- B: Mentoring may help later, but first the team member must understand the formal process.\n- D: The risk register shows *what* the risks are, not *how* risk management is conducted.",
+  "explanation_vi": "Đáp án đúng: **C. Send the new team member the risk management plan to read**.\n\n📌 Theo PMI/RMP, **Risk Management Plan** là tài liệu gốc mô tả:\n- Cách quản lý rủi ro trên dự án,\n- Vai trò & trách nhiệm,\n- Ngưỡng rủi ro (risk threshold),\n- Quy trình, công cụ, báo cáo.\n\n👉 Khi có thành viên mới (đặc biệt từ **matrix organization**), việc đầu tiên cần làm là giúp họ hiểu **luật chơi của dự án**, không phải chi tiết từng rủi ro.\n\n❌ Vì sao các đáp án khác sai:\n- **A**: Functional manager không chịu trách nhiệm đào tạo risk process của dự án.\n- **B**: Mentoring tốt nhưng **chưa phải bước đầu tiên**.\n- **D**: Risk register chỉ cho biết *có rủi ro gì*, không giải thích *quản lý rủi ro thế nào*.\n\n🧠 Mẹo thi RMP:\n👉 Câu hỏi có cụm **\"familiarize with risk process\"** → đáp án thường là **Risk Management Plan**.\n\n📘 PMBOK 6:\n- Plan Risk Management\n- Risk Management Plan = nền tảng onboarding rủi ro",
+  "reference": "PMBOK Guide 6th Edition – Plan Risk Management"
+}
+,
+{
+  "QuestionID": "RMP_ExamTopic_06",
+  "question": "The stakeholder is unwilling to make decisions that would result in negative consequences to the project. Which of the following describes the stakeholder's attitude regarding project risks?",
+  "options": [
+    "Risk averse",
+    "Risk neutral",
+    "Risk accepting",
+    "Not enough information available to describe the stakeholder's risk attitude"
+  ],
+  "correct": [0],
+  "difficulty": "Easy",
+  "domain": "Process – Risk Management",
+  "pmbok6_knowledge_area": "Project Risk Management",
+  "pmbok6_process": "Plan Risk Management",
+  "pmbok6_process_group": "Planning",
+  "short": "Avoids negative outcomes → Risk averse.",
+  "explanation_en": "Correct answer: A (Risk averse).\n\nA risk-averse stakeholder prefers to avoid uncertainty and negative consequences, even if that means sacrificing potential benefits or opportunities. Such stakeholders are uncomfortable with decisions that could introduce threats to cost, schedule, scope, or quality, and they tend to favor conservative, low-risk options.\n\nWhy the other options are incorrect:\n- B (Risk neutral): Risk-neutral stakeholders accept uncertainty and make decisions based on expected value, not fear of loss.\n- C (Risk accepting): Risk-accepting or risk-seeking stakeholders are willing to take risks for potential gains.\n- D: There is sufficient information—explicit unwillingness to accept negative consequences clearly indicates risk aversion.",
+  "explanation_vi": "Đáp án đúng: **A. Risk averse (Ngại rủi ro)**.\n\n📌 Stakeholder **không sẵn sàng đưa ra quyết định có thể gây hậu quả tiêu cực** cho dự án → đây là dấu hiệu điển hình của **risk-averse attitude**.\n\nĐặc điểm của người **risk averse**:\n- Không thoải mái với sự không chắc chắn,\n- Tránh các mối đe dọa tới cost / schedule / scope / quality,\n- Ưu tiên phương án an toàn hơn là cơ hội lợi ích cao.\n\n❌ Vì sao các đáp án khác sai:\n- **B. Risk neutral**: Chấp nhận rủi ro dựa trên expected value, không né tránh hoàn toàn.\n- **C. Risk accepting**: Sẵn sàng chấp nhận rủi ro để đổi lấy lợi ích.\n- **D**: Thông tin đã đủ rõ để xác định thái độ rủi ro.\n\n🧠 Mẹo thi RMP:\n👉 Thấy cụm **\"unwilling to accept negative consequences\"**, **\"avoids loss\"**, **\"prefers safety\"** → chọn **Risk averse**.\n\n📘 PMBOK 6:\n- Risk attitude\n- Risk appetite & risk tolerance",
+  "reference": "PMBOK Guide 6th Edition – Risk Attitudes and Stakeholder Risk Appetite"
+}
+,
+{
+  "QuestionID": "RMP_ExamTopic_07",
+  "question": "A project manager is developing the risk management process and schedules a risk planning workshop at the start of the project. Upon receiving the invitation, a senior stakeholder emails the project manager stating that a risk management plan is not needed since this is a small project, and lack of a plan will reduce costs.\n\nWhich of the following should the project manager do?",
+  "options": [
+    "Advise the stakeholder that risk management is a valuable undertaking and must be applied to all projects to some degree.",
+    "Cancel the workshop, as the stakeholder is senior and risk management is an optional process, especially on smaller projects.",
+    "Continue with the workshop, but remove the stakeholder from the list of attendees.",
+    "Review the scope in an attempt to save money in other areas of the project to provide funding for the risk management activities."
+  ],
+  "correct": [0],
+  "difficulty": "Moderate",
+  "domain": "Process – Risk Management",
+  "pmbok6_knowledge_area": "Project Risk Management",
+  "pmbok6_process": "Plan Risk Management",
+  "pmbok6_process_group": "Planning",
+  "short": "Risk management is scalable, not optional.",
+  "explanation_en": "Correct answer: A.\n\nRisk management is not optional; it is a required project management process that must be applied to all projects, regardless of size. PMBOK emphasizes that risk management should be **scaled and tailored** to the project's size, complexity, and risk exposure—not eliminated.\n\nThe project manager should professionally explain to the senior stakeholder that even small projects face uncertainty, and a lightweight risk management approach can prevent larger downstream costs.\n\nWhy the other options are incorrect:\n- B: Seniority does not override good governance; risk management is not optional.\n- C: Excluding a stakeholder creates conflict and violates stakeholder engagement principles.\n- D: Cutting scope to fund risk management misses the point—risk planning should already be integrated into project planning.",
+  "explanation_vi": "Đáp án đúng: **A. Khuyên stakeholder rằng risk management là cần thiết cho mọi dự án, dù lớn hay nhỏ**.\n\n📌 Theo PMBOK, **Risk Management không phải là tùy chọn**, mà là quy trình bắt buộc — chỉ khác nhau ở **mức độ áp dụng (tailoring)**.\n\nDự án nhỏ:\n- Không cần quy trình phức tạp,\n- Nhưng **vẫn phải có Risk Management Plan ở mức phù hợp**.\n\nViệc bỏ hoàn toàn risk management để tiết kiệm chi phí thường dẫn tới **chi phí lớn hơn khi rủi ro xảy ra**.\n\n❌ Vì sao các đáp án khác sai:\n- **B**: Senior stakeholder không có quyền bỏ qua governance chuẩn.\n- **C**: Loại stakeholder ra khỏi workshop là phản stakeholder management.\n- **D**: Risk planning không phải thứ “xin ngân sách thêm”, mà là phần cốt lõi của planning.\n\n🧠 Mẹo thi RMP:\n👉 Gặp câu nói **\"small project → no risk plan\"** → luôn chọn đáp án nói về **tailoring, not skipping**.\n\n📘 PMBOK 6:\n- Plan Risk Management\n- Tailoring considerations\n- Governance vs project size",
+  "reference": "PMBOK Guide 6th Edition – Plan Risk Management & Tailoring"
+}
+,
+{
+  "QuestionID": "RMP_ExamTopic_08",
+  "question": "What is a project issue within a project environment?",
+  "options": [
+    "A negative effect on a project objective arising from occurrence of a threat",
+    "A certain event which has a positive or negative impact in the project",
+    "A risk which has a significant impact on the project",
+    "An uncertain event which may impact the project"
+  ],
+  "correct": [0],
+  "difficulty": "Moderate",
+  "domain": "Process – Risk Management",
+  "pmbok6_knowledge_area": "Project Risk Management",
+  "pmbok6_process": "Monitor Risks",
+  "pmbok6_process_group": "Monitoring and Controlling",
+  "short": "Issue = realized risk (threat occurred).",
+  "explanation_en": "Correct answer: A.\n\nA **project issue** is a problem that is **currently occurring** and is already having a **negative impact** on one or more project objectives (scope, schedule, cost, quality, etc.). In risk terminology, an issue is typically the result of a **risk (threat) that has materialized**.\n\nKey distinction:\n- **Risk**: An uncertain event that may occur in the future.\n- **Issue**: A risk that has already occurred and is impacting the project.\n\nWhy the other options are incorrect:\n- B: Describes an event in general, not specifically an issue.\n- C: A risk is still uncertain; an issue is no longer uncertain.\n- D: This is the definition of a risk, not an issue.",
+  "explanation_vi": "Đáp án đúng: **A. Một tác động tiêu cực lên mục tiêu dự án do rủi ro (threat) đã xảy ra**.\n\n📌 **Project Issue** là vấn đề:\n- Đã xảy ra (không còn là tương lai),\n- Đang gây ảnh hưởng tiêu cực tới dự án.\n\n👉 Nói cách khác: **Issue = Risk đã materialize (xảy ra)**.\n\nPhân biệt nhanh:\n- **Risk**: Sự kiện *không chắc chắn* có thể xảy ra.\n- **Issue**: Sự kiện *đã xảy ra* và đang gây hậu quả.\n\n❌ Vì sao các đáp án khác sai:\n- **B**: Quá chung, không định nghĩa issue.\n- **C**: Risk vẫn là không chắc chắn.\n- **D**: Đây là định nghĩa của risk.\n\n🧠 Mẹo thi RMP:\n👉 Thấy từ **\"has occurred\"**, **\"negative impact now\"** → nghĩ ngay tới **Issue**.\n\n📘 PMBOK 6:\n- Monitor Risks\n- Issue Log vs Risk Register",
+  "reference": "PMBOK Guide 6th Edition – Monitor Risks & Issue Management"
+}
+,
+{
+  "QuestionID": "RMP_ExamTopic_09",
+  "question": "What is the purpose of mitigating negative risks as a part of the risk response process?",
+  "options": [
+    "To transfer the probability of a risk happening to a third party, and to reduce the severity of the impact",
+    "To reduce the probability of a risk happening, and/or reduce the severity of the impact",
+    "To accept the probability of a risk happening to reduce the severity of the impact",
+    "To increase the probability of a risk happening, but reduce the severity of the impact"
+  ],
+  "correct": [1],
+  "difficulty": "Moderate",
+  "domain": "Process – Risk Management",
+  "pmbok6_knowledge_area": "Project Risk Management",
+  "pmbok6_process": "Plan Risk Responses",
+  "pmbok6_process_group": "Planning",
+  "short": "Mitigation = reduce probability and/or impact.",
+  "explanation_en": "Correct answer: B.\n\n**Risk mitigation** is a negative risk (threat) response strategy aimed at **reducing the probability of occurrence, the impact, or both**. Mitigation does not eliminate the risk entirely, but it lowers the overall risk exposure to an acceptable level.\n\nExamples of mitigation:\n- Using proven technology instead of experimental tools (reduce probability).\n- Adding redundancy or buffers (reduce impact).\n\nWhy the other options are incorrect:\n- A: Describes **risk transfer**, not mitigation.\n- C: Describes **risk acceptance**, not mitigation.\n- D: Increasing probability contradicts the definition of mitigation.",
+  "explanation_vi": "Đáp án đúng: **B. Giảm xác suất xảy ra và/hoặc giảm mức độ tác động của rủi ro**.\n\n📌 **Risk Mitigation (giảm thiểu rủi ro)** là chiến lược xử lý **negative risks (threats)** nhằm:\n- Giảm **xác suất xảy ra**, và/hoặc\n- Giảm **mức độ ảnh hưởng** nếu rủi ro xảy ra.\n\nMitigation không loại bỏ hoàn toàn rủi ro, mà làm cho rủi ro trở nên **chấp nhận được**.\n\nVí dụ:\n- Chọn công nghệ đã được kiểm chứng → giảm xác suất.\n- Thêm buffer thời gian / chi phí → giảm tác động.\n\n❌ Vì sao các đáp án khác sai:\n- **A**: Là **risk transfer** (chuyển rủi ro).\n- **C**: Là **risk acceptance** (chấp nhận rủi ro).\n- **D**: Tăng xác suất là đi ngược lại mitigation.\n\n🧠 Mẹo thi RMP:\n👉 Thấy từ **\"mitigate\"** → nhớ ngay: **reduce probability and/or impact**.\n\n📘 PMBOK 6:\n- Plan Risk Responses\n- Strategies for Threats",
+  "reference": "PMBOK Guide 6th Edition – Plan Risk Responses"
+}
+,
+{
+  "QuestionID": "RMP_ExamTopic_10",
+  "question": "In the country where a project is being executed, customs procedures are complex and change frequently. During the risk identification process, the project team identifies a risk related to delays in customs on substantial equipment that will likely occur. Equipment delays on this project could lead to the project cancellation.\n\nHow should the probability and impact be characterized for this risk?",
+  "options": [
+    "Low probability / low impact",
+    "High probability / low impact",
+    "Low probability / high impact",
+    "High probability / high impact"
+  ],
+  "correct": [3],
+  "difficulty": "Moderate",
+  "domain": "Process – Risk Management",
+  "pmbok6_knowledge_area": "Project Risk Management",
+  "pmbok6_process": "Perform Qualitative Risk Analysis",
+  "pmbok6_process_group": "Planning",
+  "short": "Likely to occur + project cancellation = high probability & high impact.",
+  "explanation_en": "Correct answer: D.\n\nThis risk has:\n- **High probability**: Customs procedures are described as complex and frequently changing, and the delay is stated as *likely to occur*.\n- **High impact**: Equipment delays could lead to **project cancellation**, which represents a severe impact on project objectives.\n\nAccording to PMBOK®, risks that are both likely to occur and capable of causing major consequences should be classified as **high probability / high impact** risks. These risks typically require immediate attention and strong response strategies.\n\nWhy the other options are incorrect:\n- A & B: Impact is clearly not low because cancellation is possible.\n- C: Probability is not low, as delays are described as likely.",
+  "explanation_vi": "Đáp án đúng: **D. High probability / high impact**.\n\n📌 Phân tích theo PMI:\n- **High probability (xác suất cao)**: Thủ tục hải quan phức tạp và thay đổi thường xuyên, rủi ro trì hoãn được mô tả là *rất có khả năng xảy ra*.\n- **High impact (tác động cao)**: Việc chậm thiết bị có thể dẫn đến **hủy dự án**, đây là tác động cực kỳ nghiêm trọng.\n\nTheo PMBOK 6, rủi ro có **xác suất cao + tác động lớn** phải được xếp vào nhóm **High–High**, cần ưu tiên xử lý ngay.\n\n❌ Vì sao các đáp án khác sai:\n- **A, B**: Sai vì tác động không hề thấp.\n- **C**: Sai vì xác suất không thấp, đã được mô tả là \"likely\".\n\n🧠 Mẹo thi RMP:\n👉 Thấy cụm từ **\"likely to occur\" + \"project cancellation\"** → chọn ngay **High probability / High impact**.\n\n📘 PMBOK 6:\n- Perform Qualitative Risk Analysis\n- Probability and Impact Matrix",
+  "reference": "PMBOK Guide 6th Edition – Perform Qualitative Risk Analysis"
+}
+,
+{
+  "QuestionID": "RMP_ExamTopic_11",
+  "question": "A risk is identified and documented by the risk manager, but it is unclear how this risk can be proactively managed.\n\nIn this situation, what type of reserve should be allocated for the risk?",
+  "options": [
+    "Contingency",
+    "Management",
+    "Budget",
+    "Residual"
+  ],
+  "correct": [0],
+  "difficulty": "Moderate",
+  "domain": "Process – Risk Management",
+  "pmbok6_knowledge_area": "Project Risk Management",
+  "pmbok6_process": "Plan Risk Responses",
+  "pmbok6_process_group": "Planning",
+  "short": "Known risk with unclear response → contingency reserve.",
+  "explanation_en": "Correct answer: A. Contingency.\n\nA **contingency reserve** is allocated for **identified (known) risks** where the exact response may not yet be fully defined, but the risk is recognized and documented. Contingency reserves are part of the project cost baseline and are used if the risk occurs.\n\nIn this scenario:\n- The risk is **identified and documented** (known risk).\n- Proactive management actions are unclear.\n→ Therefore, allocating a **contingency reserve** is appropriate.\n\nWhy the other options are incorrect:\n- **B. Management reserve**: Used for *unknown-unknowns* and is not part of the cost baseline.\n- **C. Budget**: Too generic; not a PMI-defined reserve type for risk.\n- **D. Residual**: A residual risk is what remains *after* a response, not a reserve type.\n\nPMBOK® principle:\n> Known risks → Contingency reserve\n> Unknown risks → Management reserve",
+  "explanation_vi": "Đáp án đúng: **A. Contingency**.\n\n📌 Theo PMI:\n**Contingency reserve** được sử dụng cho **rủi ro đã được xác định (known risks)** nhưng chưa có hoặc chưa rõ biện pháp ứng phó cụ thể. Khoản dự phòng này nằm trong **cost baseline** của dự án và được dùng khi rủi ro xảy ra.\n\nTrong câu hỏi này:\n- Rủi ro **đã được xác định và ghi nhận**\n- Nhưng **chưa rõ cách quản lý chủ động**\n→ Phù hợp nhất là **contingency reserve**.\n\n❌ Vì sao các đáp án khác sai:\n- **B. Management reserve**: dùng cho *unknown-unknown risks* (rủi ro chưa xác định).\n- **C. Budget**: khái niệm chung, không phải loại reserve theo PMBOK.\n- **D. Residual**: là *rủi ro còn lại sau khi xử lý*, không phải quỹ dự phòng.\n\n🧠 Mẹo thi RMP:\n👉 Thấy cụm **\"identified risk\"** → nghĩ ngay **Contingency reserve**.\n👉 Thấy **\"unknown / unforeseen\"** → **Management reserve**.\n\n📘 PMBOK 6:\n- Plan Risk Responses\n- Cost baseline & reserves",
+  "reference": "PMBOK Guide 6th Edition – Plan Risk Responses & Cost Management"
+}
+,
+{
+  "QuestionID": "RMP_ExamTopic_12",
+  "question": "Which of the following is an effective channel for risk mitigation assistance, project risk visibility and risk escalation support?",
+  "options": [
+    "Project steering committee",
+    "Project management office (PMO)",
+    "Change control board (CCB)",
+    "Board of directors"
+  ],
+  "correct": [1],
+  "difficulty": "Moderate",
+  "domain": "Process – Risk Management",
+  "pmbok6_knowledge_area": "Project Risk Management",
+  "pmbok6_process": "Monitor Risks",
+  "pmbok6_process_group": "Monitoring and Controlling",
+  "short": "PMO = risk visibility + escalation + mitigation support.",
+  "explanation_en": "Correct answer: B. Project Management Office (PMO).\n\nThe PMO plays a central role in supporting project risk management by:\n- Providing risk visibility across projects,\n- Supporting risk mitigation and governance,\n- Acting as an escalation channel when risks exceed project authority.\n\nWhy others are incorrect:\n- Steering committee: decision body, not operational risk support.\n- CCB: focused on change approval, not risk escalation.\n- Board of directors: strategic oversight, too high-level for project risk handling.",
+  "explanation_vi": "Đáp án đúng: **B. Project Management Office (PMO)**.\n\n📌 PMO là kênh hiệu quả vì:\n- Hỗ trợ **risk mitigation** (giảm thiểu rủi ro),\n- Cung cấp **risk visibility** (tính minh bạch rủi ro toàn tổ chức),\n- Là nơi **escalate rủi ro** khi vượt quyền dự án.\n\n❌ Các đáp án khác:\n- Steering committee: thiên về quyết định chiến lược.\n- CCB: xử lý change request, không phải risk escalation.\n- Board of directors: quá cao cấp, không xử lý rủi ro dự án chi tiết.\n\n🧠 Mẹo thi RMP:\n👉 Thấy từ khóa **visibility / escalation / support** → chọn **PMO**.",
+  "reference": "PMBOK Guide 6th Edition – Monitor Risks & Organizational Governance"
+}
+,
+{
+  "QuestionID": "RMP_ExamTopic_13",
+  "question": "The risk manager wants to determine what is to be measured, how it is to be measured, and what project outcomes are to be measured.\n\nIn which of the following processes should this be established?",
+  "options": [
+    "Initiating Process",
+    "Executing Process",
+    "Planning Process",
+    "Monitoring and Controlling Process"
+  ],
+  "correct": [2],
+  "difficulty": "Moderate",
+  "domain": "Process – Risk Management",
+  "pmbok6_knowledge_area": "Project Risk Management",
+  "pmbok6_process": "Plan Risk Management",
+  "pmbok6_process_group": "Planning",
+  "short": "Metrics & measurement are defined during Planning.",
+  "explanation_en": "Correct answer: C. Planning Process.\n\nDefining:\n- What will be measured,\n- How it will be measured,\n- Which outcomes are relevant\n\nis part of **planning**. These elements are documented in management plans (including the Risk Management Plan) and must be established before execution and monitoring begin.",
+  "explanation_vi": "Đáp án đúng: **C. Planning Process**.\n\n📌 Theo PMBOK:\nViệc xác định **chỉ số đo lường**, **cách đo**, và **kết quả cần theo dõi** luôn được thực hiện trong **Planning**.\n\nCác thông tin này được ghi trong:\n- Risk Management Plan\n- Performance measurement baselines\n\n❌ Vì sao các đáp án khác sai:\n- Initiating: chỉ xác định mục tiêu tổng quát.\n- Executing: thực thi, không định nghĩa đo lường.\n- Monitoring & Controlling: dùng chỉ số đã được xác định trước đó.\n\n🧠 Mẹo thi:\n👉 Thấy cụm **\"what/how to measure\"** → **Planning**.",
+  "reference": "PMBOK Guide 6th Edition – Planning Processes"
+}
+,
+{
+  "QuestionID": "RMP_ExamTopic_14",
+  "question": "Which of the following are examples of relevant data gathering tools?",
+  "options": [
+    "Risk response plan and interviews",
+    "Questionnaires and historical data",
+    "Work breakdown structure and historical data",
+    "Work breakdown structure and interviews"
+  ],
+  "correct": [1],
+  "difficulty": "Easy",
+  "domain": "Process – Risk Management",
+  "pmbok6_knowledge_area": "Project Risk Management",
+  "pmbok6_process": "Identify Risks",
+  "pmbok6_process_group": "Planning",
+  "short": "Data gathering = questionnaires + historical data.",
+  "explanation_en": "Correct answer: B. Questionnaires and historical data.\n\nData gathering tools are used to **collect risk-related information**. Examples include:\n- Questionnaires and surveys,\n- Historical data and lessons learned,\n- Interviews and brainstorming.\n\nWhy others are incorrect:\n- Risk response plan: an output, not a data-gathering tool.\n- WBS: a decomposition tool, not used to gather data.",
+  "explanation_vi": "Đáp án đúng: **B. Questionnaires and historical data**.\n\n📌 Công cụ **thu thập dữ liệu (data gathering)** dùng để lấy thông tin rủi ro gồm:\n- Bảng câu hỏi (questionnaires),\n- Dữ liệu lịch sử (historical data).\n\n❌ Các đáp án khác sai vì:\n- Risk response plan: là **kết quả**, không phải công cụ thu thập.\n- WBS: dùng để phân rã công việc, không thu thập dữ liệu.\n\n🧠 Mẹo thi:\n👉 Thấy từ **gathering data** → nghĩ tới **survey / questionnaire / historical data**.",
+  "reference": "PMBOK Guide 6th Edition – Identify Risks"
+}
+,
+{
+  "QuestionID": "RMP_ExamTopic_15",
+  "question": "The risk manager is conducting stakeholder analysis.\n\nWhich technique should be used to help identify and manage expectations?",
+  "options": [
+    "SWOT analysis",
+    "Influence diagram",
+    "Power/Interest Grid",
+    "Interactive method"
+  ],
+  "correct": [2],
+  "difficulty": "Easy",
+  "domain": "People – Stakeholder Engagement",
+  "pmbok6_knowledge_area": "Project Risk Management",
+  "pmbok6_process": "Identify Stakeholders",
+  "pmbok6_process_group": "Initiating",
+  "short": "Power/Interest Grid = expectation management.",
+  "explanation_en": "Correct answer: C. Power/Interest Grid.\n\nThe Power/Interest Grid is a classic stakeholder analysis technique used to:\n- Classify stakeholders based on authority and interest,\n- Determine engagement strategies,\n- Manage expectations effectively.\n\nWhy others are incorrect:\n- SWOT: strategic analysis, not stakeholder expectations.\n- Influence diagram: shows causal relationships, not engagement.\n- Interactive method: too generic.",
+  "explanation_vi": "Đáp án đúng: **C. Power/Interest Grid**.\n\n📌 Power/Interest Grid giúp:\n- Phân loại stakeholder theo **quyền lực** và **mức độ quan tâm**,\n- Xác định chiến lược **quản lý kỳ vọng** phù hợp.\n\n❌ Các đáp án khác:\n- SWOT: phân tích chiến lược.\n- Influence diagram: mô hình nguyên nhân – kết quả.\n- Interactive method: khái niệm chung, không phải kỹ thuật cụ thể.\n\n🧠 Mẹo thi PMP/RMP:\n👉 Câu hỏi có **stakeholder analysis / expectations** → **Power–Interest Grid**.",
+  "reference": "PMBOK Guide 6th Edition – Stakeholder Engagement"
+}
+,
+{
+  "QuestionID": "RMP_ExamTopic_16",
+  "question": "What steps would be used during the qualitative risk analysis process to provide input to the risk register?",
+  "options": [
+    "Select risks characteristics, collect and analyze data, prioritize risks, categorize risks causes, document results",
+    "Interviews, expert opinions, sponsor inputs, risk manager review, prioritize risks, and document results",
+    "Interviews, expert opinions, risk manager review, prioritize risks, and document results",
+    "Select risks characteristics, collect and analyze data, prioritize risks, discuss action plans for major risks, document results"
+  ],
+  "correct": [0],
+  "difficulty": "Moderate",
+  "domain": "Process – Risk Management",
+  "pmbok6_knowledge_area": "Project Risk Management",
+  "pmbok6_process": "Perform Qualitative Risk Analysis",
+  "pmbok6_process_group": "Planning",
+  "short": "Qualitative analysis = characterize → analyze → prioritize → categorize → document.",
+  "explanation_en": "Correct answer: A.\n\nPerform Qualitative Risk Analysis includes:\n- Selecting risk characteristics (probability, impact, urgency),\n- Collecting and analyzing data,\n- Prioritizing risks,\n- Categorizing risk causes,\n- Documenting results in the risk register.\n\nWhy others are incorrect:\n- B & C focus on data sources, not the analytical steps.\n- D mixes response planning, which belongs to Plan Risk Responses.",
+  "explanation_vi": "Đáp án đúng: **A**.\n\n📌 Theo PMBOK 6, **Perform Qualitative Risk Analysis** gồm:\n- Xác định đặc tính rủi ro (probability, impact…),\n- Thu thập & phân tích dữ liệu,\n- Ưu tiên rủi ro,\n- Phân loại nguyên nhân rủi ro,\n- Ghi nhận kết quả vào risk register.\n\n❌ Vì sao các đáp án khác sai:\n- B, C: mô tả nguồn dữ liệu, không phải quy trình phân tích.\n- D: bàn action plan → thuộc **Plan Risk Responses**.\n\n🧠 Mẹo thi:\n👉 Qualitative = **characterize → prioritize → document**, chưa làm response.",
+  "reference": "PMBOK Guide 6th Edition – Perform Qualitative Risk Analysis"
+}
+,
+{
+  "QuestionID": "RMP_ExamTopic_17",
+  "question": "A project manager is hired as a consultant by the executive sponsor to manage a major change program that has experienced two past failures.\n\nThe executive sponsor believes the project is in good shape, but during the first week of risk analysis the project manager concludes the timeline is unrealistic and three months behind schedule. The organization's risk appetite is low.\n\nWhat is the first step that should be taken?",
+  "options": [
+    "Review the project schedule and recommend fast tracking and/or crashing the critical path",
+    "Discuss the project schedule with the executive sponsor and agree on a strategy for updating the risk management plan and risk response plans",
+    "Update existing risk response plans and include more resources to get the project back on track",
+    "Immediately call a steering committee meeting and suggest scope reductions"
+  ],
+  "correct": [1],
+  "difficulty": "Difficult",
+  "domain": "People – Stakeholder Engagement",
+  "pmbok6_knowledge_area": "Project Risk Management",
+  "pmbok6_process": "Plan Risk Management",
+  "pmbok6_process_group": "Planning",
+  "short": "Low risk appetite → align with sponsor before action.",
+  "explanation_en": "Correct answer: B.\n\nWith low organizational risk appetite, the first step is alignment with the executive sponsor. Major schedule risks require governance agreement before tactical actions.\n\nFast tracking, crashing, or scope reduction are response actions and must not be taken without sponsor alignment and updated risk planning.",
+  "explanation_vi": "Đáp án đúng: **B**.\n\n📌 Khi **risk appetite thấp**, bước đầu tiên luôn là:\n- Trao đổi với **executive sponsor**,\n- Thống nhất chiến lược cập nhật **Risk Management Plan** và **risk responses**.\n\n❌ Các đáp án khác sai vì:\n- A, C, D: là hành động kỹ thuật / phản ứng, **chưa có sự đồng thuận quản trị**.\n\n🧠 Mẹo thi:\n👉 Thấy **low risk appetite + sponsor misunderstanding** → **align trước, hành động sau**.",
+  "reference": "PMBOK Guide 6th Edition – Risk Governance & Stakeholder Engagement"
+}
+,
+{
+  "QuestionID": "RMP_ExamTopic_18",
+  "question": "During what process should a project manager assign a risk owner?",
+  "options": [
+    "Plan Risk Responses",
+    "Plan Risk Management",
+    "Monitor Risks",
+    "Identify Risks"
+  ],
+  "correct": [
+    3
+  ],
+  "difficulty": "Moderate",
+  "domain": "Process – Risk Management",
+  "pmbok6_knowledge_area": "Project Risk Management",
+  "pmbok6_process": "Identify Risks",
+  "pmbok6_process_group": "Planning",
+  "short": "Risk owner is assigned when the risk is identified and recorded.",
+  "explanation_en": "Correct answer: D (Identify Risks).\n\nRisk owners are assigned when risks are first identified and documented in the risk register. At the time of identification, the team clarifies who is responsible for monitoring the risk and for driving the agreed response actions once planning progresses.\n\nWhy the other options are incorrect:\n- A (Plan Risk Responses): This is where response strategies are developed and finalized, but ownership should already exist so the right people can contribute to selecting and planning responses.\n- B (Plan Risk Management): This process defines the approach, roles, responsibilities, and governance for risk management, but it does not assign ownership for specific individual risks.\n- C (Monitor Risks): This process tracks identified risks and executes/validates responses. By this stage, owners must already be assigned; otherwise monitoring and accountability cannot work.",
+  "explanation_vi": "Đáp án đúng: **D. Identify Risks**.\n\n**Risk owner** cần được gán ngay lúc **xác định và ghi nhận rủi ro** trong risk register. Khi vừa nhận diện rủi ro, dự án phải làm rõ **ai chịu trách nhiệm theo dõi trigger, cập nhật trạng thái và thúc đẩy hành động ứng phó** sau này.\n\n❌ Vì sao các đáp án khác sai:\n- **A. Plan Risk Responses**: Giai đoạn này là để **lập chiến lược/biện pháp ứng phó**, nhưng muốn lập tốt thì **phải có risk owner từ trước** để người chịu trách nhiệm tham gia lựa chọn response.\n- **B. Plan Risk Management**: Chỉ xác định **cách quản lý rủi ro, vai trò/trách nhiệm tổng quan, governance**, không phải nơi gán owner cho từng rủi ro cụ thể.\n- **C. Monitor Risks**: Đây là giai đoạn **theo dõi và kiểm soát rủi ro**; nếu tới lúc này mới gán owner thì đã muộn và thiếu accountability ngay từ đầu.",
+  "reference": "PMBOK Guide 6th Edition – Identify Risks; Risk Owner responsibilities (Risk Register ownership/accountability)"
+}
+,{
+  "QuestionID": "RMP_ExamTopic_19",
+  "question": "A risk manager wants to determine which risks are going to have the highest impact on a project. Which of the following techniques should the risk manager use?",
+  "options": [
+    "Assumptions analysis",
+    "Sensitivity analysis",
+    "Root cause analysis",
+    "Prioritization matrices"
+  ],
+  "correct": [1],
+  "difficulty": "Moderate",
+  "domain": "Process – Risk Management",
+  "pmbok6_knowledge_area": "Project Risk Management",
+  "pmbok6_process": "Perform Quantitative Risk Analysis",
+  "pmbok6_process_group": "Planning",
+  "short": "Find biggest impact drivers → sensitivity analysis (tornado).",
+  "explanation_en": "Correct answer: B (Sensitivity analysis).\n\nSensitivity analysis is used to determine which risks/uncertainties have the greatest impact on project objectives (e.g., cost or schedule). It isolates the variables and shows which ones drive the outcome the most (often visualized using a tornado diagram). This directly supports identifying which risks have the highest impact.\n\nWhy the other options are incorrect:\n- A (Assumptions analysis): Identifies risks arising from incorrect/uncertain assumptions, but it does not quantify and rank which risks drive the highest impact on objectives.\n- C (Root cause analysis): Finds underlying causes of risks/issues to improve prevention and responses, but it is not a technique for determining which risks have the highest impact on project outcomes.\n- D (Prioritization matrices): Typically used in qualitative risk analysis (probability-impact ranking). It helps prioritize categories, but does not identify the strongest impact drivers as precisely as sensitivity analysis in quantitative analysis.",
+  "explanation_vi": "Đáp án đúng: **B. Sensitivity analysis**.\n\nSensitivity analysis dùng để xác định **biến/rủi ro nào tác động mạnh nhất** lên mục tiêu dự án (cost/schedule). Công cụ này cô lập các biến và cho thấy biến nào “kéo” kết quả nhiều nhất (thường thể hiện bằng **tornado diagram**). Vì vậy nó phù hợp nhất khi câu hỏi hỏi: **risk nào có impact lớn nhất**.\n\n❌ Vì sao các đáp án khác sai:\n- **A. Assumptions analysis**: Giúp phát hiện rủi ro phát sinh từ **giả định sai/không chắc chắn**, nhưng **không phải kỹ thuật định lượng để đo và xếp hạng risk nào impact lớn nhất** lên objectives.\n- **C. Root cause analysis**: Dùng để tìm **nguyên nhân gốc** để phòng ngừa/ra response tốt hơn, nhưng **không dùng để xác định risk nào impact lớn nhất** lên kết quả dự án.\n- **D. Prioritization matrices**: Thường dùng trong **qualitative** (P-I matrix) để ưu tiên High/Medium/Low; hữu ích nhưng **không chỉ ra “impact driver mạnh nhất” rõ như sensitivity analysis** trong quantitative.",
+  "reference": "PMBOK Guide 6th Edition – Perform Quantitative Risk Analysis (Sensitivity analysis / Tornado diagram)"
+}
+,
+{
+  "QuestionID": "RMP_ExamTopic_20",
+  "question": "Critical deliverables are delayed, because a key subject matter expert (SME) does not have enough time to allocate to the tasks. How could the situation be improved for the future?",
+  "options": [
+    "Cross train others to reduce the SME workload.",
+    "Introduce scope reductions to limit the reliance on SMEs.",
+    "Replace the SME with resources, who are responsible for receiving output from the SME on their deliverables.",
+    "Extend the project schedule timeline to accommodate availability of the SME."
+  ],
+  "correct": [0],
+  "difficulty": "Moderate",
+  "domain": "Process – Risk Management",
+  "pmbok6_knowledge_area": "Project Risk Management",
+  "pmbok6_process": "Plan Risk Responses",
+  "pmbok6_process_group": "Planning",
+  "short": "SME bottleneck risk → mitigate by cross-training.",
+  "explanation_en": "Correct answer: A (Cross train others to reduce the SME workload).\n\nThe delay is caused by over-reliance on a single subject matter expert, which represents a resource dependency risk. The most effective long-term improvement is to mitigate this risk by cross-training additional team members so knowledge and responsibilities are shared. This reduces single-point-of-failure risk and improves schedule resilience.\n\nWhy the other options are incorrect:\n- B (Introduce scope reductions): Reducing scope may temporarily relieve pressure but does not address the root cause of the risk and may negatively impact project objectives.\n- C (Replace the SME): Replacing a critical SME is often impractical, risky, and may result in loss of essential knowledge.\n- D (Extend the schedule): Extending the timeline accepts the risk rather than mitigating it and does not improve future project performance.",
+  "explanation_vi": "Đáp án đúng: **A. Cross train others to reduce the SME workload**.\n\n📌 Giải thích:\nNguyên nhân gốc của vấn đề là **phụ thuộc quá mức vào một SME duy nhất** → đây là **resource dependency risk / single point of failure**. Biện pháp cải thiện tốt nhất cho tương lai là **mitigate rủi ro** bằng cách **cross-training**, giúp nhiều người có thể đảm nhận công việc thay vì chỉ một SME.\n\n❌ Vì sao các đáp án khác sai:\n- **B. Giảm scope**: Có thể giảm áp lực ngắn hạn nhưng **không xử lý nguyên nhân gốc** và còn làm ảnh hưởng mục tiêu dự án.\n- **C. Thay SME**: Thường không thực tế, rủi ro cao và có thể mất kiến thức quan trọng.\n- **D. Kéo dài schedule**: Đây là **accept risk**, không phải cải thiện năng lực hay giảm rủi ro cho tương lai.\n\n🧠 Mẹo thi RMP:\n👉 Hễ thấy **SME quá tải / dependency / single expert** → nghĩ ngay tới **mitigation bằng cross-training**.",
+  "reference": "PMBOK Guide 6th Edition – Plan Risk Responses (Risk mitigation, resource dependency risks)"
+}
+,
+{
+  "QuestionID": "RMP_ExamTopic_21",
+  "question": "In what way can the risk manager determine when poor risk planning techniques are influencing the scope, schedule, quality, and/or budget of the project?",
+  "options": [
+    "Evaluate the results of the Monte Carlo analysis",
+    "Document and periodically update project risk information",
+    "Monitor project metrics and performance information",
+    "Update the risk management plan"
+  ],
+  "correct": [2],
+  "difficulty": "Moderate",
+  "domain": "Process – Risk Management",
+  "pmbok6_knowledge_area": "Project Risk Management",
+  "pmbok6_process": "Monitor Risks",
+  "pmbok6_process_group": "Monitoring and Controlling",
+  "short": "Poor risk planning shows up in CPI/SPI, quality, scope metrics.",
+  "explanation_en": "Correct answer: C (Monitor project metrics and performance information).\n\nPoor risk planning techniques manifest themselves through negative impacts on project performance. By monitoring project metrics and performance information—such as schedule variance (SV), cost variance (CV), CPI, SPI, quality metrics, scope changes, and issue trends—the risk manager can objectively determine whether risk planning and responses are inadequate.\n\nPerformance data provides evidence of how well risks were anticipated and managed. If risks were poorly planned, their impacts will surface as deviations from baselines.\n\nWhy the other options are incorrect:\n- A (Monte Carlo analysis): This is a quantitative analysis tool used during planning, not a primary method for detecting ongoing impacts of poor risk planning.\n- B (Document and update risk information): This is necessary, but documentation alone does not reveal whether scope, schedule, or cost performance is being negatively affected.\n- D (Update the risk management plan): Updating the plan is a corrective action, not the method used to determine that poor planning is affecting the project.",
+  "explanation_vi": "Đáp án đúng: **C. Monitor project metrics and performance information**.\n\n📌 Giải thích:\nRủi ro được lập kế hoạch kém sẽ **thể hiện trực tiếp qua hiệu suất dự án**. Khi theo dõi các chỉ số như:\n- **SV / SPI** (tiến độ),\n- **CV / CPI** (chi phí),\n- chỉ số chất lượng,\n- thay đổi scope,\n- xu hướng issue,\n\nrisk manager có thể **đánh giá khách quan** việc risk planning có hiệu quả hay không. Nếu risk planning yếu, các sai lệch so với baseline sẽ xuất hiện rõ ràng.\n\n❌ Vì sao các đáp án khác sai:\n- **A. Monte Carlo**: dùng trong **planning**, không phải công cụ chính để phát hiện tác động thực tế đang xảy ra.\n- **B. Cập nhật risk info**: cần thiết nhưng **không đủ** để chứng minh ảnh hưởng tới cost/schedule/quality.\n- **D. Update RMP**: là **hành động khắc phục**, không phải cách để nhận diện vấn đề.\n\n🧠 Mẹo thi RMP:\n👉 Khi câu hỏi nói tới **\"influencing scope, schedule, cost, quality\"** → luôn nghĩ tới **performance metrics & monitoring**, không phải tool phân tích đơn lẻ.",
+  "reference": "PMBOK Guide 6th Edition – Monitor Risks & Project Performance Monitoring"
+}
+,
+{
+  "QuestionID": "RMP_ExamTopic_22",
+  "question": "The company board is concerned about potential legal action from a high-risk project. What technique can be used to justify risk response decisions taken on this project?",
+  "options": [
+    "Interviews",
+    "Nominal group technique",
+    "Brainstorming",
+    "Decision tree analysis"
+  ],
+  "correct": [3],
+  "difficulty": "Moderate",
+  "domain": "Process – Risk Management",
+  "pmbok6_knowledge_area": "Project Risk Management",
+  "pmbok6_process": "Plan Risk Responses",
+  "pmbok6_process_group": "Planning",
+  "short": "Legal justification → decision tree shows logic & outcomes.",
+  "explanation_en": "Correct answer: D (Decision tree analysis).\n\nDecision tree analysis is specifically used to evaluate and justify risk response decisions by clearly documenting alternative choices, associated probabilities, costs, and outcomes. In a high-risk project with potential legal exposure, decision trees provide a transparent and defensible rationale showing why a particular response was selected.\n\nThis technique is especially valuable when decisions must withstand executive scrutiny, audits, or legal review because it demonstrates structured, objective decision-making based on expected value and risk trade-offs.\n\nWhy the other options are incorrect:\n- A (Interviews): Useful for identifying risks or gathering expert input, but they do not justify or defend response decisions.\n- B (Nominal group technique): Helps reach consensus, but does not provide analytical justification suitable for legal or governance concerns.\n- C (Brainstorming): Useful for generating ideas, not for defending why a specific risk response was chosen.",
+  "explanation_vi": "Đáp án đúng: **D. Decision tree analysis**.\n\n📌 Giải thích:\nTrong dự án **rủi ro cao có khả năng phát sinh trách nhiệm pháp lý**, tổ chức cần một kỹ thuật có thể:\n- minh bạch hóa các **lựa chọn phản ứng rủi ro**,\n- thể hiện **xác suất – chi phí – kết quả** của từng phương án,\n- và **chứng minh logic ra quyết định**.\n\n**Decision tree analysis** đáp ứng đúng yêu cầu này, vì nó cho thấy rõ:\n- vì sao chọn phương án A thay vì B,\n- rủi ro – lợi ích của từng nhánh quyết định,\n- cơ sở định lượng (expected value) để bảo vệ quyết định trước board hoặc pháp lý.\n\n❌ Vì sao các đáp án khác sai:\n- **A. Interviews**: chỉ dùng thu thập ý kiến, **không đủ để biện minh quyết định**.\n- **B. Nominal group technique**: giúp đồng thuận, **không mang tính phân tích pháp lý**.\n- **C. Brainstorming**: tạo ý tưởng, **không chứng minh được lý do chọn response**.\n\n🧠 Mẹo thi RMP:\n👉 Hễ thấy từ khóa **\"justify decisions\"**, **\"legal concern\"**, **\"defensible\"** → chọn **Decision Tree Analysis**.",
+  "reference": "PMBOK Guide 6th Edition – Plan Risk Responses & Decision Tree Analysis"
+}
+,
+{
+  "QuestionID": "RMP_ExamTopic_23",
+  "question": "The project manager generates a monthly risk report for key stakeholders which documents high and medium risk items only. Where would the project manager find the list of recipients for the report?",
+  "options": [
+    "Communications management plan",
+    "Risk management plan",
+    "Risk register",
+    "Project charter"
+  ],
+  "correct": [0],
+  "difficulty": "Moderate",
+  "domain": "Process – Risk Management",
+  "pmbok6_knowledge_area": "Project Risk Management",
+  "pmbok6_process": "Monitor Risks",
+  "pmbok6_process_group": "Monitoring and Controlling",
+  "short": "Who receives what & when → Communications Management Plan.",
+  "explanation_en": "Correct answer: A (Communications management plan).\n\nThe communications management plan defines:\n- what information will be communicated,\n- the format and level of detail,\n- the frequency of communication,\n- and most importantly, **who receives the information**.\n\nSince the question asks where the project manager would find the **list of recipients** for a monthly risk report, this information is explicitly documented in the communications management plan.\n\nWhy the other options are incorrect:\n- B (Risk management plan): Describes how risks are identified, analyzed, and managed, but does not define communication recipients.\n- C (Risk register): Contains risk details such as descriptions, owners, responses, and status—not distribution lists.\n- D (Project charter): Authorizes the project and defines high-level objectives and stakeholders, but does not specify detailed communication distribution.",
+  "explanation_vi": "Đáp án đúng: **A. Communications management plan**.\n\n📌 Giải thích:\nTheo PMBOK, **Communications Management Plan** quy định rõ:\n- thông tin nào được gửi,\n- gửi cho ai,\n- tần suất bao lâu,\n- hình thức và mức độ chi tiết.\n\nVì câu hỏi hỏi **danh sách người nhận báo cáo rủi ro hàng tháng**, nên câu trả lời **bắt buộc** nằm trong **Communications Management Plan**.\n\n❌ Vì sao các đáp án khác sai:\n- **B. Risk management plan**: nói về cách quản lý rủi ro, **không quy định ai nhận báo cáo**.\n- **C. Risk register**: chỉ chứa thông tin rủi ro (mô tả, owner, response…), **không phải danh sách phân phối**.\n- **D. Project charter**: chỉ ở mức **high-level**, không chi tiết về truyền thông định kỳ.\n\n🧠 Mẹo thi RMP:\n👉 Hễ thấy câu hỏi về **\"who receives reports\"**, **\"distribution list\"**, **\"frequency of reporting\"** → chọn **Communications Management Plan**.",
+  "reference": "PMBOK Guide 6th Edition – Plan Communications Management & Monitor Risks"
+}
+,
+{
+  "QuestionID": "RMP_ExamTopic_24",
+  "question": "A CEO wants to reduce costs in the time spent for risk management activities. What step did the risk manager fail to perform?",
+  "options": [
+    "Assigning the CEO as a risk owner",
+    "Preventing all issues from occurring",
+    "Properly communicating the risk management activities and their outcomes",
+    "Explaining the purpose of the management reserve"
+  ],
+  "correct": [2],
+  "difficulty": "Moderate",
+  "domain": "Process – Risk Management",
+  "pmbok6_knowledge_area": "Project Risk Management",
+  "pmbok6_process": "Plan Risk Management",
+  "pmbok6_process_group": "Planning",
+  "short": "Executives question value → risk benefits not communicated.",
+  "explanation_en": "Correct answer: C (Properly communicating the risk management activities and their outcomes).\n\nWhen senior executives want to reduce the time or cost spent on risk management, it usually indicates that the **value and benefits of risk management have not been clearly communicated**. According to PMI, effective risk management requires transparent communication of how risk activities protect project objectives, reduce losses, and support decision-making.\n\nIf the CEO does not understand the outcomes and value generated by risk management, they may perceive it as unnecessary overhead.\n\nWhy the other options are incorrect:\n- A (Assigning the CEO as a risk owner): Executives are rarely assigned as risk owners, and this does not address misunderstanding of value.\n- B (Preventing all issues from occurring): It is impossible to prevent all issues; this is not a realistic or required step.\n- D (Explaining the purpose of the management reserve): Management reserve relates to unknown-unknowns and budget governance, not directly to time spent on risk activities.",
+  "explanation_vi": "Đáp án đúng: **C. Properly communicating the risk management activities and their outcomes**.\n\n📌 Giải thích:\nKhi **CEO muốn cắt giảm thời gian/chi phí cho quản lý rủi ro**, điều này cho thấy **giá trị của risk management chưa được truyền đạt rõ ràng**.\n\nTheo PMI, quản lý rủi ro chỉ được ủng hộ khi lãnh đạo hiểu rằng:\n- nó giúp **giảm tổn thất**,\n- **bảo vệ cost / schedule / quality**,\n- và **hỗ trợ ra quyết định chiến lược**.\n\nNếu risk manager không truyền thông tốt về **kết quả và lợi ích**, risk management sẽ bị xem là tốn kém và không cần thiết.\n\n❌ Vì sao các đáp án khác sai:\n- **A**: CEO không phải risk owner cho rủi ro chi tiết; không giải quyết gốc vấn đề.\n- **B**: Không ai có thể ngăn chặn mọi issue → phi thực tế.\n- **D**: Management reserve là vấn đề ngân sách, **không giải thích được vì sao cần đầu tư thời gian cho risk management**.\n\n🧠 Mẹo thi RMP:\n👉 Lãnh đạo muốn cắt risk management → **thiếu truyền thông về giá trị & outcome** → chọn **communicating risk management benefits**.",
+  "reference": "PMBOK Guide 6th Edition – Plan Risk Management & Risk Communications"
+}
+,
+{
+  "QuestionID": "RMP_ExamTopic_25",
+  "question": "A risk on the risk register is triggered. This triggered risk costs US$200,000 to mitigate and will overwhelm the project, causing it to fail if not mitigated. The project manager identifies that there is US$200,000 left in the management reserve.\n\nFrom which of the following sources should the funds be drawn to cover the risk mitigation?",
+  "options": [
+    "Organization management reserve",
+    "Unplanned risk reserve",
+    "Contingency reserve",
+    "Management reserve"
+  ],
+  "correct": [2],
+  "difficulty": "Difficult",
+  "domain": "Process – Risk Management",
+  "pmbok6_knowledge_area": "Project Risk Management",
+  "pmbok6_process": "Implement Risk Responses",
+  "pmbok6_process_group": "Executing",
+  "short": "Known risk occurs → use contingency reserve.",
+  "explanation_en": "Correct answer: C (Contingency reserve).\n\nA contingency reserve is allocated for **identified (known) risks** that have been analyzed and documented in the risk register. When a risk that was previously identified is triggered, the appropriate source of funding to implement the planned risk response is the **contingency reserve**.\n\nManagement reserves are intended for **unknown-unknown risks** that were not identified during planning. Even though the remaining funds are labeled as management reserve, a triggered risk from the risk register must be handled using contingency reserves, not management reserves.\n\nWhy the other options are incorrect:\n- A (Organization management reserve): This is not a formally recognized PMI funding category for project-level risk response.\n- B (Unplanned risk reserve): This term is not defined in PMBOK and is therefore invalid.\n- D (Management reserve): Used only for unforeseen risks and requires sponsor approval; it is not intended for known risks.",
+  "explanation_vi": "Đáp án đúng: **C. Contingency reserve**.\n\n📌 Giải thích:\nTheo PMI, **contingency reserve** được lập ra để xử lý **các rủi ro đã được nhận diện (known risks)** và ghi trong **risk register**.\n\nTrong câu hỏi:\n- Rủi ro **đã nằm trong risk register**,\n- Rủi ro **đã kích hoạt (triggered)**,\n- Có kế hoạch ứng phó → **phải dùng contingency reserve**.\n\n💡 Management reserve chỉ dùng cho **unknown-unknown risks** (rủi ro chưa từng nhận diện), không dùng cho rủi ro đã biết.\n\n❌ Vì sao các đáp án khác sai:\n- **A**: Không phải thuật ngữ chuẩn PMI cho quỹ dự phòng dự án.\n- **B**: “Unplanned risk reserve” không tồn tại trong PMBOK.\n- **D**: Management reserve cần sponsor approval và **không dùng cho rủi ro đã xác định**.\n\n🧠 Mẹo thi RMP:\n👉 **Risk đã có trong risk register + bị trigger** → luôn chọn **Contingency Reserve**.\n👉 **Risk chưa từng biết** → mới nghĩ tới **Management Reserve**.",
+  "reference": "PMBOK Guide 6th Edition – Plan Risk Responses & Implement Risk Responses"
+}
+
+
 
 ]

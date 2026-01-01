@@ -1,0 +1,182 @@
+[
+  {
+    "question": "The project manager is working on a large-scale project with stakeholders and subject matter experts (SMEs) located globally. The project manager has been unable to obtain a global consensus on the project's scope from the competing subject matter experts and stakeholders. This has caused a one-month delay. What should the project manager do next to reduce further delay?",
+    "options": [
+      "Initiate a scope change request.",
+      "Schedule a kickoff meeting.",
+      "Plan a stakeholder meeting.",
+      "Engage the project sponsor."
+    ],
+    "correct": 3,
+    "difficulty": "Moderate",
+    "domain": "Risk Strategy and Planning",
+    "short": "Tình huống về xung đột stakeholder trên dự án lớn; cần sự can thiệp của sponsor để đạt đồng thuận.",
+    "reference": "PMBOK Guide – Seventh Edition (2021) /// Stakeholder Engagement; Leadership; Governance",
+    "explanation_en": "Engaging the project sponsor helps to resolve conflicts and obtain consensus among stakeholders. The sponsor can provide authority, support, and resources to overcome organizational barriers.\n\nOther options are incorrect because they do not address the core issue of competing stakeholders failing to reach agreement.",
+    "explanation_vi": "Việc nhờ sponsor can thiệp giúp giải quyết xung đột và đạt được đồng thuận giữa các bên liên quan. Sponsor có thẩm quyền và có thể hỗ trợ nguồn lực để tháo gỡ vướng mắc.\n\nCác lựa chọn khác không xử lý được nguyên nhân gốc rễ là sự thiếu đồng thuận của stakeholder.",
+    "pmbok6_knowledge_area": "Project Stakeholder Management / Project Integration Management",
+    "pmbok6_process_group": "Monitoring & Controlling"
+  },
+  {
+    "question": "What are the supporting elements for effective risk management?",
+    "options": [
+      "Trained core people, a matrix organization, and a standardized project process.",
+      "Competent people, a collaborative team, and a rigid risk management strategy.",
+      "Qualified people, a supportive organization, and a simple scalable process.",
+      "Expert project teams, a functional organization, and predictive techniques."
+    ],
+    "correct": 2,
+    "difficulty": "Moderate",
+    "domain": "Risk Strategy and Planning",
+    "short": "Câu hỏi về các yếu tố hỗ trợ quản lý rủi ro hiệu quả: con người, văn hoá tổ chức và quy trình linh hoạt.",
+    "reference": "PMBOK Guide – Seventh Edition (2021) /// Risk Principles & Performance Domain",
+    "explanation_en": "Effective risk management requires qualified people, a supportive organization, and a simple scalable process. The process must be adaptable, the organization must encourage risk awareness, and individuals must have the skills to identify and manage risks.\n\nOther options emphasize rigidity, predictive-only approaches, or structures that do not directly support risk management effectiveness.",
+    "explanation_vi": "Quản lý rủi ro hiệu quả cần con người có năng lực, tổ chức có văn hoá hỗ trợ và quy trình đơn giản nhưng linh hoạt. Các yếu tố này giúp nhận diện – đánh giá – xử lý rủi ro hiệu quả.\n\nCác lựa chọn khác thiên về cấu trúc cứng nhắc hoặc kỹ thuật không phù hợp mọi tình huống.",
+    "pmbok6_knowledge_area": "Project Risk Management",
+    "pmbok6_process_group": "Planning"
+  },
+  {
+    "question": "Which of the following templates would be most appropriate to include in a risk management plan?",
+    "options": [
+      "Formal risk statement format",
+      "Work performance reports",
+      "SWOT diagram structure",
+      "Proper brainstorming indexes"
+    ],
+    "correct": 0,
+    "difficulty": "Moderate",
+    "domain": "Risk Strategy and Planning",
+    "short": "Chọn template phù hợp để đưa vào Risk Management Plan; đáp án đúng là mẫu Risk Statement chuẩn hóa.",
+    "reference": "PMI (Risk Strategy and Planning) /// Organizational process assets: templates, standard definitions, and formats (e.g., risk statement format).",
+    "explanation_en": "A formal risk statement format is the most appropriate template to include in a risk management plan because it standardizes how risks are described (including likelihood, impact, and consequences). Standard formats help ensure risks are consistently identified, analyzed, and communicated across the organization. The other listed items are not typically included as templates within the risk management plan.",
+    "explanation_vi": "Mẫu Risk Statement chuẩn hóa là template phù hợp nhất để đưa vào Risk Management Plan vì giúp chuẩn hóa cách mô tả rủi ro (xác suất, tác động, hậu quả) và đảm bảo nhận diện/đánh giá/truyền đạt rủi ro nhất quán trong tổ chức. Các lựa chọn còn lại không phải template thường được đưa vào kế hoạch quản lý rủi ro.",
+    "pmbok6_knowledge_area": "Project Risk Management",
+    "pmbok6_process_group": "Planning"
+  },
+  {
+    "question": "A mining organization hired a new risk manager with extensive industry experience and an understanding of the sustainability risk constraints driving the mining industry. During the risk identification process, the new risk manager notices that the organization lacks interest in sustainability and finds it to be a costly and time-consuming undertaking.\n\nWhat should the risk manager do?",
+    "options": [
+      "Communicate the importance of sustainability initiatives to the CEO and high-priority stakeholders.",
+      "Define and communicate business drivers and develop a plan that addresses the sustainability risks.",
+      "Facilitate sustainability training courses for the organization's key stakeholders and the project team.",
+      "Implement an effective cost optimization strategy to handle the costs associated with sustainability."
+    ],
+    "correct": 1,
+    "difficulty": "Difficult",
+    "domain": "Risk Strategy and Planning",
+    "short": "Tổ chức thiếu quan tâm tới sustainability; risk manager cần xác định business drivers và lập plan xử lý sustainability risks, tạo buy-in.",
+    "reference": "PMI (Risk Strategy and Planning) /// Sustainability risks: align with strategic objectives; define drivers; develop plan with actions/metrics; communicate for buy-in.",
+    "explanation_en": "Sustainability risks can significantly affect reputation, financial performance, and business value. The risk manager should define and communicate the business drivers and develop a plan to address sustainability risks and opportunities, including actions and metrics, and ensure transparency and buy-in. Other options are partial or not timely (generic communication, training-only, or cost optimization alone).",
+    "explanation_vi": "Rủi ro sustainability có thể ảnh hưởng mạnh tới uy tín, hiệu quả tài chính và khả năng tạo giá trị. Risk manager cần xác định/giải thích business drivers và xây dựng kế hoạch xử lý sustainability risks/opportunities (kèm hành động & chỉ số đo), đồng thời truyền thông để tạo nhận thức và buy-in. Các lựa chọn khác mang tính một phần hoặc không giải quyết gốc rễ (chỉ nói chung, chỉ đào tạo, hoặc chỉ tối ưu chi phí).",
+    "pmbok6_knowledge_area": "Project Risk Management / Project Stakeholder Management",
+    "pmbok6_process_group": "Planning"
+  },
+  {
+    "question": "A project team is working to develop and implement a risk management plan for a new project. Before doing so, the project manager instructs the team to confirm the feasibility of the risk management planning to ensure that it is effective and aligned with the organization's overall strategy.\n\nWhat is the feasibility of the risk management planning is dependent upon?",
+    "options": [
+      "Market share and the organization's reputation",
+      "The overall level of risk management maturity",
+      "Alignment with industry-specific requirements",
+      "Culture, people, and infrastructure capabilities"
+    ],
+    "correct": 3,
+    "difficulty": "Moderate",
+    "domain": "Risk Strategy and Planning",
+    "short": "Feasibility của risk management planning phụ thuộc nền tảng tổ chức: văn hoá, con người, và năng lực hạ tầng.",
+    "reference": "PMI (Risk Strategy and Planning) /// Feasibility depends on organizational culture, people, and infrastructure capabilities.",
+    "explanation_en": "Feasibility refers to an organization's ability to effectively plan and manage risk. This depends on culture, people, and infrastructure capabilities that enable risk processes to be practical and aligned with strategy. The other options do not determine whether risk planning can be executed effectively.",
+    "explanation_vi": "Feasibility là khả năng của tổ chức để lập kế hoạch và quản lý rủi ro một cách thực thi được. Điều này phụ thuộc vào văn hoá, con người và năng lực hạ tầng/quy trình hỗ trợ. Các phương án khác không quyết định việc tổ chức có thể triển khai risk planning hiệu quả hay không.",
+    "pmbok6_knowledge_area": "Project Risk Management",
+    "pmbok6_process_group": "Planning"
+  },
+  {
+    "question": "Which of the following represents levels of risk attitude?",
+    "options": [
+      "Conservative, moderate, and liberal",
+      "Risk-averse, risk-neutral, risk-tolerant, risk-seeking",
+      "Risk-mitigating, risk-avoiding, risk-transferring, risk-accepting",
+      "High, medium, and low"
+    ],
+    "correct": 1,
+    "difficulty": "Easy",
+    "domain": "Risk Strategy and Planning",
+    "short": "Các mức risk attitude chuẩn: averse/neutral/tolerant/seeking; không nhầm với chiến lược response hay thang đánh giá.",
+    "reference": "PMI (Risk Strategy and Planning) /// Risk attitude levels; stakeholder register contains attitude toward risk; thresholds.",
+    "explanation_en": "Risk attitude is a disposition toward uncertainty. Standard levels include risk-averse, risk-neutral, risk-tolerant, and risk-seeking. Other choices describe political terms, risk response strategies for threats, or qualitative gradients rather than attitudes.",
+    "explanation_vi": "Risk attitude là khuynh hướng ứng xử với bất định. Các mức điển hình gồm risk-averse, risk-neutral, risk-tolerant, risk-seeking. Các lựa chọn khác là thuật ngữ không liên quan, chiến lược ứng phó rủi ro (threat responses), hoặc thang định tính chứ không phải thái độ rủi ro.",
+    "pmbok6_knowledge_area": "Project Risk Management / Project Stakeholder Management",
+    "pmbok6_process_group": "Planning"
+  },
+  {
+    "question": "A key stakeholder continuously refers to a specific project risk as an issue, but that is an inaccurate representation. This has caused confusion among the team and other stakeholders. The risk manager meets with the stakeholder to coach and mentor them on risk management terms and meanings.\n\nHow should the risk manager describe the definition of an issue within risk management?",
+    "options": [
+      "A negative effect arising from the occurrence of a threat.",
+      "A probable event that has a positive or negative impact.",
+      "A known risk that has a significant impact on the project.",
+      "An uncertain event that may impact project objectives."
+    ],
+    "correct": 0,
+    "difficulty": "Moderate",
+    "domain": "Risk Strategy and Planning",
+    "short": "Phân biệt risk vs issue: issue là hậu quả tiêu cực đã xảy ra (threat đã xảy ra).",
+    "reference": "PMI (Risk Strategy and Planning) /// Issue = threat occurred; Risk = uncertain event/condition (positive or negative).",
+    "explanation_en": "An issue is a negative effect on a project objective arising from the occurrence of a threat—once a threat occurs, the risk becomes an issue/problem. The other options describe risks (uncertain events/conditions) rather than issues.",
+    "explanation_vi": "Issue là tác động tiêu cực lên mục tiêu dự án do một threat đã xảy ra—khi threat xảy ra, risk trở thành issue/problem. Các lựa chọn còn lại mô tả risk (sự kiện/điều kiện không chắc chắn có thể tác động tích cực hoặc tiêu cực) chứ không phải issue.",
+    "pmbok6_knowledge_area": "Project Risk Management",
+    "pmbok6_process_group": "Monitoring & Controlling"
+  },
+  {
+    "question": "A project manager is replaced after project planning has begun. The team is preparing to identify the risk appetite of project stakeholders. The new project manager must first identify the stakeholders.\n\nWhat should the project manager review to effectively identify project stakeholders?",
+    "options": [
+      "Project charter, management reserve, enterprise environmental factors, and organizational process assets",
+      "Project management plan, human resource plan, enterprise environmental factors, and organizational process assets",
+      "Project charter, project management plan, enterprise environmental factors, and communications management plan",
+      "Project management plan, communications management plan, lessons learned, and organizational process assets"
+    ],
+    "correct": 2,
+    "difficulty": "Moderate",
+    "domain": "Risk Strategy and Planning",
+    "short": "Để identify stakeholders hiệu quả: review charter + PM plan + EEF + communications plan.",
+    "reference": "PMI (Risk Strategy and Planning / Stakeholder) /// Identify stakeholders sources: project charter, PM plan, communications plan, EEF.",
+    "explanation_en": "Reviewing the project charter, project management plan, enterprise environmental factors, and communications management plan provides the most comprehensive basis to identify stakeholders and their roles/communication needs. Other options include items that do not directly identify stakeholders (e.g., management reserve) or are less suitable for this scenario.",
+    "explanation_vi": "Xem xét project charter, project management plan, EEF và communications management plan giúp xác định stakeholders đầy đủ nhất (vai trò, nhu cầu thông tin/trao đổi). Các lựa chọn khác chứa yếu tố không trực tiếp giúp identify stakeholders (như management reserve) hoặc kém phù hợp cho tình huống này.",
+    "pmbok6_knowledge_area": "Project Stakeholder Management",
+    "pmbok6_process_group": "Initiating"
+  },
+  {
+    "question": "A newly hired risk manager has developed the organization's risk management plan. The CEO disapproves of the plan and informs the risk manager that the organization can tolerate additional costs but will not tolerate any risks on quality.\n\nWhat should the risk manager do?",
+    "options": [
+      "Align the risk management plan to the organization's thresholds.",
+      "Demonstrate the positive side of cost optimization to the CEO.",
+      "Explain to the CEO that risk has nothing to do with quality issues.",
+      "Conduct a stakeholder analysis and spend more time with them."
+    ],
+    "correct": 0,
+    "difficulty": "Easy",
+    "domain": "Risk Strategy and Planning",
+    "short": "CEO nêu rõ risk threshold (cost có thể tăng nhưng quality risk = 0) → cần align risk plan theo thresholds tổ chức.",
+    "reference": "PMI (Risk Strategy and Planning) /// Risk thresholds/tolerance: align plan and responses with organizational objectives and priorities.",
+    "explanation_en": "The risk manager should align the risk management plan with the organization’s thresholds, especially the zero tolerance for quality risks. This may require revising responses, prioritization, and resource allocation to reflect organizational objectives. Other options do not address the stated thresholds or are incorrect assumptions.",
+    "explanation_vi": "Risk manager cần điều chỉnh/align risk management plan theo risk thresholds của tổ chức (đặc biệt không chấp nhận rủi ro về chất lượng). Có thể phải sửa chiến lược ứng phó, ưu tiên, hoặc phân bổ nguồn lực. Các lựa chọn khác không giải quyết đúng yêu cầu thresholds hoặc lập luận sai.",
+    "pmbok6_knowledge_area": "Project Risk Management / Project Quality Management",
+    "pmbok6_process_group": "Planning"
+  },
+  {
+    "question": "The project manager needs to create a risk management plan for a high-risk project. The company's senior management does not see value in spending time identifying and documenting low-probability risks and asks to skip this and start the project immediately.\n\nWhat should the project manager do first?",
+    "options": [
+      "Create a risk register with only high-probability risks and assign members of senior management as risk action owners.",
+      "Engage a risk consultant to identify all risks while the project team initiates the project immediately as requested.",
+      "Assess the risk appetite and risk attitude of senior management and develop a risk management plan accordingly.",
+      "Meet with the team to identify all risks associated with the project even if that means implementation would be delayed."
+    ],
+    "correct": 2,
+    "difficulty": "Easy",
+    "domain": "Risk Strategy and Planning",
+    "short": "Senior management muốn bỏ low-probability risks; bước đầu tiên là hiểu risk appetite/attitude để thiết kế risk plan phù hợp và thống nhất giá trị.",
+    "reference": "PMI (Risk Strategy and Planning) /// Risk appetite & attitude guide the scope/approach of risk management activities and decision-making.",
+    "explanation_en": "First assess senior management’s risk appetite and attitude, then tailor the risk management plan and prioritization approach accordingly. This maintains alignment with organizational strategy and clarifies perceived value. Other options either start without proper risk planning, overreact without transparency, or create unsuitable ownership/coverage.",
+    "explanation_vi": "Cần đánh giá risk appetite và risk attitude của senior management trước, rồi thiết kế risk management plan/phạm vi ưu tiên tương ứng. Việc này đảm bảo alignment chiến lược, thiết lập risk culture và làm rõ nhận thức giá trị. Các phương án khác hoặc bỏ qua risk planning, hoặc thiếu minh bạch, hoặc thiết lập ownership không phù hợp.",
+    "pmbok6_knowledge_area": "Project Risk Management / Project Stakeholder Management",
+    "pmbok6_process_group": "Planning"
+  }
+]

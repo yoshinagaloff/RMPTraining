@@ -1,0 +1,183 @@
+
+[
+  {
+    "question": "A pharmaceutical company undertakes a new, year-long research and development (R&D) project... Based on the characteristics of this new project, what is the level of stakeholder risk appetite and appropriate risk strategy?",
+    "options": [
+      "Low stakeholder risk appetite; leverage historical project planning data, develop standard metrics and reports, and develop a formal risk management plan.",
+      "High stakeholder risk appetite; leverage historical project planning data, develop standard metrics and reports, and develop a formal risk management plan.",
+      "High stakeholder risk appetite; leverage historical project planning data, utilize informal metrics and reports, and develop risk management training.",
+      "Low stakeholder risk appetite; collect new project data, create custom metrics and reports, and develop a formal risk management plan."
+    ],
+    "correct": 1,
+    "difficulty": "Moderate",
+    "domain": "Risk Strategy and Planning",
+    "short": "Xác định risk appetite của stakeholders dựa trên bối cảnh tổ chức (growth aggressive, PMO mạnh, có dữ liệu lịch sử) và chọn risk strategy phù hợp.",
+    "reference": "PMBOK Guide – Seventh Edition (2021) PMI /// Risk Appetite, Risk Threshold, Risk Strategy; Organizational Governance & PMO support. // The Standard for Risk Management in Portfolios, Programs, and Projects (PMI) (concepts)",
+    "explanation_en": "The organization pursues aggressive growth and high margins, indicating high risk appetite. At the same time, they have a mature PMO, historical performance data, and require formal documentation and standardized reporting. Therefore, the best strategy is high risk appetite combined with leveraging historical planning data, using standard metrics/reports, and developing a formal risk management plan.",
+    "explanation_vi": "Tổ chức theo đuổi tăng trưởng quyết liệt và biên lợi nhuận cao → thể hiện khẩu vị rủi ro (risk appetite) cao. Đồng thời PMO trưởng thành, có dữ liệu lịch sử và yêu cầu đầy đủ artifact/metrics chuẩn → chiến lược phù hợp là tận dụng dữ liệu lịch sử, chuẩn hóa báo cáo/metrics và lập kế hoạch quản lý rủi ro chính thức.",
+    "pmbok6_knowledge_area": "Project Risk Management",
+    "pmbok6_process_group": "Planning"
+  },
+  {
+    "question": "The risk manager joins a project team that is planning for a new project... What should the risk manager do first to help define stakeholder risk appetite?",
+    "options": [
+      "Review past risk response plans.",
+      "Perform a SWOT analysis.",
+      "Conduct a sensitivity analysis.",
+      "Host meetings and interviews."
+    ],
+    "correct": 3,
+    "difficulty": "Moderate",
+    "domain": "Risk Strategy and Planning",
+    "short": "Để xác định risk appetite của stakeholders, bước đầu tiên là thu thập thông tin trực tiếp qua meetings/interviews thay vì suy đoán từ dự án cũ.",
+    "reference": "PMBOK Guide – Seventh Edition (2021) PMI /// Stakeholder engagement, communication, tailoring; Risk appetite & attitude elicitation. // PMBOK 6: Plan Risk Management / Identify Risks (stakeholder input, interviews)",
+    "explanation_en": "Risk appetite should be confirmed directly with stakeholders rather than assumed. Meetings and interviews are the most appropriate first step to elicit risk attitudes, tolerance, and objective priorities.",
+    "explanation_vi": "Risk appetite cần được xác nhận trực tiếp chứ không nên suy đoán. Meetings và interviews là bước đầu phù hợp nhất để khai thác thái độ rủi ro, mức chịu đựng bất định và ưu tiên mục tiêu của stakeholders.",
+    "pmbok6_knowledge_area": "Project Risk Management / Project Stakeholder Management / Project Communications Management",
+    "pmbok6_process_group": "Planning"
+  },
+  {
+    "question": "In the country where a project is being executed... How should the probability and impact be characterized for this risk?",
+    "options": [
+      "Low probability/low impact",
+      "High probability/low impact",
+      "Low probability/high impact",
+      "High probability/high impact"
+    ],
+    "correct": 3,
+    "difficulty": "Easy",
+    "domain": "Risk Analysis",
+    "short": "Đánh giá P/I: thủ tục hải quan phức tạp và hay đổi → xác suất cao; trễ thiết bị có thể hủy dự án → tác động rất cao.",
+    "reference": "PMBOK 6: Perform Qualitative Risk Analysis (Probability & Impact assessment); Risk register updates.",
+    "explanation_en": "Frequent changes and complexity make delays likely (high probability). Potential project cancellation makes the impact very high. Therefore, it is high probability/high impact.",
+    "explanation_vi": "Hải quan phức tạp và thay đổi thường xuyên → rủi ro trễ xảy ra cao. Trễ thiết bị có thể dẫn đến hủy dự án → tác động cực lớn. Do đó là High probability / High impact.",
+    "pmbok6_knowledge_area": "Project Risk Management",
+    "pmbok6_process_group": "Planning"
+  },
+  {
+    "question": "After applying several risk identification techniques... After this information is documented, who should typically be designated as the risk owner(s)?",
+    "options": [
+      "Client interest representatives",
+      "The project management office",
+      "External vendors or contractors",
+      "Members of the project team"
+    ],
+    "correct": 3,
+    "difficulty": "Easy",
+    "domain": "Risk Identification",
+    "short": "Risk owner thường là thành viên project team để đảm bảo ownership và theo dõi/triển khai response hiệu quả.",
+    "reference": "PMBOK 6: Identify Risks / Plan Risk Responses (risk owner assignment in risk register).",
+    "explanation_en": "Risk owners are typically members of the project team because they are closest to the work and can be accountable for implementing and monitoring response actions. Other parties may own certain risks, but the standard/default choice is project team members.",
+    "explanation_vi": "Risk owner thường là thành viên dự án vì họ gần công việc nhất, chịu trách nhiệm triển khai và theo dõi response. Các bên khác có thể được chỉ định trong một số trường hợp, nhưng lựa chọn mặc định/thông dụng là project team.",
+    "pmbok6_knowledge_area": "Project Risk Management",
+    "pmbok6_process_group": "Planning"
+  },
+  {
+    "question": "A risk is identified early in the project... After six months, it is determined that the risk does not apply... How should the risk be handled by the risk manager?",
+    "options": [
+      "Ignore the insignificant risks and concentrate only on the pertinent project risks.",
+      "Remove the risk from the risk register and inform the project manager that it is no longer valid.",
+      "Close the risk during the next risk board meeting and keep it in the risk register.",
+      "Conduct a risk analysis to determine how an inappropriate risk was formally accepted."
+    ],
+    "correct": 2,
+    "difficulty": "Difficult",
+    "domain": "Monitor and Close Risks",
+    "short": "Rủi ro không còn áp dụng → không xóa/không bỏ qua; nên đóng (close) và vẫn lưu trong risk register để minh bạch và học hỏi.",
+    "reference": "PMBOK 6: Monitor Risks (update risk register, close risks, document outcomes).",
+    "explanation_en": "Risks evolve over time. If a risk is no longer applicable, it should be formally closed, documented, and retained in the risk register for traceability and learning, rather than ignored or deleted.",
+    "explanation_vi": "Risk thay đổi theo thời gian. Khi risk không còn áp dụng, cần đóng (close) một cách chính thức, ghi nhận kết quả và vẫn lưu trong risk register để truy vết và rút kinh nghiệm, thay vì xóa hoặc bỏ qua.",
+    "pmbok6_knowledge_area": "Project Risk Management",
+    "pmbok6_process_group": "Monitoring and Controlling"
+  },
+  {
+    "question": "A project manager is creating a risk management plan, but participants in a group meeting are hesitant to express their concerns and opinions... What should the project manager do to ensure that they capture everyone's opinions?",
+    "options": [
+      "Facilitate a brainstorming session.",
+      "Perform a Monte Carlo simulation.",
+      "Conduct participant interviews.",
+      "Require all participants to speak."
+    ],
+    "correct": 2,
+    "difficulty": "Difficult",
+    "domain": "Risk Identification",
+    "short": "Khi họ ngại phát biểu trong nhóm, phỏng vấn 1-1 giúp lấy ý kiến trung thực hơn và tạo môi trường tin cậy.",
+    "reference": "PMBOK 6: Identify Risks (interviews as a tool/technique); Stakeholder engagement practices.",
+    "explanation_en": "Interviews in a confidential setting encourage candid input from hesitant participants and help capture concerns that may not surface in group sessions.",
+    "explanation_vi": "Phỏng vấn (interviews) trong môi trường tin cậy/bảo mật giúp người ngại nói trong nhóm chia sẻ thẳng thắn hơn, từ đó thu được đầy đủ ý kiến.",
+    "pmbok6_knowledge_area": "Project Risk Management / Project Stakeholder Management",
+    "pmbok6_process_group": "Planning"
+  },
+  {
+    "question": "A project team is working on a complex project... hire an external risk manager with specific technical expertise... What should the project manager do?",
+    "options": [
+      "Identify an internal expert with the necessary knowledge.",
+      "Employ an external risk manager with technical expertise.",
+      "Engage a specialized risk management consulting company.",
+      "Conduct a cost-benefit analysis of hiring an external expert."
+    ],
+    "correct": 3,
+    "difficulty": "Moderate",
+    "domain": "Risk Strategy and Planning",
+    "short": "Thiếu knowledge kỹ thuật → trước khi thuê expert ngoài phải làm cost-benefit analysis để quyết định hợp lý.",
+    "reference": "PMBOK 6: Plan Resource Management / Plan Procurement Management (make-or-buy); Tailoring; Business case thinking.",
+    "explanation_en": "Before hiring external expertise, the project manager should evaluate whether the benefits outweigh the costs and consider constraints, complexity, and impact. A cost-benefit analysis supports a justified decision.",
+    "explanation_vi": "Trước khi thuê chuyên gia bên ngoài, PM cần đánh giá lợi ích so với chi phí (cost-benefit) dựa trên độ phức tạp, ràng buộc và tác động nếu thiếu expertise. Đây là cách ra quyết định có cơ sở.",
+    "pmbok6_knowledge_area": "Project Resource Management / Project Procurement Management / Project Risk Management",
+    "pmbok6_process_group": "Planning"
+  },
+  {
+    "question": "During a progress meeting... risk materialized... contingency reserve does not cover... What should the project manager do?",
+    "options": [
+      "Ask the project sponsor to apply the management reserve to cover the remaining cost of the response.",
+      "Ask the project sponsor to provide an additional budget to compensate for the cost overage.",
+      "Issue a change request to modify the scope, cost, and schedule baselines to support the new plan.",
+      "Use the contingency reserve and assess options to reduce the budget to cover the remaining work."
+    ],
+    "correct": 2,
+    "difficulty": "Expert",
+    "domain": "Risk Response",
+    "short": "Contingency reserve không đủ cho response đã planned → phải làm change request để cập nhật baselines (scope/cost/schedule).",
+    "reference": "PMBOK 6: Perform Integrated Change Control; Plan Risk Responses / Implement Risk Responses (baselines updates via change control).",
+    "explanation_en": "If executing an identified risk response exceeds the available contingency reserve, the project needs baseline changes. The correct action is to submit a change request so scope/cost/schedule baselines can be formally updated through change control.",
+    "explanation_vi": "Khi triển khai response cho risk đã biết nhưng contingency reserve không đủ, dự án cần thay đổi baseline. Hành động đúng là phát hành change request để cập nhật scope/cost/schedule baseline theo quy trình change control.",
+    "pmbok6_knowledge_area": "Project Integration Management / Project Risk Management / Project Cost Management / Project Schedule Management",
+    "pmbok6_process_group": "Monitoring and Controlling"
+  },
+  {
+    "question": "A risk response strategy was not appropriately implemented... risk action owner was never assigned... When should the project manager have assigned a risk action owner?",
+    "options": [
+      "After risk response strategies are identified.",
+      "During the initial risk analysis process.",
+      "While monitoring the status of project risks.",
+      "Before establishing the risk management plan."
+    ],
+    "correct": 0,
+    "difficulty": "Difficult",
+    "domain": "Risk Response",
+    "short": "Risk action owner cần được gán ngay sau khi xác định response strategy để đảm bảo có người chịu trách nhiệm triển khai.",
+    "reference": "PMBOK 6: Plan Risk Responses (assign risk owner/action owner for response actions).",
+    "explanation_en": "An action owner should be assigned once response strategies/actions are defined so there is clear accountability to implement them. Assigning later risks missed execution and control.",
+    "explanation_vi": "Action owner phải được chỉ định sau khi đã xác định response strategy/action để có trách nhiệm rõ ràng trong triển khai. Chỉ định muộn sẽ dẫn đến không thực thi/không kiểm soát được response.",
+    "pmbok6_knowledge_area": "Project Risk Management",
+    "pmbok6_process_group": "Planning"
+  },
+  {
+    "question": "A risk manager is coaching a team... proactively monitor risks... What should the risk manager instruct the team to do in order to proactively monitor risks?",
+    "options": [
+      "Develop risk responses, create a risk management plan, and stay alert for risk events.",
+      "Update the lessons learned documents, develop risk responses, and create the risk management plan.",
+      "Track identified risks, watch residual risks, identify new risks, and evaluate risk management success.",
+      "Review lessons learned document to identify risks, quantify risks, and lower impact ratings."
+    ],
+    "correct": 2,
+    "difficulty": "Easy",
+    "domain": "Monitor and Close Risks",
+    "short": "Monitor Risks chủ động: theo dõi risks đã biết + residual, phát hiện risks mới, và đánh giá hiệu quả quy trình risk management.",
+    "reference": "PMBOK 6: Monitor Risks (track, review, identify new risks, assess effectiveness).",
+    "explanation_en": "Proactive monitoring includes tracking identified risks, monitoring residual risks, identifying new risks, and evaluating the effectiveness of risk management throughout the project.",
+    "explanation_vi": "Theo dõi rủi ro một cách chủ động gồm: track các risk đã nhận diện, theo dõi residual risks, nhận diện risk mới và đánh giá hiệu quả quản lý rủi ro xuyên suốt dự án.",
+    "pmbok6_knowledge_area": "Project Risk Management",
+    "pmbok6_process_group": "Monitoring and Controlling"
+  }
+]

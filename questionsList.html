@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>RMP MOCK TEST - Question List</title>
+  <style>
+    body { background: #f4f4f4; font-size: 15px;}
+    .container {
+      max-width: 1100px; margin: 36px auto; background: #fff; border-radius: 18px;
+      box-shadow: 0 6px 32px rgba(0,0,0,0.08); padding: 18px 18px 20px 18px;
+    }
+    .icon-main { text-align:center; margin-bottom:10px;}
+    .icon-main svg { vertical-align:middle; width:34px; height:34px; margin-right:6px;}
+    .icon-main span { font-size:1.15em; vertical-align:middle;}
+    .title { font-size:1.23em; font-weight:bold; margin-bottom:8px; text-align:center; letter-spacing:0.01em;}
+    .section-title { font-size:1.09em; font-weight:bold; text-align:center; margin:16px 0 8px 0;}
+    .total-questions { font-size:1em; font-weight:bold; margin-top:18px; margin-bottom:8px;}
+    .total-questions span { color:#009688; text-decoration:underline; cursor:pointer;}
+    .filter-row { display:flex; gap:18px; flex-wrap: wrap; margin-bottom:12px;}
+    .filter-label { font-weight:bold; margin-right:2px; }
+    .filter-select { font-size:0.96em; padding:5px 13px; border-radius:6px; border:1.5px solid #bbb;}
+    .print-row { margin-bottom:0; margin-top:0; display:flex; flex-wrap:wrap; align-items:center; gap:8px;}
+    .print-btn {
+      background:#009688; color:#fff; border:none; border-radius:7px; font-size:1em; font-weight:600;
+      padding:9px 24px; margin:0 4px 0 0; cursor:pointer; transition:background 0.2s; display:inline-block;
+    }
+    .print-btn:hover { background:#1976d2; }
+    .start-btn {
+      background:#009688; color:#fff; border:none; border-radius:7px; font-size:1em; font-weight:600;
+      padding:10px 30px; margin:0 14px 0 0; cursor:pointer; transition:background 0.2s; display:inline-block;
+    }
+    .start-btn:before { content:'🚀 '; }
+    .start-btn:hover { background:#1976d2; }
+    .load-btn {
+      background:#ff9800; color:#fff; border:none; border-radius:7px; font-size:1em; font-weight:600;
+      padding:10px 30px; margin:0 0 0 0; cursor:pointer; transition:background 0.2s; display:inline-block;
+    }
+    .load-btn:before { content:'🔄 '; }
+    .load-btn:hover { background:#1976d2; }
+
+    /* Toggle text styles (Download / Filter) */
+    .toggle-text {
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      padding:7px 10px;
+      border-radius:8px;
+      user-select:none;
+      cursor:pointer;
+      color:#1976d2;
+      font-weight:700;
+      outline:none;
+    }
+    .toggle-text:hover { background:#e3f2fd; color:#0d47a1; }
+    .toggle-text:focus { box-shadow: 0 0 0 3px rgba(33,150,243,0.25); }
+    .toggle-icon {
+      width:20px; height:20px;
+      border:2px solid #1976d2;
+      border-radius:5px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-weight:900;
+      line-height:1;
+      font-size:14px;
+      background:#fff;
+      flex:0 0 auto;
+    }
+    .toggle-panel {
+      margin-top:8px;
+      padding:10px 12px;
+      border:1.5px solid #bbdefb;
+      border-radius:10px;
+      background:#f7fbff;
+      width:100%;
+      max-width:1100px;
+    }
+
+    .dl-options { display:flex; flex-direction:column; gap:6px; margin-bottom:10px; font-size:0.98em; }
+    .dl-actions { display:flex; align-items:center; gap:10px; flex-wrap:wrap; }
+
+    .qtable { width:100%; border-collapse:collapse; margin-top:14px; border:2px solid #2196f3; font-size:1em;}
+    .qtable th, .qtable td { border:1.5px solid #2196f3; padding:10px 6px; text-align:left; font-size:1em;}
+    .qtable th { background:#e3f2fd; color:#1976d2; font-weight:bold; font-size:1em;}
+    .qtable .q-link { color:#1976d2; text-decoration:underline; cursor:pointer; font-weight:bold; font-size:1em;}
+    .qtable .q-link:hover { color:#0d47a1; }
+    .qtable td { background:#f5fbff;}
+    .qtable tr.data-row:nth-child(even) td { background:#e3f2fd;}
+    .qtable tr.data-row:hover td { background: #bbdefb !important; cursor: pointer; transition: background 0.18s; }
+    .qtable td.status { font-style:italic; font-size:1em; font-weight:bold;}
+    .status-correct { color:#43a047; }
+    .status-incorrect { color:#d32f2f; }
+    .status-unanswered { color:#757575; }
+
+    .difficulty-box { display:inline-block; padding:4px 13px; border-radius:7px; min-width:69px; text-align:center; font-weight:bold; font-size:1em; margin-left:6px; }
+    .difficulty-Easy { background:#43a047; color:#fff; border:2px solid #388e3c;}
+    .difficulty-Moderate { background:#fbc02d; color:#fff; border:2px solid #f9a825;}
+    .difficulty-Difficult { background:#d32f2f; color:#fff; border:2px solid #b71c1c;}
+    .difficulty-Expert { background:#8e24aa; color:#fff; border:2px solid #6a1b9a; box-shadow:0 0 0 2px #ce93d8 inset;}
+
+    .paging-row { display: flex; align-items:center; justify-content: space-between; margin: 22px 2px 0 2px; flex-wrap: wrap; gap: 10px; }
+    .pagination-controls { display: flex; align-items:center; gap: 8px; flex-wrap:wrap; }
+    .pagination-page { font-size:1.12em; font-weight:bold; color:#1976d2; min-width:48px; text-align:center; }
+    .nav-btn, .first-btn, .last-btn {
+      padding:9px 15px; font-size:1.1em; border-radius:7px; border:none; font-weight:600; cursor:pointer; min-width:38px; margin-right:2px;
+    }
+    .nav-btn { background:#616161; color:#fff;}
+    .first-btn, .last-btn { background:#2196f3; color:#fff;}
+    .nav-btn:disabled, .first-btn:disabled, .last-btn:disabled { background:#bbb; color:#fff;}
+    .goto-input { font-size:1.02em; padding:8px 10px; border-radius:7px; border:1.5px solid #bbb; width:78px; }
+
+    /* Question preview + tooltip */
+    .q-question-cell { position: relative; }
+    .q-snippet { display:inline-block; max-width: 520px; vertical-align: middle; }
+    .q-sum-btn {
+      margin-left:10px;
+      padding:4px 10px;
+      font-size:0.92em;
+      border-radius:7px;
+      border:1.5px solid #1976d2;
+      background:#fff;
+      color:#1976d2;
+      font-weight:700;
+      cursor:pointer;
+    }
+    .q-sum-btn:hover { background:#e3f2fd; }
+    .q-tooltip {
+      position: fixed;
+      z-index: 9999;
+      display: none;
+      max-width: 560px;
+      padding: 10px 12px;
+      border: 1.5px solid #90caf9;
+      border-radius: 10px;
+      background: #fff;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+      color: #222;
+      line-height: 1.35;
+      font-size: 0.98em;
+      white-space: pre-wrap;
+    }
+    .q-tooltip .tt-title { font-weight: 800; color:#1976d2; margin-bottom:6px; }
+    .q-tooltip .tt-divider { border-top:1px solid #e0e0e0; margin:8px 0; }
+    .q-tooltip .tt-subtitle { font-weight:800; color:#009688; margin-bottom:6px; }
+
+ (max-width: 700px) {
+      .container {padding:2vw;}
+      .title, .section-title {font-size:1em;}
+      .print-btn, .start-btn, .load-btn { font-size:0.96em; padding:7px 10vw;}
+      .qtable th, .qtable td {font-size:0.96em;padding:7px 3px;}
+      .filter-row { flex-direction: column; gap:8px; }
+      .paging-row { flex-direction:column; gap: 6px;}
+      .toggle-panel { max-width: 100%; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container" id="main-container">
+    <div class="icon-main" style="margin-top:14px;">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="#2b7cff">
+        <circle cx="32" cy="32" r="30" stroke="#1976d2" stroke-width="4" fill="#e3f2fd"/>
+        <text x="32" y="42" text-anchor="middle" font-size="32" fill="#1976d2" font-family="Arial" font-weight="bold">?</text>
+      </svg>
+      <span>📚</span>
+    </div>
+    <div class="title">RMP MOCK TEST</div>
+    <div class="icon-main" style="margin-top:18px;">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+        <circle cx="32" cy="32" r="28" stroke="#1976d2" stroke-width="4" fill="#e3f2fd"/>
+        <text x="32" y="41" text-anchor="middle" font-size="32" fill="#1976d2" font-family="Arial" font-weight="bold">✏️</text>
+      </svg>
+      <span>🎓</span>
+    </div>
+    <div class="section-title">QUESTION LIST</div>
+    <div id="test-area"></div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+  <script>
+    let questions = [];
+    let filterDomain = "all";
+    let filterKA = "all";
+    let filterPG = "all";
+    let page = 1;
+    const PAGE_SIZE = 10;
+
+    // Toggles
+    let downloadGroupOpen = false;
+    let downloadOption = "full_qa";
+    let filterGroupOpen = false;
+
+    // Keyword filter (OR)
+    let keywordQuery = "";
+    let keywordTerms = [];
+
+    let currentFilteredQuestions = [];
+
+    let showSummaryInTooltip = {}; // { [indexOrigin]: boolean }
+    let tooltipActiveIdx = null;
+
+    function normalizeFields() {
+      for (let q of questions) {
+        if (!Array.isArray(q.domain)) {
+          if (!q.domain) q.domain = [];
+          else q.domain = String(q.domain).split(/[\/,、]/).map(s=>s.trim()).filter(s=>s.length);
+        }
+        if (!Array.isArray(q.pmbok6_knowledge_area)) {
+          if (!q.pmbok6_knowledge_area) q.pmbok6_knowledge_area = [];
+          else q.pmbok6_knowledge_area = String(q.pmbok6_knowledge_area).split(/[\/,、]/).map(s=>s.trim()).filter(s=>s.length);
+        }
+        if (!Array.isArray(q.pmbok6_process_group)) {
+          if (!q.pmbok6_process_group) q.pmbok6_process_group = [];
+          else q.pmbok6_process_group = String(q.pmbok6_process_group).split(/[\/,、]/).map(s=>s.trim()).filter(s=>s.length);
+        }
+      }
+    }
+
+    function getUnique(field) {
+      let all = [];
+      for (let q of questions) {
+        if (Array.isArray(q[field])) all.push(...q[field]);
+      }
+      return [...new Set(all)];
+    }
+
+    function normalizeText(s) {
+      return (s || "").toString().toLowerCase().replace(/\s+/g, " ").trim();
+    }
+    function parseKeywords(raw) {
+      return normalizeText(raw).split(",").map(x => x.trim()).filter(Boolean);
+    }
+    function combinedQuestionText(q) {
+      const qText = q.question || "";
+      const opts = Array.isArray(q.options) ? q.options.join(" ") : "";
+      return normalizeText(qText + " " + opts);
+    }
+    function snippetWords(text, maxWords) {
+      const t = (text || "").toString().replace(/\s+/g, " ").trim();
+      if (!t) return "";
+      const parts = t.split(" ");
+      if (parts.length <= maxWords) return t;
+      return parts.slice(0, maxWords).join(" ") + " ...";
+    }
+
+    function ensureTooltipEl() {
+      let el = document.getElementById("q-tooltip");
+      if (!el) {
+        el = document.createElement("div");
+        el.id = "q-tooltip";
+        el.className = "q-tooltip";
+        document.body.appendChild(el);
+      }
+      return el;
+    }
+
+    function buildTooltipHTML(q, idxOrigin) {
+      const qFull = (q.question || "");
+      const showSum = !!showSummaryInTooltip[idxOrigin];
+      const sum = (q.short || "");
+      let html = `<div class="tt-title">Question</div>${escapeHTML(qFull)}`;
+      if (showSum && sum) {
+        html += `<div class="tt-divider"></div><div class="tt-subtitle">Summary</div>${escapeHTML(sum)}`;
+      }
+      return html;
+    }
+
+    function escapeHTML(s) {
+      return (s || "").toString()
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#39;");
+    }
+
+    function showTooltipAt(x, y, q, idxOrigin) {
+      const el = ensureTooltipEl();
+      el.innerHTML = buildTooltipHTML(q, idxOrigin);
+      el.style.display = "block";
+
+      const pad = 12;
+      const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
+      const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
+
+      // initial
+      let left = x + pad;
+      let top = y + pad;
+
+      // measure after show
+      const rect = el.getBoundingClientRect();
+      if (left + rect.width + pad > vw) left = Math.max(pad, vw - rect.width - pad);
+      if (top + rect.height + pad > vh) top = Math.max(pad, vh - rect.height - pad);
+
+      el.style.left = left + "px";
+      el.style.top = top + "px";
+    }
+
+    function hideTooltip() {
+      const el = document.getElementById("q-tooltip");
+      if (el) el.style.display = "none";
+      tooltipActiveIdx = null;
+    }
+
+    function matchesAnyKeyword(q, terms) {
+      if (!terms || terms.length === 0) return true;
+      const text = combinedQuestionText(q);
+      return terms.some(k => text.includes(k));
+    }
+    function applyKeywordFilterFromUI() {
+      const inp = document.getElementById("keyword-filter");
+      keywordQuery = inp ? inp.value : keywordQuery;
+      keywordTerms = parseKeywords(keywordQuery);
+      page = 1;
+      renderListPage();
+    }
+    function clearKeywordFilter() {
+      keywordQuery = "";
+      keywordTerms = [];
+      const inp = document.getElementById("keyword-filter");
+      if (inp) inp.value = "";
+      page = 1;
+      renderListPage();
+    }
+
+    function difficultyBox(level) {
+      if (!level) level = "Moderate";
+      let txt = String(level).charAt(0).toUpperCase() + String(level).slice(1).toLowerCase();
+      let className = "difficulty-" + txt;
+      return `<span class="difficulty-box ${className}">${txt}</span>`;
+    }
+
+    function statusCell(idx, q) {
+      let userAnswers = JSON.parse(localStorage.getItem('rmp_userAnswers')||"[]");
+      let answer = userAnswers[idx];
+
+      let multiCount = 1;
+      let lower = q.question ? q.question.toLowerCase() : "";
+      let mc = lower.match(/choose\s+(two|three|four|five|\d+|all)/) ||
+               lower.match(/select\s+(two|three|four|five|\d+|all)/) ||
+               lower.match(/(pick|mark)\s+(two|three|four|five|\d+|all)/);
+      if (mc) {
+        let val = mc[1] || mc[2];
+        if (val === "two") multiCount = 2;
+        else if (val === "three") multiCount = 3;
+        else if (val === "four") multiCount = 4;
+        else if (val === "five") multiCount = 5;
+        else if (val === "all") multiCount = q.options ? q.options.length : 2;
+        else if (!isNaN(val)) multiCount = Number(val);
+      }
+
+      if (answer == null || (Array.isArray(answer) && answer.length === 0)) {
+        return `<span class="status status-unanswered">Not answered</span>`;
+      }
+
+      let correctArr = Array.isArray(q.correct) ? q.correct : [q.correct];
+      let chosenArr = (multiCount > 1) ? (Array.isArray(answer) ? answer : []) : [answer];
+
+      let isCorrect = false;
+      if (multiCount > 1) {
+        isCorrect = chosenArr.length === correctArr.length && correctArr.every(i => chosenArr.includes(i));
+      } else {
+        isCorrect = chosenArr[0] === correctArr[0];
+      }
+
+      if (isCorrect) return `<span class="status status-correct">CORRECT</span>`;
+      return `<span class="status status-incorrect">INCORRECT</span>`;
+    }
+
+    function toggleDownloadGroup() { downloadGroupOpen = !downloadGroupOpen; renderListPage(); }
+    function toggleFilterGroup() { filterGroupOpen = !filterGroupOpen; renderListPage(); }
+
+    function bindToggleA11y(el, fn) {
+      el.addEventListener("click", fn);
+      el.addEventListener("keydown", (e) => {
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault();
+          fn();
+        }
+      });
+    }
+
+    function exportSelectedPDF() {
+      const optEl = document.querySelector('input[name="dlopt"]:checked');
+      const opt = optEl ? optEl.value : downloadOption;
+      downloadOption = opt;
+
+      if (opt === "full_qa") return printFullAll();
+      if (opt === "full_q") return printQuestionsOnlyAll();
+      if (opt === "filtered_qa") return printFilteredFull();
+      if (opt === "filtered_q") return printFilteredQuestionsOnly();
+    }
+
+    function gotoPage(p) {
+      page = p;
+      renderListPage();
+    }
+
+    function gotoPageFromInput(maxPages) {
+      const inp = document.getElementById("goto-page-input");
+      if (!inp) return;
+      let p = parseInt(inp.value, 10);
+      if (isNaN(p)) return;
+      if (p < 1) p = 1;
+      if (p > maxPages) p = maxPages;
+      page = p;
+      renderListPage();
+    }
+
+    function renderListPage() {
+      let filteredQuestions = questions;
+
+      if (filterDomain !== "all") {
+        filteredQuestions = filteredQuestions.filter(q => Array.isArray(q.domain) && q.domain.includes(filterDomain));
+      }
+      if (filterKA !== "all") {
+        filteredQuestions = filteredQuestions.filter(q => Array.isArray(q.pmbok6_knowledge_area) && q.pmbok6_knowledge_area.includes(filterKA));
+      }
+      if (filterPG !== "all") {
+        filteredQuestions = filteredQuestions.filter(q => Array.isArray(q.pmbok6_process_group) && q.pmbok6_process_group.includes(filterPG));
+      }
+
+      if (keywordTerms && keywordTerms.length > 0) {
+        filteredQuestions = filteredQuestions.filter(q => matchesAnyKeyword(q, keywordTerms));
+      }
+
+      currentFilteredQuestions = filteredQuestions;
+
+      let totalPages = Math.max(1, Math.ceil(filteredQuestions.length / PAGE_SIZE));
+      if(page < 1) page = 1;
+      if(page > totalPages) page = totalPages;
+
+      let start = (page-1)*PAGE_SIZE;
+      let end = Math.min(filteredQuestions.length, page*PAGE_SIZE);
+
+      const dlSign = downloadGroupOpen ? "−" : "+";
+      const dlPanelStyle = downloadGroupOpen ? "" : "display:none;";
+      const fltSign = filterGroupOpen ? "−" : "+";
+      const fltPanelStyle = filterGroupOpen ? "" : "display:none;";
+
+      let html = `
+      <div class="total-questions">Total questions: <span>${filteredQuestions.length}</span></div>
+
+      <div class="print-row" style="gap:12px;">
+        <div id="flt-toggle" class="toggle-text" role="button" tabindex="0" aria-expanded="${filterGroupOpen}">
+          <span class="toggle-icon" aria-hidden="true">${fltSign}</span>
+          <span>Filters...</span>
+        </div>
+
+        <div id="dl-toggle" class="toggle-text" role="button" tabindex="0" aria-expanded="${downloadGroupOpen}">
+          <span class="toggle-icon" aria-hidden="true">${dlSign}</span>
+          <span>Download Questions...</span>
+        </div>
+      </div>
+
+      <div id="flt-panel" class="toggle-panel" style="${fltPanelStyle}">
+        <div class="filter-row" style="margin-bottom:10px;">
+          <div>
+            <span class="filter-label">Domain:</span>
+            <select id="domain-filter" class="filter-select">
+              <option value="all">-- All domains --</option>
+              ${getUnique("domain").map(domain=>`<option value="${domain}" ${filterDomain===domain?'selected':''}>${domain}</option>`).join('')}
+            </select>
+          </div>
+          <div>
+            <span class="filter-label">Knowledge area:</span>
+            <select id="ka-filter" class="filter-select">
+              <option value="all">-- All knowledge areas --</option>
+              ${getUnique("pmbok6_knowledge_area").map(ka=>`<option value="${ka}" ${filterKA===ka?'selected':''}>${ka}</option>`).join('')}
+            </select>
+          </div>
+          <div>
+            <span class="filter-label">Process group:</span>
+            <select id="pg-filter" class="filter-select">
+              <option value="all">-- All process groups --</option>
+              ${getUnique("pmbok6_process_group").map(pg=>`<option value="${pg}" ${filterPG===pg?'selected':''}>${pg}</option>`).join('')}
+            </select>
+          </div>
+        </div>
+
+        <div class="filter-row" style="margin-bottom:0;">
+          <div style="display:flex; align-items:center; gap:10px; flex-wrap:wrap;">
+            <span class="filter-label">Keyword (OR, comma):</span>
+            <input id="keyword-filter" class="filter-select" style="min-width:320px;"
+                   placeholder="risk, contingency, reserve"
+                   value="${keywordQuery.replace(/"/g,'&quot;')}" />
+            <button class="print-btn" style="padding:7px 16px;" onclick="applyKeywordFilterFromUI()">Apply</button>
+            <button class="print-btn" style="padding:7px 16px; background:#616161;" onclick="clearKeywordFilter()">Clear</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="dl-panel" class="toggle-panel" style="${dlPanelStyle}">
+        <div class="dl-options">
+          <label><input type="radio" name="dlopt" value="full_qa" ${downloadOption==="full_qa"?"checked":""}> 1. Full questions & answers with explanations</label>
+          <label><input type="radio" name="dlopt" value="full_q" ${downloadOption==="full_q"?"checked":""}> 2. Full questions only</label>
+          <label><input type="radio" name="dlopt" value="filtered_qa" ${downloadOption==="filtered_qa"?"checked":""}> 3. Filtered questions & answers with explanations</label>
+          <label><input type="radio" name="dlopt" value="filtered_q" ${downloadOption==="filtered_q"?"checked":""}> 4. Filtered questions</label>
+        </div>
+        <div class="dl-actions">
+          <button class="print-btn" onclick="exportSelectedPDF()">Export (PDF)</button>
+        </div>
+      </div>
+
+      <table class="qtable">
+        <tr>
+          <th>Question#</th>
+          <th>Questions</th>
+          <th>Domain</th>
+          <th>Knowledge area</th>
+          <th>Process group</th>
+          <th>Difficulty</th>
+          <th>Status</th>
+        </tr>`;
+
+      for (let i = start; i < end; i++) {
+        let q = filteredQuestions[i];
+        let indexOrigin = questions.indexOf(q);
+        html += `<tr class="data-row">
+            <td><span class="q-link" onclick="gotoQuestion(${indexOrigin})">Question#${indexOrigin + 1}</span></td>
+            <td class="q-question-cell" data-idx="${indexOrigin}">
+              <span class="q-snippet">${snippetWords(q.question || "", 20)}</span>
+              <button type="button" class="q-sum-btn" data-idx="${indexOrigin}" title="Toggle summary in tooltip">Summary</button>
+            </td>
+            <td>${(q.domain||[]).join(" / ")}</td>
+            <td>${(q.pmbok6_knowledge_area||[]).join(" / ")}</td>
+            <td>${(q.pmbok6_process_group||[]).join(" / ")}</td>
+            <td>${difficultyBox(q.difficulty)}</td>
+            <td>${statusCell(indexOrigin, q)}</td>
+        </tr>`;
+      }
+
+      html += `</table>`;
+
+      html += `
+      <div class="paging-row">
+        <div class="pagination-controls">
+          <button class="first-btn" onclick="gotoPage(1)" ${page===1 ? "disabled" : ""}>&laquo;</button>
+          <button class="nav-btn" onclick="gotoPage(${page-1})" ${page===1 ? "disabled" : ""}>&lt;</button>
+          <span class="pagination-page">${page} / ${totalPages}</span>
+          <button class="nav-btn" onclick="gotoPage(${page+1})" ${page===totalPages ? "disabled" : ""}>&gt;</button>
+          <button class="last-btn" onclick="gotoPage(${totalPages})" ${page===totalPages ? "disabled" : ""}>&raquo;</button>
+
+          <input id="goto-page-input" class="goto-input" type="number" min="1" max="${totalPages}" value="${page}" />
+          <button class="nav-btn" onclick="gotoPageFromInput(${totalPages})">Go</button>
+        </div>
+        <div>
+          <button class="start-btn" onclick="gotoQuestion(0)">Start Test!</button>
+          <button class="load-btn" onclick="showUploadPage()">Load new test</button>
+        </div>
+      </div>
+      `;
+
+      document.getElementById('test-area').innerHTML = html;
+      // Tooltip bindings for question preview column
+      const qCells = document.querySelectorAll(".q-question-cell");
+      qCells.forEach(cell => {
+        const idxOrigin = parseInt(cell.getAttribute("data-idx"), 10);
+        const q = questions[idxOrigin];
+
+        cell.addEventListener("mouseenter", (e) => {
+          tooltipActiveIdx = idxOrigin;
+          showTooltipAt(e.clientX, e.clientY, q, idxOrigin);
+        });
+        cell.addEventListener("mousemove", (e) => {
+          if (tooltipActiveIdx === idxOrigin) {
+            showTooltipAt(e.clientX, e.clientY, q, idxOrigin);
+          }
+        });
+        cell.addEventListener("mouseleave", () => {
+          hideTooltip();
+        });
+      });
+
+      const sumBtns = document.querySelectorAll(".q-sum-btn");
+      sumBtns.forEach(btn => {
+        btn.addEventListener("click", (e) => {
+          e.stopPropagation();
+          const idxOrigin = parseInt(btn.getAttribute("data-idx"), 10);
+          showSummaryInTooltip[idxOrigin] = !showSummaryInTooltip[idxOrigin];
+
+          // If tooltip is currently showing for this row, refresh it at current mouse position
+          const q = questions[idxOrigin];
+          const tip = ensureTooltipEl();
+          if (tip && tip.style.display === "block" && tooltipActiveIdx === idxOrigin) {
+            // Keep current position
+            const r = tip.getBoundingClientRect();
+            tip.innerHTML = buildTooltipHTML(q, idxOrigin);
+            tip.style.left = r.left + "px";
+            tip.style.top = r.top + "px";
+          }
+        });
+      });
+
+
+      // bind filter selects (only if panel exists)
+      const domSel = document.getElementById("domain-filter");
+      const kaSel = document.getElementById("ka-filter");
+      const pgSel = document.getElementById("pg-filter");
+      if (domSel) domSel.onchange = function() { filterDomain = this.value; page = 1; renderListPage(); };
+      if (kaSel) kaSel.onchange = function() { filterKA = this.value; page = 1; renderListPage(); };
+      if (pgSel) pgSel.onchange = function() { filterPG = this.value; page = 1; renderListPage(); };
+
+      // bind keyword enter
+      const kw = document.getElementById("keyword-filter");
+      if (kw) {
+        kw.oninput = function(){ keywordQuery = this.value; };
+        kw.onkeydown = function(e){
+          if (e.key === "Enter") { e.preventDefault(); applyKeywordFilterFromUI(); }
+        };
+      }
+
+      // bind toggles
+      const dlToggle = document.getElementById("dl-toggle");
+      const fltToggle = document.getElementById("flt-toggle");
+      if (dlToggle) bindToggleA11y(dlToggle, toggleDownloadGroup);
+      if (fltToggle) bindToggleA11y(fltToggle, toggleFilterGroup);
+
+      // remember option selection
+      const radios = document.querySelectorAll('input[name="dlopt"]');
+      radios.forEach(r => r.addEventListener("change", () => downloadOption = r.value));
+
+      // bind goto page enter
+      const gotoInput = document.getElementById("goto-page-input");
+      if (gotoInput) {
+        gotoInput.onkeydown = (e) => {
+          if (e.key === "Enter") {
+            e.preventDefault();
+            gotoPageFromInput(totalPages);
+          }
+        };
+      }
+    }
+
+    function gotoQuestion(idx) {
+      localStorage.setItem('rmp_current_idx', idx);
+      window.location.href = "question.html";
+    }
+
+    function showUploadPage() {
+      localStorage.removeItem('rmp_questions');
+      window.location.href = "index.html";
+    }
+
+    // ----------------------------
+    // PDF helpers
+    // ----------------------------
+    function printQuestionsOnlyList(qList, filename, titleText) {
+      if (!qList || !qList.length) return;
+      if (!window.jspdf || !window.jspdf.jsPDF) {
+        alert("jsPDF not loaded. Please check network/CDN.");
+        return;
+      }
+      const { jsPDF } = window.jspdf;
+      const doc = new jsPDF({ unit: "mm", format: "a4", orientation: "portrait" });
+
+      doc.setFont('times', '');
+      doc.setFontSize(15);
+      doc.setTextColor(33,33,33);
+      doc.text(titleText, 20, 20);
+
+      doc.setFontSize(11);
+      let y = 30;
+      let marginL = 20, lineH = 6, pageH = 287;
+
+      qList.forEach((q, idx) => {
+        doc.setFontSize(13);
+        doc.setTextColor(33,80,180);
+        doc.text(`Question#${idx+1}:`, marginL, y);
+
+        doc.setFontSize(11);
+        doc.setTextColor(199,120,0);
+        doc.text(` [${q.difficulty||"Moderate"}]`, marginL+40, y);
+        y+=lineH;
+
+        doc.setTextColor(33,33,33);
+        let qText = q.question || "";
+        let lines = doc.splitTextToSize(qText, 170);
+        for (let l=0; l<lines.length; l++) {
+          if (y > pageH-lineH) { doc.addPage(); doc.setFont('times',''); y = 20; }
+          doc.text(lines[l], marginL, y);
+          y += lineH;
+        }
+
+        (q.options||[]).forEach((opt, i) => {
+          let optStr = `${String.fromCharCode(65+i)}. ${opt}`;
+          let optLines = doc.splitTextToSize(optStr, 160);
+          for (let l=0; l<optLines.length; l++) {
+            if (y > pageH-lineH) { doc.addPage(); doc.setFont('times',''); y = 20; }
+            doc.text(optLines[l], marginL+4, y);
+            y += lineH;
+          }
+        });
+
+        y += 2;
+        if (y > pageH-lineH) { doc.addPage(); doc.setFont('times',''); y = 20; }
+      });
+
+      doc.save(filename);
+    }
+
+    function printFullList(qList, filename, titleText) {
+      if (!qList || !qList.length) return;
+      if (!window.jspdf || !window.jspdf.jsPDF) {
+        alert("jsPDF not loaded. Please check network/CDN.");
+        return;
+      }
+      if (typeof html2canvas === "undefined") {
+        alert("html2canvas not loaded. Please check network/CDN.");
+        return;
+      }
+
+      const { jsPDF } = window.jspdf;
+      const pdf = new jsPDF({ unit: "mm", format: "a4", orientation: "portrait" });
+
+      const pageWidth = pdf.internal.pageSize.getWidth();
+      const marginLR = 15;
+      const marginTop = 10;
+      const pdfWidth = pageWidth - marginLR * 2;
+
+      pdf.setFont("helvetica", "bold");
+      pdf.setFontSize(17);
+      pdf.text(titleText, pageWidth / 2, marginTop + 8, { align: "center" });
+
+      function renderQuestionToCanvas(q, idx) {
+        return new Promise((resolve) => {
+          let pdfDiv = document.createElement("div");
+          pdfDiv.setAttribute('style', 'width:624px;background:#fff;color:#222;position:fixed;left:-9999px;top:0;z-index:-1;padding:0;');
+          const correctArr = Array.isArray(q.correct) ? q.correct : [q.correct];
+
+          const esc = (s) => String(s||"").replace(/</g,"&lt;").replace(/>/g,"&gt;");
+
+          pdfDiv.innerHTML = `
+            <div style="font-size: 11px; color: #222 !important; background: #fff !important; font-family: Arial, sans-serif;">
+              <div style="padding: 10px 12px;">
+                <div style="margin-bottom:6px;">
+                  <span style="color:#1976d2;font-weight:bold;">Question#${idx+1}:</span>
+                  <span style="color:#fbc02d;font-weight:bold;"> [${esc(q.difficulty || "Moderate")}]</span>
+                </div>
+
+                <div style="margin-bottom:8px; white-space:pre-wrap; line-height:1.35;">${esc(q.question||"")}</div>
+
+                <div style="margin-bottom:8px;">
+                  ${(q.options||[]).map((opt,i)=> {
+                    const isCorrect = correctArr.includes(i);
+                    return `<div style="margin: 3px 0;">${String.fromCharCode(65+i)}. ${esc(opt)}${isCorrect ? ' <span style="color:#388e3c;font-weight:bold;">[Correct]</span>' : ''}</div>`;
+                  }).join('')}
+                </div>
+
+                ${q.reference ? `<div style="color:#6a1b9a;background:#ede7f6;font-family:'Courier New',Courier,monospace;padding:4px 8px;border-radius:5px;display:inline-block;margin-top:7px;margin-bottom:7px;">Reference: ${esc(q.reference)}</div>` : ''}
+
+                ${q.explanation_en ? `<div style="font-style:italic;color:#1976d2;margin-top:7px;margin-bottom:7px;">Explain EN: ${esc(q.explanation_en)}</div>` : ''}
+
+                ${q.explanation_vi ? `<div style="margin-bottom:7px;margin-top:7px;">Explain VI: ${esc(q.explanation_vi)}</div>` : ''}
+              </div>
+            </div>
+          `;
+          document.body.appendChild(pdfDiv);
+
+          html2canvas(pdfDiv, {scale:2, width:624, windowWidth:624, background:'#fff'}).then(canvas => {
+            document.body.removeChild(pdfDiv);
+            resolve(canvas);
+          });
+        });
+      }
+
+      async function build() {
+        for (let i=0; i<qList.length; i++) {
+          const canvas = await renderQuestionToCanvas(qList[i], i);
+          const imgData = canvas.toDataURL('image/png');
+
+          const imgPdfHeight = (canvas.height * pdfWidth) / canvas.width;
+
+          if (i > 0) pdf.addPage();
+          pdf.addImage(imgData, 'PNG', marginLR, marginTop, pdfWidth, imgPdfHeight);
+        }
+        pdf.save(filename);
+      }
+
+      build();
+    }
+
+    function printFullAll() {
+      printFullList(questions, "RMP_Full.pdf", "RMP MOCK TEST - Full Content");
+    }
+    function printQuestionsOnlyAll() {
+      printQuestionsOnlyList(questions, "RMP_Questions_Only.pdf", "RMP MOCK TEST - Questions Only");
+    }
+    function printFilteredFull() {
+      printFullList(currentFilteredQuestions, "RMP_Filtered_Full.pdf", "RMP MOCK TEST - Filtered Full Content");
+    }
+    function printFilteredQuestionsOnly() {
+      printQuestionsOnlyList(currentFilteredQuestions, "RMP_Filtered_Questions_Only.pdf", "RMP MOCK TEST - Filtered Questions Only");
+    }
+
+    window.onload = function() {
+      let raw = localStorage.getItem('rmp_questions');
+      if (!raw) {
+        window.location.href = "index.html";
+        return;
+      }
+      questions = JSON.parse(raw);
+      normalizeFields();
+      renderListPage();
+    };
+  </script>
+</body>
+</html>

@@ -1,0 +1,182 @@
+[
+  {
+    "question": "The sponsor hires a project manager as a consultant to evaluate a change program currently underway... What is the first action the consulting project manager should take based on the current state of the project?",
+    "options": [
+      "Cancel or put the project on hold and request permission to hire a replacement program manager.",
+      "Assess the risk management plan and adjust it accordingly to accommodate the mistakes.",
+      "Continue the project as planned, assemble the missing project documentation, and fill gaps.",
+      "Meet with the project sponsor to report current findings and develop a corrective course of action."
+    ],
+    "correct": 3,
+    "difficulty": "Moderate",
+    "domain": "Monitor and Close Risks",
+    "short": "Consultant phát hiện tình trạng chương trình không đúng báo cáo (thiếu resource plan, risk register không cập nhật, vendor chậm). Bước đầu tiên: báo cáo sponsor và thống nhất hướng khắc phục.",
+    "reference": "PMI (general) /// Governance, escalation, corrective action planning",
+    "explanation_en": "The first step is to inform the sponsor of the findings and align on a corrective course of action. Major governance gaps and schedule/procurement risks require sponsor awareness and decision-making before taking drastic actions or quietly filling documentation gaps.",
+    "explanation_vi": "Bước đầu tiên là gặp sponsor để báo cáo các phát hiện và thống nhất hướng hành động khắc phục. Đây là vấn đề quản trị nghiêm trọng (thiếu kế hoạch nguồn lực, rủi ro không cập nhật, vendor chậm) nên cần sponsor nắm và cùng quyết định trước khi tự ý “vá” tài liệu hay dừng dự án.",
+    "pmbok6_knowledge_area": "Project Integration Management / Project Risk Management / Project Stakeholder Management",
+    "pmbok6_process_group": "Monitoring and Controlling"
+  },
+  {
+    "question": "A risk-seeking organization has experienced measurable success... overall project risk far exceeds the risk threshold... What should the project manager suggest?",
+    "options": [
+      "Monitor ongoing risks closely for any major changes.",
+      "Proceed as planned because it is a risk-seeking organization.",
+      "Consider canceling the project or scaling back the scope.",
+      "Adjust the organizational risk appetite and increase thresholds."
+    ],
+    "correct": 2,
+    "difficulty": "Difficult",
+    "domain": "Risk Strategy and Planning",
+    "short": "Dù tổ chức risk-seeking, overall project risk vượt ngưỡng risk threshold: nên cân nhắc hủy hoặc giảm scope để phù hợp ngưỡng.",
+    "reference": "PMI (general) /// Risk appetite, risk threshold, overall project risk decisions",
+    "explanation_en": "Even risk-seeking organizations operate within defined thresholds. If overall risk exceeds the threshold, options include canceling or reducing scope to bring exposure within tolerance rather than changing appetite/thresholds just to justify the project.",
+    "explanation_vi": "Tổ chức có thể risk-seeking nhưng vẫn có ngưỡng (threshold) rõ ràng. Khi overall risk vượt ngưỡng, cần cân nhắc hủy hoặc giảm scope để đưa rủi ro về mức chấp nhận được, thay vì “nới” appetite/threshold chỉ để hợp thức hóa dự án.",
+    "pmbok6_knowledge_area": "Project Risk Management",
+    "pmbok6_process_group": "Initiating / Planning"
+  },
+  {
+    "question": "A risk manager is assigned to a short-term telecommunications upgrade project... Which aspect of risk impact should be prioritized when designing the risk impact scale?",
+    "options": [
+      "Technical performance",
+      "Project budget",
+      "Technical requirements",
+      "Project schedule"
+    ],
+    "correct": 3,
+    "difficulty": "Difficult",
+    "domain": "Risk Strategy and Planning",
+    "short": "Thiết kế thang đo impact: dự án timeline gắt, ưu tiên tác động lên schedule.",
+    "reference": "PMI (general) /// Qualitative risk analysis: impact scales aligned to objectives",
+    "explanation_en": "Impact scales should reflect project objectives and constraints. With rigorous timelines and a stated priority on on-time completion, schedule impact should be prioritized in the scale.",
+    "explanation_vi": "Thang đo impact phải bám vào mục tiêu/ưu tiên của dự án. Vì timeline bị ràng buộc rất chặt và hoàn thành đúng hạn là quan trọng nhất, nên ưu tiên yếu tố tác động lên tiến độ (schedule).",
+    "pmbok6_knowledge_area": "Project Risk Management / Project Schedule Management",
+    "pmbok6_process_group": "Planning"
+  },
+  {
+    "question": "During project execution, the project team realizes that the power outlet for imported equipment is not compatible... What type of response best describes this course of action?",
+    "options": [
+      "Contingency plan",
+      "Management plan",
+      "Fall-back plan",
+      "Workaround"
+    ],
+    "correct": 3,
+    "difficulty": "Moderate",
+    "domain": "Risk Response",
+    "short": "Sự cố không lường trước (chưa có trong risk register) và xử lý bằng giải pháp thay thế để giữ tiến độ → workaround.",
+    "reference": "PMI (general) /// Workarounds for unplanned responses",
+    "explanation_en": "A workaround is an unplanned response to an event that was not identified as a risk. Buying an adapter to keep schedule is a classic workaround.",
+    "explanation_vi": "Workaround là hành động ứng phó phát sinh, không nằm trong kế hoạch rủi ro ban đầu. Sự cố ổ cắm không tương thích không được nhận diện trước, nên mua adapter để giữ tiến độ chính là workaround.",
+    "pmbok6_knowledge_area": "Project Risk Management",
+    "pmbok6_process_group": "Executing / Monitoring and Controlling"
+  },
+  {
+    "question": "The risk manager is prioritizing risks based on the potential impact on cost and schedule... Using expected monetary value (EMV) calculation, which risk has the greatest potential impact on cost and schedule?",
+    "options": [
+      "Risk 1",
+      "Risk 2",
+      "Risk 3",
+      "Risk 4"
+    ],
+    "correct": 0,
+    "difficulty": "Moderate",
+    "domain": "Risk Analysis",
+    "short": "Ưu tiên rủi ro theo EMV: tính EMV và expected schedule impact, Risk 1 cao nhất.",
+    "reference": "PMI (general) /// Quantitative risk analysis: EMV",
+    "explanation_en": "EMV(cost): R1=500k*0.25=125k; R2=200k*0.6=120k; R3=1.2M*0.1=120k; R4=600k*0.2=120k. Expected schedule: R1=60*0.25=15 days (largest). Therefore Risk 1 has the greatest expected impact.",
+    "explanation_vi": "EMV(cost): R1=500k*0.25=125k; R2=200k*0.6=120k; R3=1.2M*0.1=120k; R4=600k*0.2=120k. Expected schedule impact: R1=60*0.25=15 ngày (cao nhất). Vì vậy Risk 1 là lớn nhất.",
+    "pmbok6_knowledge_area": "Project Risk Management / Project Cost Management / Project Schedule Management",
+    "pmbok6_process_group": "Planning"
+  },
+  {
+    "question": "A company is executing a high-visibility project... sponsor instructed the project manager to manipulate the data used for the Monte Carlo simulation... What should the project manager do?",
+    "options": [
+      "Schedule a face-to-face meeting with the project sponsor.",
+      "Modify the simulation data as requested by the project sponsor.",
+      "Ignore the project sponsor's request and proceed as planned.",
+      "Email the project sponsor stating that data should not be modified."
+    ],
+    "correct": 0,
+    "difficulty": "Moderate",
+    "domain": "Risk Analysis",
+    "short": "Sponsor yêu cầu sửa dữ liệu Monte Carlo để giảm risk rating (phi đạo đức): ưu tiên trao đổi trực tiếp để xử lý và giữ tính chính trực.",
+    "reference": "PMI Code of Ethics & Professional Conduct (general) /// Integrity and honesty",
+    "explanation_en": "Manipulating data is unethical and undermines decision quality. A direct conversation is the best first step to address concerns, explain consequences, and realign expectations while maintaining integrity.",
+    "explanation_vi": "Sửa dữ liệu để làm đẹp risk rating là sai đạo đức và làm hỏng chất lượng quyết định. Bước đầu tiên phù hợp là gặp trực tiếp sponsor để trao đổi, giải thích hệ quả, và thống nhất hướng xử lý mà vẫn giữ tính chính trực.",
+    "pmbok6_knowledge_area": "Project Risk Management / Project Stakeholder Management",
+    "pmbok6_process_group": "Executing"
+  },
+  {
+    "question": "A project manager is hired as a consultant... concludes the project timeline is unrealistic and is three months behind schedule... organization's risk appetite is low. What is the first step that should be taken?",
+    "options": [
+      "Review the project schedule and recommend fast-tracking the schedule and/or crashing the critical path.",
+      "Discuss the schedule with the executive sponsor and identify a strategy for updating the risk management and risk response plans.",
+      "Update all existing risk response plans and include additional resources necessary to get the project back on track.",
+      "Immediately call a steering committee meeting, report the project status, and suggest project scope reductions to save time."
+    ],
+    "correct": 1,
+    "difficulty": "Moderate",
+    "domain": "Monitor and Close Risks",
+    "short": "Phát hiện timeline không thực tế và trễ 3 tháng, tổ chức risk appetite thấp: bước đầu tiên là trao đổi với sponsor và thống nhất chiến lược cập nhật risk plan/response.",
+    "reference": "PMI (general) /// Sponsor alignment, risk planning updates",
+    "explanation_en": "Before selecting tactics (crashing/fast-tracking) or escalating broadly, align with the sponsor on the true status and agree on how to update risk management and response plans given low risk appetite.",
+    "explanation_vi": "Trước khi áp dụng biện pháp kỹ thuật (crash/fast-track) hay gọi họp lớn, cần thống nhất với sponsor về thực trạng và chiến lược cập nhật risk management plan và risk responses, đặc biệt khi tổ chức có risk appetite thấp.",
+    "pmbok6_knowledge_area": "Project Risk Management / Project Integration Management / Project Stakeholder Management",
+    "pmbok6_process_group": "Monitoring and Controlling"
+  },
+  {
+    "question": "A project risk manager participated in a project risk assessment for a struggling project and reviewed the final results. What should the project risk manager do next to increase the likelihood of project success?",
+    "options": [
+      "Schedule a meeting and present the assessment results to stakeholders.",
+      "Use the assessment results in the day-to-day management of project risks.",
+      "Schedule a meeting with the project sponsor and discuss the assessment results.",
+      "Use the assessment results to review the project handover plan to operations."
+    ],
+    "correct": 1,
+    "difficulty": "Difficult",
+    "domain": "Monitor and Close Risks",
+    "short": "Sau khi risk assessment xong: hành động tốt nhất là áp dụng kết quả vào quản lý rủi ro hằng ngày để tăng khả năng thành công.",
+    "reference": "PMI (general) /// Continuous risk management",
+    "explanation_en": "Risk assessments add value only when integrated into ongoing decisions and actions (monitoring, responses, prioritization). Meetings may help, but the most direct next step is to operationalize results day-to-day.",
+    "explanation_vi": "Risk assessment chỉ có giá trị khi được đưa vào vận hành: ưu tiên/monitor/response trong hoạt động hằng ngày. Họp trình bày có thể cần, nhưng bước tiếp theo trực tiếp nhất để tăng khả năng thành công là dùng kết quả vào quản trị rủi ro thường nhật.",
+    "pmbok6_knowledge_area": "Project Risk Management",
+    "pmbok6_process_group": "Monitoring and Controlling"
+  },
+  {
+    "question": "During a company's audit, it is found that no risk management information exists within the lessons learned database. What could the company do to increase the amount of risk management organizational process assets?",
+    "options": [
+      "Require the project manager to record significant risk management information, to provide concrete data in the lessons learned database for future projects.",
+      "Require the project management office (PMO) to merge and distribute risk logs to all key stakeholders associated with risk management.",
+      "Require the project manager to update the project management office (PMO) policy and procedures on an iterative basis to ensure relevancy to current projects.",
+      "Require the project management office (PMO) to perform quality audits on all active projects, to ensure alignment with communication industry standards."
+    ],
+    "correct": 0,
+    "difficulty": "Moderate",
+    "domain": "Monitor and Close Risks",
+    "short": "Audit phát hiện thiếu dữ liệu risk trong lessons learned: yêu cầu PM ghi nhận thông tin risk quan trọng để tạo OPA cho dự án sau.",
+    "reference": "PMI (general) /// Organizational Process Assets, Lessons Learned",
+    "explanation_en": "Capturing and storing significant risk management information (e.g., effective responses, triggers, outcomes) in lessons learned builds OPAs for future projects. Other options assume assets already exist or address unrelated activities.",
+    "explanation_vi": "Ghi nhận và lưu trữ thông tin quản lý rủi ro quan trọng vào lessons learned (response hiệu quả, trigger, kết quả…) là cách trực tiếp tạo OPA cho dự án tương lai. Các lựa chọn khác hoặc giả định đã có dữ liệu, hoặc không giải quyết đúng vấn đề.",
+    "pmbok6_knowledge_area": "Project Integration Management / Project Risk Management",
+    "pmbok6_process_group": "Closing"
+  },
+  {
+    "question": "The project enters a testing phase... A risk is identified, added to the risk register, and a response is developed. What is the next step?",
+    "options": [
+      "Tell the customer that the schedule risk has been added to the register.",
+      "Hire more resources to ensure the original schedule is maintained.",
+      "Communicate and monitor the risk response with testing and operations.",
+      "Resist the scope increase to maintain the original testing requirements."
+    ],
+    "correct": 2,
+    "difficulty": "Easy",
+    "domain": "Monitor and Close Risks",
+    "short": "Sau khi identify risk + đưa vào register + lập response: bước tiếp theo là communicate và monitor thực thi response với testing/operations.",
+    "reference": "PMI (general) /// Implementing and monitoring risk responses",
+    "explanation_en": "Once a response is planned, the next step is to communicate it to relevant parties and monitor execution, especially where operations/testing teams are involved. Informing the customer about register updates is not the next operational step.",
+    "explanation_vi": "Khi đã lập risk response, bước tiếp theo là truyền thông tới bên liên quan và theo dõi việc triển khai response, đặc biệt có operations/testing tham gia. Việc báo cho khách rằng đã ghi vào register không phải bước triển khai cần ưu tiên.",
+    "pmbok6_knowledge_area": "Project Risk Management / Project Communications Management",
+    "pmbok6_process_group": "Monitoring and Controlling"
+  }
+]

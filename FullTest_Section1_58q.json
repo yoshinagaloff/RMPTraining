@@ -1,0 +1,1104 @@
+[
+  {
+    "question": "A project manager is leading a project with numerous risks that may occur sequentially and could potentially result in significant financial consequences.\n\nWhat should the project manager do to better understand the risks?",
+    "options": [
+      "Perform a SWOT analysis with stakeholders.",
+      "Analyze a probability and impact matrix.",
+      "Participate in a brainstorming session.",
+      "Build a decision tree with the project team."
+    ],
+    "correct": 1,
+    "difficulty": "Expert",
+    "domain": "Risk Strategy and Planning",
+    "reference": "PMBOK® Guide 6th Ed. — Plan Risk Management; risk appetite/threshold/strategy tailoring.",
+    "explanation_en": "This is about risk strategy and planning; the best answer aligns the approach with stakeholder risk appetite/thresholds and governance: Analyze a probability and impact matrix.",
+    "explanation_vi": "Câu này thuộc chiến lược & lập kế hoạch rủi ro (strategy & planning); đáp án đúng bám theo risk appetite/threshold và quản trị dự án: Analyze a probability and impact matrix.",
+    "pmbok6_knowledge_area": "Project Risk Management",
+    "pmbok6_process_group": "Planning",
+    "short": "Xác định hành động/bước tiếp theo phù hợp liên quan đến xác suất (probability), tác động (impact), cây quyết định (decision tree) trong tình huống",
+    "summary": "A project manager is leading a project with numerous risks that may occur sequentially and could potentially result in significant financial consequences. What should the project manager do to better understand the risks"
+  },
+  {
+    "question": "Based on the following information, which of the following has the highest risk exposure?\n<table class=\"q-table\"><thead><tr><th>Threat / Opportunity</th><th>Probability</th><th>Impact</th></tr></thead><tbody><tr><td>Funding Shortage</td><td>Very Low</td><td>Very High</td></tr><tr><td>Materials Delivery</td><td>Low</td><td>High</td></tr><tr><td>Labor Shortage</td><td>Moderate</td><td>Moderate</td></tr><tr><td>Schedule Slippage</td><td>High</td><td>Low</td></tr><tr><td>Delayed Procurement</td><td>Moderate</td><td>Very High</td></tr><tr><td>New Technology</td><td>Moderate</td><td>Moderate</td></tr></tbody></table>",
+    "options": [
+      "Labor shortage",
+      "Schedule slippage",
+      "Delayed procurement",
+      "Funding shortage"
+    ],
+    "correct": 2,
+    "difficulty": "Moderate",
+    "domain": "Risk Analysis",
+    "reference": "PMBOK® Guide 6th Ed. — Perform Qualitative Risk Analysis / Perform Quantitative Risk Analysis (P-I matrix, EMV, Monte Carlo, decision tree).",
+    "explanation_en": "This question is about assessing/prioritizing risks using analysis techniques; the best answer is the option that correctly applies the appropriate analysis method: Delayed procurement",
+    "explanation_vi": "Câu này thuộc phân tích rủi ro (risk analysis); đáp án đúng là lựa chọn áp dụng đúng kỹ thuật/phương pháp phân tích theo PMI: Delayed procurement",
+    "pmbok6_knowledge_area": "Project Risk Management / Project Schedule Management / Project Procurement Management",
+    "pmbok6_process_group": "Planning",
+    "short": "Chọn lựa chọn phù hợp nhất liên quan đến mức phơi nhiễm rủi ro (risk exposure), xác suất (probability), tác động (impact) trong tình huống",
+    "summary": "Câu hỏi chọn rủi ro có mức độ phơi nhiễm (risk exposure) cao nhất dựa trên bảng Probability và Impact."
+  },
+  {
+    "question": "A risk manager schedules a project overview meeting with the project sponsor to provide an update on risk management progress. Each functional lead identifies the most critical information to be presented at an executive level. The information must balance communicating essential information with actions and recommendations.\n\nWhat risk information should be communicated to the project sponsor?",
+    "options": [
+      "Significant risks and issues and their planned responses.",
+      "Risk matrix showing the distribution of high, medium, and low risks.",
+      "Results of the last project risk brainstorming session.",
+      "Summary feedback from the previous risk audit."
+    ],
+    "correct": 0,
+    "difficulty": "Difficult",
+    "domain": "Risk Strategy and Planning",
+    "reference": "PMBOK® Guide 6th Ed. — Plan Risk Management; risk appetite/threshold/strategy tailoring.",
+    "explanation_en": "This is about risk strategy and planning; the best answer aligns the approach with stakeholder risk appetite/thresholds and governance: Significant risks and issues and their planned responses.",
+    "explanation_vi": "Câu này thuộc chiến lược & lập kế hoạch rủi ro (strategy & planning); đáp án đúng bám theo risk appetite/threshold và quản trị dự án: Significant risks and issues and their planned responses.",
+    "pmbok6_knowledge_area": "Project Risk Management / Project Schedule Management / Project Stakeholder Management",
+    "pmbok6_process_group": "Planning",
+    "short": "Chọn đáp án đúng liên quan đến risk audit (đánh giá rủi ro) trong tình huống",
+    "summary": "A risk manager schedules a project overview meeting with the project sponsor to provide an update on risk management progress. Each functional lead identifies the most critical information to be presented at an executive"
+  },
+  {
+    "question": "A project has four risks that are identified during the risk identification process. The table shows the probability of each risk occurring and the corresponding cost.\n<table class=\"q-table\"><thead><tr><th>Risk</th><th>Activity</th><th>Probability</th><th>Cost Impact (US$)</th></tr></thead><tbody><tr><td>2</td><td>A</td><td>10%</td><td>-$5,900</td></tr><tr><td>4</td><td>B</td><td>5%</td><td>$1,000</td></tr><tr><td>1</td><td>C</td><td>20%</td><td>-$5,000</td></tr><tr><td>3</td><td>D</td><td>15%</td><td>$3,000</td></tr></tbody></table>\nWhat is the total estimated monetary value of the cost for this project?",
+    "options": [
+      "-$1,590",
+      "-$1,090",
+      "$1,090",
+      "$1,590"
+    ],
+    "correct": 1,
+    "difficulty": "Difficult",
+    "domain": "Risk Analysis",
+    "reference": "PMBOK® Guide 6th Ed. — Perform Qualitative Risk Analysis / Perform Quantitative Risk Analysis (P-I matrix, EMV, Monte Carlo, decision tree).",
+    "explanation_en": "This question is about assessing/prioritizing risks using analysis techniques; the best answer is the option that correctly applies the appropriate analysis method: -$1,090",
+    "explanation_vi": "Câu này thuộc phân tích rủi ro (risk analysis); đáp án đúng là lựa chọn áp dụng đúng kỹ thuật/phương pháp phân tích theo PMI: -$1,090",
+    "pmbok6_knowledge_area": "Project Risk Management / Project Cost Management",
+    "pmbok6_process_group": "Planning",
+    "short": "Tính toán giá trị cần tìm liên quan đến xác suất (probability), tác động (impact) trong tình huống",
+    "summary": "Tính tổng Expected Monetary Value (EMV) của chi phí dự án dựa trên bảng xác suất và cost impact của từng rủi ro."
+  },
+  {
+    "question": "The team has just completed a risk response planning session and identified responses for all the high and medium-priority risks. What should the team do with the remaining low-priority risks?",
+    "options": [
+      "Create risk responses later, as time allows.",
+      "Add the risks to a watchlist for periodic monitoring.",
+      "Remove the risks from the risk register.",
+      "Conduct a low-priority risk response planning workshop."
+    ],
+    "correct": 1,
+    "difficulty": "Difficult",
+    "domain": "Risk Response",
+    "reference": "PMBOK® Guide 6th Ed. — Plan Risk Responses / Implement Risk Responses (avoid/transfer/mitigate/accept, contingency vs management reserve, workarounds).",
+    "explanation_en": "This focuses on selecting/implementing a response to threats/opportunities; the best answer matches PMI response strategy/reserve usage: Add the risks to a watchlist for periodic monitoring.",
+    "explanation_vi": "Câu này thuộc ứng phó rủi ro (risk response); đáp án đúng phản ánh đúng chiến lược response/loại reserve theo PMI: Add the risks to a watchlist for periodic monitoring.",
+    "pmbok6_knowledge_area": "Project Risk Management",
+    "pmbok6_process_group": "Planning",
+    "short": "Xác định hành động/bước tiếp theo phù hợp liên quan đến sổ đăng ký rủi ro (risk register) trong tình huống",
+    "summary": "The team has just completed a risk response planning session and identified responses for all the high and medium-priority risks. What should the team do with the remaining low-priority risks"
+  },
+  {
+    "question": "A project manager has been newly hired and assigned to a technology development project. As the team prepared to plan risk management for the project it became clear that siloed departments are hindering communication among cross-functional teams and making cooperation difficult. As a result, the team is having difficulty defining risk roles and responsibilities.\n\nWhat should the project manager do to address this situation?",
+    "options": [
+      "Identify the root cause of the communication breakdown and the factors that contribute to the departmental silos.",
+      "Lead the team in completing the risk management planning activities by defining risk roles based on departmental risk attitudes.",
+      "Ask the project sponsor to meet with each team to explain that continued communication issues will result in disciplinary actions.",
+      "Delay planning risk management strategies until the cross-functional teams become more communicative and transparent."
+    ],
+    "correct": 0,
+    "difficulty": "Difficult",
+    "domain": "Risk Strategy and Planning",
+    "reference": "PMBOK® Guide 6th Ed. — Plan Risk Management; risk appetite/threshold/strategy tailoring.",
+    "explanation_en": "This is about risk strategy and planning; the best answer aligns the approach with stakeholder risk appetite/thresholds and governance: Identify the root cause of the communication breakdown and the factors that contribute to the departmental silos.",
+    "explanation_vi": "Câu này thuộc chiến lược & lập kế hoạch rủi ro (strategy & planning); đáp án đúng bám theo risk appetite/threshold và quản trị dự án: Identify the root cause of the communication breakdown and the factors that contribute to the departmental silos.",
+    "pmbok6_knowledge_area": "Project Risk Management / Project Communications Management",
+    "pmbok6_process_group": "Planning",
+    "short": "Xác định hành động/bước tiếp theo phù hợp trong tình huống",
+    "summary": "A project manager has been newly hired and assigned to a technology development project. As the team prepared to plan risk management for the project it became clear that siloed departments are hindering communication am"
+  },
+  {
+    "question": "During the execution of repair work, the root cause of the damage was discovered to be failures that occurred during the construction phase. The same contractor who performed the construction work is performing the repairs. Because of this, the CEO wants to negotiate with the contractor for a reduced price.\n\nWhat should the project manager do?",
+    "options": [
+      "Negotiate with the contractor to cancel the repair work and pay compensation for the previous work.",
+      "Negotiate the repair work with the contractor based on a shared risk-reward relationship.",
+      "Proceed with the contractor without mentioning the issue since the previous work is already closed.",
+      "Proceed with the contractor and subtract the amount paid for supervision of the previous work."
+    ],
+    "correct": 1,
+    "difficulty": "Moderate",
+    "domain": "Risk Strategy and Planning",
+    "reference": "PMBOK® Guide 6th Ed. — Plan Risk Management; risk appetite/threshold/strategy tailoring.",
+    "explanation_en": "This is about risk strategy and planning; the best answer aligns the approach with stakeholder risk appetite/thresholds and governance: Negotiate the repair work with the contractor based on a shared risk-reward relationship.",
+    "explanation_vi": "Câu này thuộc chiến lược & lập kế hoạch rủi ro (strategy & planning); đáp án đúng bám theo risk appetite/threshold và quản trị dự án: Negotiate the repair work with the contractor based on a shared risk-reward relationship.",
+    "pmbok6_knowledge_area": "Project Risk Management / Project Stakeholder Management / Project Procurement Management",
+    "pmbok6_process_group": "Planning",
+    "short": "Xác định hành động/bước tiếp theo phù hợp trong tình huống",
+    "summary": "During the execution of repair work, the root cause of the damage was discovered to be failures that occurred during the construction phase. The same contractor who performed the construction work is performing the repai"
+  },
+  {
+    "question": "A cosmetic company would like to expand into the pharmaceutical market. To assist in this, the company acquires an existing company that has established resources and experience operating in the pharmaceutical market. The new pharmaceutical products involve higher levels of governance and stricter compliance regulations. While planning for a new pharmaceutical project, the project manager realizes that the majority of stakeholders and team members have worked on cosmetic projects in the past, but only a few have experience with pharmaceutical projects.\n\nWhat should the project manager emphasize when identifying risks for the project?",
+    "options": [
+      "Fostering project team collaboration by facilitating meetings and teambuilding workshops.",
+      "The compliance and regulatory risks associated with the pharmaceutical industry.",
+      "Individuals who have worked on pharmaceutical projects should lead the risk identification process.",
+      "Advocating for additional resources that have more experience with the pharmaceutical industry."
+    ],
+    "correct": 1,
+    "difficulty": "Expert",
+    "domain": "Risk Identification",
+    "reference": "PMBOK® Guide 6th Ed. — Identify Risks (interviews, brainstorming, checklists, RBS).",
+    "explanation_en": "This focuses on identifying/assigning risks; the best answer aligns with PMI identification practices: The compliance and regulatory risks associated with the pharmaceutical industry.",
+    "explanation_vi": "Câu này thuộc nhận diện rủi ro (risk identification); đáp án đúng bám theo thực hành PMI để nhận diện/gán ownership: The compliance and regulatory risks associated with the pharmaceutical industry.",
+    "pmbok6_knowledge_area": "Project Risk Management / Project Stakeholder Management",
+    "pmbok6_process_group": "Planning",
+    "short": "Xác định hành động/bước tiếp theo phù hợp trong tình huống",
+    "summary": "A cosmetic company would like to expand into the pharmaceutical market. To assist in this, the company acquires an existing company that has established resources and experience operating in the pharmaceutical market. Th"
+  },
+  {
+    "question": "At project initiation, a quote for the required services was requested from a vendor, and the work was estimated at US$100,000. As the project progressed, requirements were updated following the company's procurement process, and a modified quote was received for more than US$250,000. The allocated contingency funds are not sufficient to cover the difference.\n\nWhat should the project manager do?",
+    "options": [
+      "Restart the procurement process and select a new vendor.",
+      "Review the contract type that will be awarded to the vendor.",
+      "Proceed with the best offer as per the procurement process.",
+      "Engage the steering committee and escalate the issue."
+    ],
+    "correct": 3,
+    "difficulty": "Difficult",
+    "domain": "Risk Response",
+    "reference": "PMBOK® Guide 6th Ed. — Plan Risk Responses / Implement Risk Responses (avoid/transfer/mitigate/accept, contingency vs management reserve, workarounds).",
+    "explanation_en": "This focuses on selecting/implementing a response to threats/opportunities; the best answer matches PMI response strategy/reserve usage: Engage the steering committee and escalate the issue.",
+    "explanation_vi": "Câu này thuộc ứng phó rủi ro (risk response); đáp án đúng phản ánh đúng chiến lược response/loại reserve theo PMI: Engage the steering committee and escalate the issue.",
+    "pmbok6_knowledge_area": "Project Risk Management / Project Procurement Management",
+    "pmbok6_process_group": "Planning",
+    "short": "Xác định hành động/bước tiếp theo phù hợp trong tình huống",
+    "summary": "At project initiation, a quote for the required services was requested from a vendor, and the work was estimated at US$100,000. As the project progressed, requirements were updated following the company's procurement pro"
+  },
+  {
+    "question": "A project team is working to establish a radio communication system for a network of remote outposts as part of a major project designed to monitor and prevent environmental crises. The team must secure the necessary licenses to use a specific radio frequency for communications. New radio units must also be installed on each outpost, but there is a lot of uncertainty and risk associated with the installation due to weather and other environmental factors.\n\nWhich of the following project life cycles would work best for this undertaking?",
+    "options": [
+      "Predictive",
+      "Agile",
+      "Hybrid",
+      "Iterative"
+    ],
+    "correct": 2,
+    "difficulty": "Expert",
+    "domain": "Monitor and Close Risks",
+    "reference": "PMBOK® Guide 6th Ed. — Monitor Risks / Close Project or Phase (risk audits, lessons learned, reporting).",
+    "explanation_en": "This is about monitoring/closing risks and reporting; the best answer reflects the correct next step for control/closure: Hybrid",
+    "explanation_vi": "Câu này thuộc giám sát & đóng rủi ro (monitor/close); đáp án đúng thể hiện bước tiếp theo đúng để kiểm soát/đóng & báo cáo: Hybrid",
+    "pmbok6_knowledge_area": "Project Risk Management / Project Communications Management",
+    "pmbok6_process_group": "Monitoring and Controlling",
+    "short": "Chọn lựa chọn phù hợp nhất trong tình huống",
+    "summary": "A project team is working to establish a radio communication system for a network of remote outposts as part of a major project designed to monitor and prevent environmental crises. The team must secure the necessary lic"
+  },
+  {
+    "question": "The risk manager is currently performing the monitoring and reporting process. Which of the following is a direct input for ongoing schedule metrics?",
+    "options": [
+      "Work breakdown structure (WBS)",
+      "Risk breakdown structure (RBS)",
+      "Critical path method (CPM)",
+      "Organizational breakdown structure (OBS)"
+    ],
+    "correct": 0,
+    "difficulty": "Expert",
+    "domain": "Monitor and Close Risks",
+    "reference": "PMBOK® Guide 6th Ed. — Monitor Risks / Close Project or Phase (risk audits, lessons learned, reporting).",
+    "explanation_en": "This is about monitoring/closing risks and reporting; the best answer reflects the correct next step for control/closure: Work breakdown structure (WBS)",
+    "explanation_vi": "Câu này thuộc giám sát & đóng rủi ro (monitor/close); đáp án đúng thể hiện bước tiếp theo đúng để kiểm soát/đóng & báo cáo: Work breakdown structure (WBS)",
+    "pmbok6_knowledge_area": "Project Risk Management / Project Schedule Management / Project Communications Management",
+    "pmbok6_process_group": "Monitoring and Controlling",
+    "short": "Chọn lựa chọn phù hợp nhất trong tình huống",
+    "summary": "The risk manager is currently performing the monitoring and reporting process. Which of the following is a direct input for ongoing schedule metrics"
+  },
+  {
+    "question": "A project is in danger and the project manager realizes that this is because there is a serious misallocation of resources and the risk responses that have been implemented have been largely ineffective.\n\nWhat is the most likely cause of this?",
+    "options": [
+      "Stakeholders were not engaged properly.",
+      "The project manager has been distracted.",
+      "There is conflict within the project team.",
+      "Risks were not weighted appropriately."
+    ],
+    "correct": 3,
+    "difficulty": "Difficult",
+    "domain": "Risk Response",
+    "reference": "PMBOK® Guide 6th Ed. — Plan Risk Responses / Implement Risk Responses (avoid/transfer/mitigate/accept, contingency vs management reserve, workarounds).",
+    "explanation_en": "This focuses on selecting/implementing a response to threats/opportunities; the best answer matches PMI response strategy/reserve usage: Risks were not weighted appropriately.",
+    "explanation_vi": "Câu này thuộc ứng phó rủi ro (risk response); đáp án đúng phản ánh đúng chiến lược response/loại reserve theo PMI: Risks were not weighted appropriately.",
+    "pmbok6_knowledge_area": "Project Risk Management",
+    "pmbok6_process_group": "Planning",
+    "short": "Xác định nội dung/khái niệm đúng trong tình huống",
+    "summary": "A project is in danger and the project manager realizes that this is because there is a serious misallocation of resources and the risk responses that have been implemented have been largely ineffective. What is the most"
+  },
+  {
+    "question": "When analyzing the reward system in a company, there is evidence that suggests that teams are consistently dealing with major problems and operate primarily in an emergency mode. As a result, those who receive the most recognition are those developing response strategies quickly. Individuals who work efficiently and proactively are rewarded far less.\n\nWhat does this observation indicate regarding the risk management process?",
+    "options": [
+      "Project managers are appropriately rewarding individuals deserving of the most recognition.",
+      "Resources are focused on addressing immediate problems rather than preventing future risks.",
+      "The company's rewards system offers no insight into the risk management process.",
+      "Risk management is successful because risk response strategies are being developed quickly."
+    ],
+    "correct": 1,
+    "difficulty": "Difficult",
+    "domain": "Risk Strategy and Planning",
+    "reference": "PMBOK® Guide 6th Ed. — Plan Risk Management; risk appetite/threshold/strategy tailoring.",
+    "explanation_en": "This is about risk strategy and planning; the best answer aligns the approach with stakeholder risk appetite/thresholds and governance: Resources are focused on addressing immediate problems rather than preventing future risks.",
+    "explanation_vi": "Câu này thuộc chiến lược & lập kế hoạch rủi ro (strategy & planning); đáp án đúng bám theo risk appetite/threshold và quản trị dự án: Resources are focused on addressing immediate problems rather than preventing future risks.",
+    "pmbok6_knowledge_area": "Project Risk Management",
+    "pmbok6_process_group": "Planning",
+    "short": "Xác định thời điểm phù hợp trong tình huống",
+    "summary": "When analyzing the reward system in a company, there is evidence that suggests that teams are consistently dealing with major problems and operate primarily in an emergency mode. As a result, those who receive the most r"
+  },
+  {
+    "question": "A risk manager decided to involve a third party to manage a project risk given that they had more experience than the current project team.\n\nWhat kind of response strategy did the risk manager apply to address overall project risk?",
+    "options": [
+      "Avoid",
+      "Exploit",
+      "Transfer",
+      "Reduce"
+    ],
+    "correct": 2,
+    "difficulty": "Moderate",
+    "domain": "Risk Strategy and Planning",
+    "reference": "PMBOK® Guide 6th Ed. — Plan Risk Management; risk appetite/threshold/strategy tailoring.",
+    "explanation_en": "This is about risk strategy and planning; the best answer aligns the approach with stakeholder risk appetite/thresholds and governance: Transfer",
+    "explanation_vi": "Câu này thuộc chiến lược & lập kế hoạch rủi ro (strategy & planning); đáp án đúng bám theo risk appetite/threshold và quản trị dự án: Transfer",
+    "pmbok6_knowledge_area": "Project Risk Management",
+    "pmbok6_process_group": "Planning",
+    "short": "Chọn đáp án đúng trong tình huống",
+    "summary": "A risk manager decided to involve a third party to manage a project risk given that they had more experience than the current project team. What kind of response strategy did the risk manager apply to address overall pro"
+  },
+  {
+    "question": "During a high-risk project, several risks have been materialized and responses have been implemented, However, the project still appears to be in trouble. The project manager is concerned that the risk management rules are not being carried out as specified.\n\nWhat should the project manager do to identify the weaknesses of the risk management process?",
+    "options": [
+      "Transfer the risks.",
+      "Update the risk register.",
+      "Request a risk audit.",
+      "Analyze the risks."
+    ],
+    "correct": 2,
+    "difficulty": "Moderate",
+    "domain": "Risk Identification",
+    "reference": "PMBOK® Guide 6th Ed. — Identify Risks (interviews, brainstorming, checklists, RBS).",
+    "explanation_en": "This focuses on identifying/assigning risks; the best answer aligns with PMI identification practices: Request a risk audit.",
+    "explanation_vi": "Câu này thuộc nhận diện rủi ro (risk identification); đáp án đúng bám theo thực hành PMI để nhận diện/gán ownership: Request a risk audit.",
+    "pmbok6_knowledge_area": "Project Risk Management",
+    "pmbok6_process_group": "Planning",
+    "short": "Xác định hành động/bước tiếp theo phù hợp liên quan đến sổ đăng ký rủi ro (risk register), risk audit (đánh giá rủi ro) trong tình huống",
+    "summary": "During a high-risk project, several risks have been materialized and responses have been implemented, However, the project still appears to be in trouble. The project manager is concerned that the risk management rules a"
+  },
+  {
+    "question": "A project manager is conducting risk analysis for a recurring project that has been a regular undertaking for the organization. The project is a routine task focused on updating internal data systems and is repeated once a year. One of the key stakeholders is new to the organization and requests that the project team perform a quantitative risk analysis for the project.\n\nHow should the project manager respond?",
+    "options": [
+      "Prepare a detailed report for the new stakeholder summarizing the successful risk management techniques of past projects.",
+      "Coordinate an additional risk analysis meeting with the project team to perform quantitative risk analysis as requested by the stakeholder.",
+      "Facilitate a meeting with all project stakeholders and conduct a poll to determine if they agree with the new stakeholder's request.",
+      "Describe the risk management strategy and explain that quantitative risk analysis for routine projects is not cost-effective or necessary."
+    ],
+    "correct": 3,
+    "difficulty": "Difficult",
+    "domain": "Risk Analysis",
+    "reference": "PMBOK® Guide 6th Ed. — Perform Qualitative Risk Analysis / Perform Quantitative Risk Analysis (P-I matrix, EMV, Monte Carlo, decision tree).",
+    "explanation_en": "This question is about assessing/prioritizing risks using analysis techniques; the best answer is the option that correctly applies the appropriate analysis method: Describe the risk management strategy and explain that quantitative risk analysis for routine projects is not cost-effective or necessary.",
+    "explanation_vi": "Câu này thuộc phân tích rủi ro (risk analysis); đáp án đúng là lựa chọn áp dụng đúng kỹ thuật/phương pháp phân tích theo PMI: Describe the risk management strategy and explain that quantitative risk analysis for routine projects is not cost-effective or necessary.",
+    "pmbok6_knowledge_area": "Project Risk Management / Project Stakeholder Management",
+    "pmbok6_process_group": "Planning",
+    "short": "Xác định cách đánh giá/đặc tả phù hợp trong tình huống",
+    "summary": "A project manager is conducting risk analysis for a recurring project that has been a regular undertaking for the organization. The project is a routine task focused on updating internal data systems and is repeated once"
+  },
+  {
+    "question": "Which of the following should the risk manager consider as external environmental factors when creating the risk management plan?",
+    "options": [
+      "Government regulations, industry best practice templates, organizational standard processes, and competitor landscape",
+      "Government regulations, industry standards, conditions of the marketplace, and competitor landscape",
+      "Government regulations, risk categories, organizational standard processes, and competitor landscape",
+      "Government regulations, human resource policies and procedures, organizational standard processes, and competitor landscape"
+    ],
+    "correct": 1,
+    "difficulty": "Moderate",
+    "domain": "Risk Strategy and Planning",
+    "reference": "PMBOK® Guide 6th Ed. — Plan Risk Management; risk appetite/threshold/strategy tailoring.",
+    "explanation_en": "This is about risk strategy and planning; the best answer aligns the approach with stakeholder risk appetite/thresholds and governance: Government regulations, industry standards, conditions of the marketplace, and competitor landscape",
+    "explanation_vi": "Câu này thuộc chiến lược & lập kế hoạch rủi ro (strategy & planning); đáp án đúng bám theo risk appetite/threshold và quản trị dự án: Government regulations, industry standards, conditions of the marketplace, and competitor landscape",
+    "pmbok6_knowledge_area": "Project Risk Management",
+    "pmbok6_process_group": "Planning",
+    "short": "Chọn lựa chọn phù hợp nhất trong tình huống",
+    "summary": "Which of the following should the risk manager consider as external environmental factors when creating the risk management plan"
+  },
+  {
+    "question": "A risk manager is working on a deployment project to replace some equipment that will soon become obsolete. A review of the schedule and cost has revealed that the risk of a 5-month delay is likely and may introduce additional risk.\n\nHow should the risk manager address risks from the delay?",
+    "options": [
+      "Analyze the business impact in order to reprioritize the deliverables.",
+      "Request to negotiate with the vendors for a longer support period.",
+      "Ask to order new equipment immediately so there will be no support issue.",
+      "Acknowledge these constraints and take them into account when planning."
+    ],
+    "correct": 0,
+    "difficulty": "Difficult",
+    "domain": "Risk Strategy and Planning",
+    "reference": "PMBOK® Guide 6th Ed. — Plan Risk Management; risk appetite/threshold/strategy tailoring.",
+    "explanation_en": "This is about risk strategy and planning; the best answer aligns the approach with stakeholder risk appetite/thresholds and governance: Analyze the business impact in order to reprioritize the deliverables.",
+    "explanation_vi": "Câu này thuộc chiến lược & lập kế hoạch rủi ro (strategy & planning); đáp án đúng bám theo risk appetite/threshold và quản trị dự án: Analyze the business impact in order to reprioritize the deliverables.",
+    "pmbok6_knowledge_area": "Project Risk Management / Project Cost Management / Project Schedule Management",
+    "pmbok6_process_group": "Planning",
+    "short": "Xác định cách đánh giá/đặc tả phù hợp liên quan đến tác động (impact) trong tình huống",
+    "summary": "A risk manager is working on a deployment project to replace some equipment that will soon become obsolete. A review of the schedule and cost has revealed that the risk of a 5-month delay is likely and may introduce addi"
+  },
+  {
+    "question": "A team member has a history of not meeting deadlines, but the project team does not recognize the potential impact that this could have on the project if the individual does not improve their performance.\n\nWhat type of risk is this?",
+    "options": [
+      "Known/unknown",
+      "Known/known",
+      "Unknown/known",
+      "Unknown/unknown"
+    ],
+    "correct": 0,
+    "difficulty": "Difficult",
+    "domain": "Risk Strategy and Planning",
+    "reference": "PMBOK® Guide 6th Ed. — Plan Risk Management; risk appetite/threshold/strategy tailoring.",
+    "explanation_en": "This is about risk strategy and planning; the best answer aligns the approach with stakeholder risk appetite/thresholds and governance: Known/unknown",
+    "explanation_vi": "Câu này thuộc chiến lược & lập kế hoạch rủi ro (strategy & planning); đáp án đúng bám theo risk appetite/threshold và quản trị dự án: Known/unknown",
+    "pmbok6_knowledge_area": "Project Risk Management",
+    "pmbok6_process_group": "Planning",
+    "short": "Chọn đáp án đúng liên quan đến tác động (impact) trong tình huống",
+    "summary": "A team member has a history of not meeting deadlines, but the project team does not recognize the potential impact that this could have on the project if the individual does not improve their performance. What type of ri"
+  },
+  {
+    "question": "A project manager is working with a large group of stakeholders to identify risks for a new project. Some stakeholders have been with the organization for many years, others joined only recently. The project manager noticed that the long-term stakeholders have identified very similar sets of risks whereas the newer stakeholders have longer and more varied lists.\n\nHow should the project manager address this discrepancy?",
+    "options": [
+      "Focus on the risks identified by the stakeholders that have been with the organization the longest because they have the most experience.",
+      "Use a combination of risk identification techniques to identify risks and ensure that the identified risks are unambiguously described.",
+      "Develop a system for categorizing stakeholders by their experience, interest, requirements, and authority in order to prioritize risks.",
+      "Meet with the project sponsor to discuss the issue and suggest reducing the number of stakeholders participating in risk identification."
+    ],
+    "correct": 1,
+    "difficulty": "Difficult",
+    "domain": "Risk Identification",
+    "reference": "PMBOK® Guide 6th Ed. — Identify Risks (interviews, brainstorming, checklists, RBS).",
+    "explanation_en": "This focuses on identifying/assigning risks; the best answer aligns with PMI identification practices: Use a combination of risk identification techniques to identify risks and ensure that the identified risks are unambiguously described.",
+    "explanation_vi": "Câu này thuộc nhận diện rủi ro (risk identification); đáp án đúng bám theo thực hành PMI để nhận diện/gán ownership: Use a combination of risk identification techniques to identify risks and ensure that the identified risks are unambiguously described.",
+    "pmbok6_knowledge_area": "Project Risk Management / Project Stakeholder Management",
+    "pmbok6_process_group": "Planning",
+    "short": "Xác định cách đánh giá/đặc tả phù hợp trong tình huống",
+    "summary": "A project manager is working with a large group of stakeholders to identify risks for a new project. Some stakeholders have been with the organization for many years, others joined only recently. The project manager noti"
+  },
+  {
+    "question": "In a project that is critical to the organization, one of the contractors complains that approvals are lengthy and difficult to handle. The contractor mentioned this as it may impact the project schedule.\n\nWhat should the risk manager do next?",
+    "options": [
+      "Reduce the risk by hiring additional resources.",
+      "Add this risk to the risk register to be monitored.",
+      "Escalate the risk to upper management.",
+      "Discuss mitigation options with the team."
+    ],
+    "correct": 3,
+    "difficulty": "Expert",
+    "domain": "Risk Strategy and Planning",
+    "reference": "PMBOK® Guide 6th Ed. — Plan Risk Management; risk appetite/threshold/strategy tailoring.",
+    "explanation_en": "This is about risk strategy and planning; the best answer aligns the approach with stakeholder risk appetite/thresholds and governance: Discuss mitigation options with the team.",
+    "explanation_vi": "Câu này thuộc chiến lược & lập kế hoạch rủi ro (strategy & planning); đáp án đúng bám theo risk appetite/threshold và quản trị dự án: Discuss mitigation options with the team.",
+    "pmbok6_knowledge_area": "Project Risk Management / Project Schedule Management / Project Procurement Management",
+    "pmbok6_process_group": "Planning",
+    "short": "Xác định hành động/bước tiếp theo phù hợp liên quan đến tác động (impact), sổ đăng ký rủi ro (risk register) trong tình huống",
+    "summary": "In a project that is critical to the organization, one of the contractors complains that approvals are lengthy and difficult to handle. The contractor mentioned this as it may impact the project schedule. What should the"
+  },
+  {
+    "question": "A risk manager is notified that critical project deliverables are delayed because a key subject matter expert (SME) does not have enough time to allocate to the tasks.\n\nWhat should the risk manager do to address this situation?",
+    "options": [
+      "Dismiss the SME from the project and replace them immediately with another SME.",
+      "Confront the SME and remind them of their commitments and responsibilities.",
+      "Assess the impact of the delay and determine the urgency and severity of the situation.",
+      "Implement a workaround plan by outsourcing the work to external contractors."
+    ],
+    "correct": 2,
+    "difficulty": "Difficult",
+    "domain": "Risk Strategy and Planning",
+    "reference": "PMBOK® Guide 6th Ed. — Plan Risk Management; risk appetite/threshold/strategy tailoring.",
+    "explanation_en": "This is about risk strategy and planning; the best answer aligns the approach with stakeholder risk appetite/thresholds and governance: Assess the impact of the delay and determine the urgency and severity of the situation.",
+    "explanation_vi": "Câu này thuộc chiến lược & lập kế hoạch rủi ro (strategy & planning); đáp án đúng bám theo risk appetite/threshold và quản trị dự án: Assess the impact of the delay and determine the urgency and severity of the situation.",
+    "pmbok6_knowledge_area": "Project Risk Management",
+    "pmbok6_process_group": "Planning",
+    "short": "Xác định hành động/bước tiếp theo phù hợp liên quan đến tác động (impact), workaround (giải pháp xử lý phát sinh) trong tình huống",
+    "summary": "A risk manager is notified that critical project deliverables are delayed because a key subject matter expert (SME) does not have enough time to allocate to the tasks. What should the risk manager do to address this situ"
+  },
+  {
+    "question": "A project encountered unforeseen circumstances, resulting in a higher level of risk than originally anticipated. The risk manager identified a new response strategy to address the elevated risk level more effectively, but the new strategy differs from the original plan.\n\nWhat should the risk manager do?",
+    "options": [
+      "Implement only those responses that are compatible with the risk management plan.",
+      "Update the risk management plan and implement the newly developed response to address the risk.",
+      "Wait until the next progress meeting to describe the events leading to the elevated risk level.",
+      "Acknowledge the risk and not instruct the project team not to take any action unless the risk occurs."
+    ],
+    "correct": 1,
+    "difficulty": "Difficult",
+    "domain": "Risk Strategy and Planning",
+    "reference": "PMBOK® Guide 6th Ed. — Plan Risk Management; risk appetite/threshold/strategy tailoring.",
+    "explanation_en": "This is about risk strategy and planning; the best answer aligns the approach with stakeholder risk appetite/thresholds and governance: Update the risk management plan and implement the newly developed response to address the risk.",
+    "explanation_vi": "Câu này thuộc chiến lược & lập kế hoạch rủi ro (strategy & planning); đáp án đúng bám theo risk appetite/threshold và quản trị dự án: Update the risk management plan and implement the newly developed response to address the risk.",
+    "pmbok6_knowledge_area": "Project Risk Management",
+    "pmbok6_process_group": "Planning",
+    "short": "Xác định hành động/bước tiếp theo phù hợp trong tình huống",
+    "summary": "A project encountered unforeseen circumstances, resulting in a higher level of risk than originally anticipated. The risk manager identified a new response strategy to address the elevated risk level more effectively, bu"
+  },
+  {
+    "question": "An executive stakeholder has crucial decision power on the execution and success of a project. How should this stakeholder's importance be reflected in the stakeholder engagement plan?",
+    "options": [
+      "Describe the executive's support level, expectations, risk threshold, and appropriate communications for various project needs.",
+      "Include the executive in an organizational chart and illustrate any affinities or hostilities with other stakeholders.",
+      "Label the executive as \"supportive\" and ensure that email, phone numbers, and absence/vacation times are up to date.",
+      "Describe the executive's involvement in similar past projects in order to decide the appropriate engagement level."
+    ],
+    "correct": 0,
+    "difficulty": "Moderate",
+    "domain": "Risk Strategy and Planning",
+    "reference": "PMBOK® Guide 6th Ed. — Plan Risk Management; risk appetite/threshold/strategy tailoring.",
+    "explanation_en": "This is about risk strategy and planning; the best answer aligns the approach with stakeholder risk appetite/thresholds and governance: Describe the executive's support level, expectations, risk threshold, and appropriate communications for various project needs.",
+    "explanation_vi": "Câu này thuộc chiến lược & lập kế hoạch rủi ro (strategy & planning); đáp án đúng bám theo risk appetite/threshold và quản trị dự án: Describe the executive's support level, expectations, risk threshold, and appropriate communications for various project needs.",
+    "pmbok6_knowledge_area": "Project Risk Management / Project Stakeholder Management",
+    "pmbok6_process_group": "Planning",
+    "short": "Xác định cách đánh giá/đặc tả phù hợp liên quan đến ngưỡng rủi ro (risk threshold) trong tình huống",
+    "summary": "An executive stakeholder has crucial decision power on the execution and success of a project. How should this stakeholder's importance be reflected in the stakeholder engagement plan"
+  },
+  {
+    "question": "During project execution a new risk is identified and the stakeholders request that the project manager take immediate steps to avoid it. However, after analysis, the project team disputes that strategy because the risk should be classified as an opportunity and suggests developing a strategy to exploit it rather than avoid it. The stakeholders disagree and state that they want all newly identified risks to be avoided whenever possible.\n\nHow should the project manager address this situation?",
+    "options": [
+      "Meet with the stakeholders to discuss the new risk and clarify the criteria for classifying a risk as a threat or an opportunity.",
+      "Escalate the issue to senior leadership and request that they make the final determination regarding response strategies.",
+      "Instruct the project team to classify the newly identified risk as a threat and immediately develop a strategy for avoiding it.",
+      "Classify the newly identified risk as an opportunity and develop a response plan to exploit it without involving stakeholders."
+    ],
+    "correct": 0,
+    "difficulty": "Difficult",
+    "domain": "Risk Response",
+    "reference": "PMBOK® Guide 6th Ed. — Plan Risk Responses / Implement Risk Responses (avoid/transfer/mitigate/accept, contingency vs management reserve, workarounds).",
+    "explanation_en": "This focuses on selecting/implementing a response to threats/opportunities; the best answer matches PMI response strategy/reserve usage: Meet with the stakeholders to discuss the new risk and clarify the criteria for classifying a risk as a threat or an opportunity.",
+    "explanation_vi": "Câu này thuộc ứng phó rủi ro (risk response); đáp án đúng phản ánh đúng chiến lược response/loại reserve theo PMI: Meet with the stakeholders to discuss the new risk and clarify the criteria for classifying a risk as a threat or an opportunity.",
+    "pmbok6_knowledge_area": "Project Risk Management / Project Stakeholder Management",
+    "pmbok6_process_group": "Executing",
+    "short": "Xác định cách đánh giá/đặc tả phù hợp trong tình huống",
+    "summary": "During project execution a new risk is identified and the stakeholders request that the project manager take immediate steps to avoid it. However, after analysis, the project team disputes that strategy because the risk"
+  },
+  {
+    "question": "The risk manager for a data center infrastructure project is preparing to perform a final post-project risk audit. Several stakeholders do not think that audits are valuable and are impatient with the process. They request that it be skipped in order to begin work on the next project.\n\nHow should the risk manager describe the purposes of the audit?",
+    "options": [
+      "To review the performance of project team members and make a plan to provide training to fill knowledge or skill gaps.",
+      "To document all risks that were identified for the first time and prepare appropriate response actions to address them.",
+      "To assess the activities of risk action owners for all risks that occurred and provide feedback on their performance.",
+      "To evaluate the effectiveness of the risk management process and provide recommendations for improvement."
+    ],
+    "correct": 3,
+    "difficulty": "Moderate",
+    "domain": "Monitor and Close Risks",
+    "reference": "PMBOK® Guide 6th Ed. — Monitor Risks / Close Project or Phase (risk audits, lessons learned, reporting).",
+    "explanation_en": "This is about monitoring/closing risks and reporting; the best answer reflects the correct next step for control/closure: To evaluate the effectiveness of the risk management process and provide recommendations for improvement.",
+    "explanation_vi": "Câu này thuộc giám sát & đóng rủi ro (monitor/close); đáp án đúng thể hiện bước tiếp theo đúng để kiểm soát/đóng & báo cáo: To evaluate the effectiveness of the risk management process and provide recommendations for improvement.",
+    "pmbok6_knowledge_area": "Project Risk Management / Project Stakeholder Management",
+    "pmbok6_process_group": "Monitoring and Controlling",
+    "short": "Xác định cách đánh giá/đặc tả phù hợp liên quan đến risk audit (đánh giá rủi ro) trong tình huống",
+    "summary": "The risk manager for a data center infrastructure project is preparing to perform a final post-project risk audit. Several stakeholders do not think that audits are valuable and are impatient with the process. They reque"
+  },
+  {
+    "question": "A regional vendor for custom-manufactured oil platforms is awarded a contract to design, manufacture, and install 40 offshore oil platforms. Installation of these platforms requires precision placement and stable seas to properly install the deep water structure. There are several schedule and cost incentives for early completion, and the project manager asks the project risk manager to perform an analysis evaluating the probability of meeting the incentive dates. While researching methods that could be used for performing this analysis, the risk manager realizes that there are existing spreadsheets within the organization. The risk manager is considering performing project evaluation and review technique (PERT) analysis with software owned by the organization. The other option is to buy a commercial risk analysis software suite that will perform Latin Hypercube Monte Carlo simulations for US$975.\n\nWhat would be the most analytical option for this probability assessment?",
+    "options": [
+      "Since a schedule risk assessment involves multiplication and division of schedule durations against specific risk events, the Monte Carlo simulation software is the best option.",
+      "The commercial product that performs the PERT analysis is the best option because a schedule risk assessment involves the summation of uncertainties added or subtracted from or to schedule dates.",
+      "A schedule risk assessment involves multiplication and division of schedule durations against specific risk events, a spreadsheet and using a PERT analysis is the best option.",
+      "PERT analysis is a proven, highly accurate method for schedule-based risk and is not impacted by Monte Carlo simulation's limitation of summation modeling where only addition and subtraction of uncertain values are used."
+    ],
+    "correct": 0,
+    "difficulty": "Expert",
+    "domain": "Risk Analysis",
+    "reference": "PMBOK® Guide 6th Ed. — Perform Qualitative Risk Analysis / Perform Quantitative Risk Analysis (P-I matrix, EMV, Monte Carlo, decision tree).",
+    "explanation_en": "This question is about assessing/prioritizing risks using analysis techniques; the best answer is the option that correctly applies the appropriate analysis method: Since a schedule risk assessment involves multiplication and division of schedule durations against specific risk events, the Monte Carlo simulation software is the best option.",
+    "explanation_vi": "Câu này thuộc phân tích rủi ro (risk analysis); đáp án đúng là lựa chọn áp dụng đúng kỹ thuật/phương pháp phân tích theo PMI: Since a schedule risk assessment involves multiplication and division of schedule durations against specific risk events, the Monte Carlo simulation software is the best option.",
+    "pmbok6_knowledge_area": "Project Risk Management / Project Cost Management / Project Schedule Management / Project Procurement Management",
+    "pmbok6_process_group": "Planning",
+    "short": "Chọn đáp án đúng liên quan đến xác suất (probability), tác động (impact), phân tích Monte Carlo trong tình huống",
+    "summary": "A regional vendor for custom-manufactured oil platforms is awarded a contract to design, manufacture, and install 40 offshore oil platforms. Installation of these platforms requires precision placement and stable seas to"
+  },
+  {
+    "question": "A project team member identifies, but does not document, a risk early in the project, because it is considered to be insignificant. This risk occurs later and negatively impacts the project.\n\nWhat could the project manager have done differently to avoid this situation?",
+    "options": [
+      "Conduct meetings early in the project to confirm that the team is familiar with risk identification requirements.",
+      "Communicate the punishment and rewards policy to the project team during the project kick-off meeting.",
+      "Provide project team members with access to advanced simulation tools and templates for decision tree diagrams.",
+      "Provide team members with a risk management prompt list early in the project to ensure risks are not missed."
+    ],
+    "correct": 0,
+    "difficulty": "Difficult",
+    "domain": "Risk Response",
+    "reference": "PMBOK® Guide 6th Ed. — Plan Risk Responses / Implement Risk Responses (avoid/transfer/mitigate/accept, contingency vs management reserve, workarounds).",
+    "explanation_en": "This focuses on selecting/implementing a response to threats/opportunities; the best answer matches PMI response strategy/reserve usage: Conduct meetings early in the project to confirm that the team is familiar with risk identification requirements.",
+    "explanation_vi": "Câu này thuộc ứng phó rủi ro (risk response); đáp án đúng phản ánh đúng chiến lược response/loại reserve theo PMI: Conduct meetings early in the project to confirm that the team is familiar with risk identification requirements.",
+    "pmbok6_knowledge_area": "Project Risk Management",
+    "pmbok6_process_group": "Planning",
+    "short": "Chọn đáp án đúng liên quan đến tác động (impact), cây quyết định (decision tree) trong tình huống",
+    "summary": "A project team member identifies, but does not document, a risk early in the project, because it is considered to be insignificant. This risk occurs later and negatively impacts the project. What could the project manage"
+  },
+  {
+    "question": "The risk manager for a project successfully establishes the risk management plan, creates the risk register, and performs the qualitative risk analysis with the team. As the first step of the analysis, the risk manager develops the probability and impact scales. The scales are presented to the project stakeholders, who refuse to accept the proposed scales.\n\nWhat did the risk manager overlook prior to developing probability and impact scales?",
+    "options": [
+      "Gaining approvals for the developed risk register from stakeholders.",
+      "Informing the project manager about the risk management process.",
+      "Evaluating and understanding the risk appetite of the stakeholders",
+      "Interviewing the stakeholders and reviewing the communication plan."
+    ],
+    "correct": 2,
+    "difficulty": "Difficult",
+    "domain": "Risk Response",
+    "reference": "PMBOK® Guide 6th Ed. — Plan Risk Responses / Implement Risk Responses (avoid/transfer/mitigate/accept, contingency vs management reserve, workarounds).",
+    "explanation_en": "This focuses on selecting/implementing a response to threats/opportunities; the best answer matches PMI response strategy/reserve usage: Evaluating and understanding the risk appetite of the stakeholders",
+    "explanation_vi": "Câu này thuộc ứng phó rủi ro (risk response); đáp án đúng phản ánh đúng chiến lược response/loại reserve theo PMI: Evaluating and understanding the risk appetite of the stakeholders",
+    "pmbok6_knowledge_area": "Project Risk Management / Project Stakeholder Management",
+    "pmbok6_process_group": "Planning",
+    "short": "Chọn đáp án đúng liên quan đến khẩu vị rủi ro (risk appetite), xác suất (probability), tác động (impact) trong tình huống",
+    "summary": "The risk manager for a project successfully establishes the risk management plan, creates the risk register, and performs the qualitative risk analysis with the team. As the first step of the analysis, the risk manager d"
+  },
+  {
+    "question": "During a weekly project review meeting, a stakeholder identifies some new risks. When creating risk responses for these newly identified risks, what should the project team do to discover trends and more efficiently manage the responses?",
+    "options": [
+      "Classify the risk impacts based on their severity.",
+      "Document potential workaround solutions.",
+      "Identify the appropriate risk action owners.",
+      "Determine the root causes of the identified risks."
+    ],
+    "correct": 0,
+    "difficulty": "Expert",
+    "domain": "Risk Response",
+    "reference": "PMBOK® Guide 6th Ed. — Plan Risk Responses / Implement Risk Responses (avoid/transfer/mitigate/accept, contingency vs management reserve, workarounds).",
+    "explanation_en": "This focuses on selecting/implementing a response to threats/opportunities; the best answer matches PMI response strategy/reserve usage: Classify the risk impacts based on their severity.",
+    "explanation_vi": "Câu này thuộc ứng phó rủi ro (risk response); đáp án đúng phản ánh đúng chiến lược response/loại reserve theo PMI: Classify the risk impacts based on their severity.",
+    "pmbok6_knowledge_area": "Project Risk Management / Project Stakeholder Management",
+    "pmbok6_process_group": "Planning",
+    "short": "Xác định hành động/bước tiếp theo phù hợp liên quan đến tác động (impact), workaround (giải pháp xử lý phát sinh) trong tình huống",
+    "summary": "During a weekly project review meeting, a stakeholder identifies some new risks. When creating risk responses for these newly identified risks, what should the project team do to discover trends and more efficiently mana"
+  },
+  {
+    "question": "It was discovered that the likelihood of several project risks was overestimated during the risk identification process. This discrepancy can be attributed to the influence of bias while identifying risks.\n\nWhat could the project manager have done to avoid this situation?",
+    "options": [
+      "Prepared a detailed report describing the project business case.",
+      "Challenged assumptions made during the risk identification process.",
+      "Requested that the sponsor verify the validity of the identified risks.",
+      "Assembled stakeholders who were experienced in risk identification."
+    ],
+    "correct": 1,
+    "difficulty": "Difficult",
+    "domain": "Risk Response",
+    "reference": "PMBOK® Guide 6th Ed. — Plan Risk Responses / Implement Risk Responses (avoid/transfer/mitigate/accept, contingency vs management reserve, workarounds).",
+    "explanation_en": "This focuses on selecting/implementing a response to threats/opportunities; the best answer matches PMI response strategy/reserve usage: Challenged assumptions made during the risk identification process.",
+    "explanation_vi": "Câu này thuộc ứng phó rủi ro (risk response); đáp án đúng phản ánh đúng chiến lược response/loại reserve theo PMI: Challenged assumptions made during the risk identification process.",
+    "pmbok6_knowledge_area": "Project Risk Management",
+    "pmbok6_process_group": "Planning",
+    "short": "Chọn đáp án đúng trong tình huống",
+    "summary": "It was discovered that the likelihood of several project risks was overestimated during the risk identification process. This discrepancy can be attributed to the influence of bias while identifying risks. What could the"
+  },
+  {
+    "question": "Due to budget constraints, the project team decides to use low-cost equipment with high testing uncertainty. This has led to discrepancies and wasted resources. A team member suggests using high-quality equipment with lower test uncertainty to improve testing quality. The team member states that the high-quality equipment will cost more, but the increased testing quality would reduce waste, decrease risks, and lower overall costs.\n\nHow should the project risk manager respond to this proposal?",
+    "options": [
+      "Reject the team member's proposal due to the budget constraints and follow the original quality management plan.",
+      "Accept the proposal because the high-quality equipment produces precise test results with lower test uncertainty.",
+      "Evaluate the proposal to determine if high-quality equipment will lower test uncertainty enough to justify the increased cost.",
+      "Implement the proposed change because the budget is not an issue when quality assurance is taken into consideration."
+    ],
+    "correct": 2,
+    "difficulty": "Moderate",
+    "domain": "Risk Strategy and Planning",
+    "reference": "PMBOK® Guide 6th Ed. — Plan Risk Management; risk appetite/threshold/strategy tailoring.",
+    "explanation_en": "This is about risk strategy and planning; the best answer aligns the approach with stakeholder risk appetite/thresholds and governance: Evaluate the proposal to determine if high-quality equipment will lower test uncertainty enough to justify the increased cost.",
+    "explanation_vi": "Câu này thuộc chiến lược & lập kế hoạch rủi ro (strategy & planning); đáp án đúng bám theo risk appetite/threshold và quản trị dự án: Evaluate the proposal to determine if high-quality equipment will lower test uncertainty enough to justify the increased cost.",
+    "pmbok6_knowledge_area": "Project Risk Management / Project Cost Management",
+    "pmbok6_process_group": "Planning",
+    "short": "Xác định cách đánh giá/đặc tả phù hợp trong tình huống",
+    "summary": "Due to budget constraints, the project team decides to use low-cost equipment with high testing uncertainty. This has led to discrepancies and wasted resources. A team member suggests using high-quality equipment with lo"
+  },
+  {
+    "question": "During the execution phase of a project, a project team identifies a previously unforeseen risk that could delay the project for several months. What should the project manager do first?",
+    "options": [
+      "Update the risk register.",
+      "Perform qualitative risk analysis.",
+      "Update the project sponsors.",
+      "Plan for additional budget."
+    ],
+    "correct": 0,
+    "difficulty": "Difficult",
+    "domain": "Risk Strategy and Planning",
+    "reference": "PMBOK® Guide 6th Ed. — Plan Risk Management; risk appetite/threshold/strategy tailoring.",
+    "explanation_en": "This is about risk strategy and planning; the best answer aligns the approach with stakeholder risk appetite/thresholds and governance: Update the risk register.",
+    "explanation_vi": "Câu này thuộc chiến lược & lập kế hoạch rủi ro (strategy & planning); đáp án đúng bám theo risk appetite/threshold và quản trị dự án: Update the risk register.",
+    "pmbok6_knowledge_area": "Project Risk Management",
+    "pmbok6_process_group": "Planning",
+    "short": "Xác định hành động/bước tiếp theo phù hợp liên quan đến sổ đăng ký rủi ro (risk register) trong tình huống",
+    "summary": "During the execution phase of a project, a project team identifies a previously unforeseen risk that could delay the project for several months. What should the project manager do first"
+  },
+  {
+    "question": "Mid-project, a risk manager goes on medical leave and is replaced by a new risk manager. Before leaving, the original risk manager met with the new risk manager to thoroughly review and discuss the project and the risk management plan. During a status meeting, the new risk manager is notified that a known risk has materialized.\n\nWhat is the appropriate course of action in this case?",
+    "options": [
+      "Initiate a change request to adjust the project's budget requirements.",
+      "Perform a risk reserve analysis and utilize the management reserve.",
+      "Follow the risk response plan produced by the original risk manager.",
+      "Meet with the team to plan and implement a new response strategy."
+    ],
+    "correct": 2,
+    "difficulty": "Moderate",
+    "domain": "Risk Strategy and Planning",
+    "reference": "PMBOK® Guide 6th Ed. — Plan Risk Management; risk appetite/threshold/strategy tailoring.",
+    "explanation_en": "This is about risk strategy and planning; the best answer aligns the approach with stakeholder risk appetite/thresholds and governance: Follow the risk response plan produced by the original risk manager.",
+    "explanation_vi": "Câu này thuộc chiến lược & lập kế hoạch rủi ro (strategy & planning); đáp án đúng bám theo risk appetite/threshold và quản trị dự án: Follow the risk response plan produced by the original risk manager.",
+    "pmbok6_knowledge_area": "Project Risk Management",
+    "pmbok6_process_group": "Planning",
+    "short": "Xác định nội dung/khái niệm đúng liên quan đến quỹ dự phòng quản lý (management reserve), yêu cầu thay đổi (change request) trong tình huống",
+    "summary": "Mid-project, a risk manager goes on medical leave and is replaced by a new risk manager. Before leaving, the original risk manager met with the new risk manager to thoroughly review and discuss the project and the risk m"
+  },
+  {
+    "question": "Despite the project team carrying out risk management processes and adhering to organizational risk planning procedures, the contingency reserves for a recent project were depleted before the project was completed.\n\nWhat recommendation could be implemented to prevent this from recurring?",
+    "options": [
+      "Use the Monte Carlo simulation.",
+      "Implement a reserve analysis process.",
+      "Conduct more frequent status meetings.",
+      "Increase the contingency reserve."
+    ],
+    "correct": 1,
+    "difficulty": "Difficult",
+    "domain": "Risk Response",
+    "reference": "PMBOK® Guide 6th Ed. — Plan Risk Responses / Implement Risk Responses (avoid/transfer/mitigate/accept, contingency vs management reserve, workarounds).",
+    "explanation_en": "This focuses on selecting/implementing a response to threats/opportunities; the best answer matches PMI response strategy/reserve usage: Implement a reserve analysis process.",
+    "explanation_vi": "Câu này thuộc ứng phó rủi ro (risk response); đáp án đúng phản ánh đúng chiến lược response/loại reserve theo PMI: Implement a reserve analysis process.",
+    "pmbok6_knowledge_area": "Project Risk Management",
+    "pmbok6_process_group": "Planning",
+    "short": "Chọn đáp án đúng liên quan đến phân tích Monte Carlo, quỹ dự phòng (contingency reserve) trong tình huống",
+    "summary": "Despite the project team carrying out risk management processes and adhering to organizational risk planning procedures, the contingency reserves for a recent project were depleted before the project was completed. What"
+  },
+  {
+    "question": "When using the risk register to manage the cost risk analysis, which of the following techniques models the way correlation arises, and avoids the need to estimate the correlation coefficients?",
+    "options": [
+      "Risk Monte Carlo analysis",
+      "Risk driver method",
+      "Risk scatter diagram",
+      "Risk RACI matrix"
+    ],
+    "correct": 1,
+    "difficulty": "Expert",
+    "domain": "Risk Response",
+    "reference": "PMBOK® Guide 6th Ed. — Plan Risk Responses / Implement Risk Responses (avoid/transfer/mitigate/accept, contingency vs management reserve, workarounds).",
+    "explanation_en": "This focuses on selecting/implementing a response to threats/opportunities; the best answer matches PMI response strategy/reserve usage: Risk driver method",
+    "explanation_vi": "Câu này thuộc ứng phó rủi ro (risk response); đáp án đúng phản ánh đúng chiến lược response/loại reserve theo PMI: Risk driver method",
+    "pmbok6_knowledge_area": "Project Risk Management / Project Cost Management",
+    "pmbok6_process_group": "Planning",
+    "short": "Chọn lựa chọn phù hợp nhất liên quan đến phân tích Monte Carlo, sổ đăng ký rủi ro (risk register) trong tình huống",
+    "summary": "When using the risk register to manage the cost risk analysis, which of the following techniques models the way correlation arises, and avoids the need to estimate the correlation coefficients"
+  },
+  {
+    "question": "A risk manager is working on a complex project that is running over budget and over schedule. Some stakeholders believe that these overages are a result of poor risk planning techniques.\n\nWhat can the risk manager do to determine the validity of these concerns?",
+    "options": [
+      "Conduct a survey to gather opinions from all project stakeholders.",
+      "Defend the risk management plan and the planning techniques.",
+      "Review the risk management plan and project performance data.",
+      "Compare the overages with the planned budget and schedule."
+    ],
+    "correct": 2,
+    "difficulty": "Difficult",
+    "domain": "Risk Strategy and Planning",
+    "reference": "PMBOK® Guide 6th Ed. — Plan Risk Management; risk appetite/threshold/strategy tailoring.",
+    "explanation_en": "This is about risk strategy and planning; the best answer aligns the approach with stakeholder risk appetite/thresholds and governance: Review the risk management plan and project performance data.",
+    "explanation_vi": "Câu này thuộc chiến lược & lập kế hoạch rủi ro (strategy & planning); đáp án đúng bám theo risk appetite/threshold và quản trị dự án: Review the risk management plan and project performance data.",
+    "pmbok6_knowledge_area": "Project Risk Management / Project Cost Management / Project Schedule Management / Project Stakeholder Management",
+    "pmbok6_process_group": "Planning",
+    "short": "Chọn đáp án đúng trong tình huống",
+    "summary": "A risk manager is working on a complex project that is running over budget and over schedule. Some stakeholders believe that these overages are a result of poor risk planning techniques. What can the risk manager do to d"
+  },
+  {
+    "question": "A project manager is working with the project team to prioritize identified project risks, but several stakeholders are interfering with the process. The stakeholders have competing priorities and are attempting to influence the prioritization process to favor their priorities.\n\nWhat should the project manager do in order to ensure that the team prioritizes risks appropriately?",
+    "options": [
+      "Perform qualitative and quantitative risk analysis.",
+      "Engage the project sponsor to decide.",
+      "Refer to the stakeholder analysis prioritization tree.",
+      "Perform a review of organizational process assets."
+    ],
+    "correct": 0,
+    "difficulty": "Difficult",
+    "domain": "Risk Analysis",
+    "reference": "PMBOK® Guide 6th Ed. — Perform Qualitative Risk Analysis / Perform Quantitative Risk Analysis (P-I matrix, EMV, Monte Carlo, decision tree).",
+    "explanation_en": "This question is about assessing/prioritizing risks using analysis techniques; the best answer is the option that correctly applies the appropriate analysis method: Perform qualitative and quantitative risk analysis.",
+    "explanation_vi": "Câu này thuộc phân tích rủi ro (risk analysis); đáp án đúng là lựa chọn áp dụng đúng kỹ thuật/phương pháp phân tích theo PMI: Perform qualitative and quantitative risk analysis.",
+    "pmbok6_knowledge_area": "Project Risk Management / Project Stakeholder Management",
+    "pmbok6_process_group": "Planning",
+    "short": "Xác định hành động/bước tiếp theo phù hợp trong tình huống",
+    "summary": "A project manager is working with the project team to prioritize identified project risks, but several stakeholders are interfering with the process. The stakeholders have competing priorities and are attempting to influ"
+  },
+  {
+    "question": "A project manager is initiating risk management planning for a project that has an elevated degree of uncertainty and risk associated with the development of the product. The project must have a clearly defined and repeatable rollout phase in order to deliver the intended business value.\n\nWhat project methodology should the project manager suggest?",
+    "options": [
+      "Lean",
+      "Hybrid",
+      "Agile",
+      "Predictive"
+    ],
+    "correct": 1,
+    "difficulty": "Expert",
+    "domain": "Risk Strategy and Planning",
+    "reference": "PMBOK® Guide 6th Ed. — Plan Risk Management; risk appetite/threshold/strategy tailoring.",
+    "explanation_en": "This is about risk strategy and planning; the best answer aligns the approach with stakeholder risk appetite/thresholds and governance: Hybrid",
+    "explanation_vi": "Câu này thuộc chiến lược & lập kế hoạch rủi ro (strategy & planning); đáp án đúng bám theo risk appetite/threshold và quản trị dự án: Hybrid",
+    "pmbok6_knowledge_area": "Project Risk Management",
+    "pmbok6_process_group": "Planning",
+    "short": "Chọn đáp án đúng trong tình huống",
+    "summary": "A project manager is initiating risk management planning for a project that has an elevated degree of uncertainty and risk associated with the development of the product. The project must have a clearly defined and repea"
+  },
+  {
+    "question": "A project team is planning for the construction of a major housing development. The development will consist of five stand-alone apartment buildings. The project team is in the process of identifying project risks. Many key construction activities will be completed by a contractor. The project manager intends to include the contractor in risk identification exercises, but one key stakeholder voices concerns and would like to identify risks internally.\n\nHow should the project manager address this concern?",
+    "options": [
+      "Request that the contractor complete a detailed report summarizing all potential risks and submit it to the project team to verify.",
+      "Escalate the matter to the project sponsor and request that the stakeholder be removed from the project.",
+      "Initiate the risk identification process with the team as planned but without involving the contractor as requested by the stakeholder.",
+      "Explain that contractor involvement is critical because they have a better understanding of the risks associated with their work."
+    ],
+    "correct": 3,
+    "difficulty": "Difficult",
+    "domain": "Risk Identification",
+    "reference": "PMBOK® Guide 6th Ed. — Identify Risks (interviews, brainstorming, checklists, RBS).",
+    "explanation_en": "This focuses on identifying/assigning risks; the best answer aligns with PMI identification practices: Explain that contractor involvement is critical because they have a better understanding of the risks associated with their work.",
+    "explanation_vi": "Câu này thuộc nhận diện rủi ro (risk identification); đáp án đúng bám theo thực hành PMI để nhận diện/gán ownership: Explain that contractor involvement is critical because they have a better understanding of the risks associated with their work.",
+    "pmbok6_knowledge_area": "Project Risk Management / Project Stakeholder Management / Project Procurement Management",
+    "pmbok6_process_group": "Planning",
+    "short": "Xác định cách đánh giá/đặc tả phù hợp trong tình huống",
+    "summary": "A project team is planning for the construction of a major housing development. The development will consist of five stand-alone apartment buildings. The project team is in the process of identifying project risks. Many"
+  },
+  {
+    "question": "A project manager is running a high-cost telecommunications project. There is a monthly status meeting, and the risk manager should provide an update to the project team and project sponsors on major risks.\n\nWhat risk-related information should be included in the monthly status meeting of this complex project?",
+    "options": [
+      "Top priority risks at present, risks closed in the last period, milestone changes.",
+      "Top priority risks at present, risks that have occurred, risk management plan.",
+      "Top priority risks at present, risks that have occurred, changes in project scope.",
+      "Top priority risks at present, risks that have occurred, risks closed in the last period."
+    ],
+    "correct": 3,
+    "difficulty": "Difficult",
+    "domain": "Risk Strategy and Planning",
+    "reference": "PMBOK® Guide 6th Ed. — Plan Risk Management; risk appetite/threshold/strategy tailoring.",
+    "explanation_en": "This is about risk strategy and planning; the best answer aligns the approach with stakeholder risk appetite/thresholds and governance: Top priority risks at present, risks that have occurred, risks closed in the last period.",
+    "explanation_vi": "Câu này thuộc chiến lược & lập kế hoạch rủi ro (strategy & planning); đáp án đúng bám theo risk appetite/threshold và quản trị dự án: Top priority risks at present, risks that have occurred, risks closed in the last period.",
+    "pmbok6_knowledge_area": "Project Risk Management / Project Cost Management / Project Stakeholder Management / Project Communications Management",
+    "pmbok6_process_group": "Planning",
+    "short": "Chọn đáp án đúng trong tình huống",
+    "summary": "A project manager is running a high-cost telecommunications project. There is a monthly status meeting, and the risk manager should provide an update to the project team and project sponsors on major risks. What risk-rel"
+  },
+  {
+    "question": "A junior risk manager approaches a senior risk manager seeking advice on an analysis method to enhance sample representativeness and improve simulation accuracy. The senior risk manager says that an analysis method that uses stratified sampling without replacement would be best.\n\nWhich analysis method should the senior risk manager suggest?",
+    "options": [
+      "Impact Analysis",
+      "Monte Carlo simulation",
+      "Latin Hypercube",
+      "Linear regression analysis"
+    ],
+    "correct": 2,
+    "difficulty": "Expert",
+    "domain": "Risk Strategy and Planning",
+    "reference": "PMBOK® Guide 6th Ed. — Plan Risk Management; risk appetite/threshold/strategy tailoring.",
+    "explanation_en": "This is about risk strategy and planning; the best answer aligns the approach with stakeholder risk appetite/thresholds and governance: Latin Hypercube",
+    "explanation_vi": "Câu này thuộc chiến lược & lập kế hoạch rủi ro (strategy & planning); đáp án đúng bám theo risk appetite/threshold và quản trị dự án: Latin Hypercube",
+    "pmbok6_knowledge_area": "Project Risk Management",
+    "pmbok6_process_group": "Planning",
+    "short": "Chọn đáp án đúng liên quan đến tác động (impact), phân tích Monte Carlo trong tình huống",
+    "summary": "A junior risk manager approaches a senior risk manager seeking advice on an analysis method to enhance sample representativeness and improve simulation accuracy. The senior risk manager says that an analysis method that"
+  },
+  {
+    "question": "When performing integrated cost-schedule risk analysis, a risk manager must correlate the project costs and activities with the risk baseline. Why is determining correlation critical in performing this analysis?",
+    "options": [
+      "Correlation strength is defined by the strength of multiple risks affecting one cost or activity.",
+      "Correlation is always negative in projects with high production costs.",
+      "Correlation indicates causality between project costs and specific project activities.",
+      "Correlation identifies how each project risk affects project costs or activities."
+    ],
+    "correct": 3,
+    "difficulty": "Difficult",
+    "domain": "Risk Strategy and Planning",
+    "reference": "PMBOK® Guide 6th Ed. — Plan Risk Management; risk appetite/threshold/strategy tailoring.",
+    "explanation_en": "This is about risk strategy and planning; the best answer aligns the approach with stakeholder risk appetite/thresholds and governance: Correlation identifies how each project risk affects project costs or activities.",
+    "explanation_vi": "Câu này thuộc chiến lược & lập kế hoạch rủi ro (strategy & planning); đáp án đúng bám theo risk appetite/threshold và quản trị dự án: Correlation identifies how each project risk affects project costs or activities.",
+    "pmbok6_knowledge_area": "Project Risk Management / Project Cost Management / Project Schedule Management",
+    "pmbok6_process_group": "Planning",
+    "short": "Xác định thời điểm phù hợp trong tình huống",
+    "summary": "When performing integrated cost-schedule risk analysis, a risk manager must correlate the project costs and activities with the risk baseline. Why is determining correlation critical in performing this analysis"
+  },
+  {
+    "question": "A risk manager creates a survey for project stakeholders to obtain their opinions on high levels of risk. Key questions in the survey address acceptable levels of cost increases and schedule delays.\n\nWhat is the risk manager trying to determine?",
+    "options": [
+      "Risk urgency",
+      "Risk exposure",
+      "Risk threshold",
+      "Risk attitude"
+    ],
+    "correct": 2,
+    "difficulty": "Difficult",
+    "domain": "Risk Response",
+    "reference": "PMBOK® Guide 6th Ed. — Plan Risk Responses / Implement Risk Responses (avoid/transfer/mitigate/accept, contingency vs management reserve, workarounds).",
+    "explanation_en": "This focuses on selecting/implementing a response to threats/opportunities; the best answer matches PMI response strategy/reserve usage: Risk threshold",
+    "explanation_vi": "Câu này thuộc ứng phó rủi ro (risk response); đáp án đúng phản ánh đúng chiến lược response/loại reserve theo PMI: Risk threshold",
+    "pmbok6_knowledge_area": "Project Risk Management / Project Cost Management / Project Schedule Management / Project Stakeholder Management",
+    "pmbok6_process_group": "Planning",
+    "short": "Xác định nội dung/khái niệm đúng liên quan đến ngưỡng rủi ro (risk threshold), mức phơi nhiễm rủi ro (risk exposure) trong tình huống",
+    "summary": "A risk manager creates a survey for project stakeholders to obtain their opinions on high levels of risk. Key questions in the survey address acceptable levels of cost increases and schedule delays. What is the risk mana"
+  },
+  {
+    "question": "An organization has a new goal to become more environmentally sustainable and is planning to take incremental steps to achieve this. The organization is planning to replace the packaging for its top-selling products with sustainable alternatives. The team is preparing a SWOT analysis for this initiative.\n\nWhich of the following would be considered a strength?",
+    "options": [
+      "Global warming has a lot of visibility and could draw attention.",
+      "They could attract environmentally conscientious customers.",
+      "Increased production costs will be offset by increased sales.",
+      "The product is already successful and has brand recognition."
+    ],
+    "correct": 3,
+    "difficulty": "Difficult",
+    "domain": "Risk Identification",
+    "reference": "PMBOK® Guide 6th Ed. — Identify Risks (interviews, brainstorming, checklists, RBS).",
+    "explanation_en": "This focuses on identifying/assigning risks; the best answer aligns with PMI identification practices: The product is already successful and has brand recognition.",
+    "explanation_vi": "Câu này thuộc nhận diện rủi ro (risk identification); đáp án đúng bám theo thực hành PMI để nhận diện/gán ownership: The product is already successful and has brand recognition.",
+    "pmbok6_knowledge_area": "Project Risk Management",
+    "pmbok6_process_group": "Planning",
+    "short": "Chọn lựa chọn phù hợp nhất liên quan đến phân tích SWOT trong tình huống",
+    "summary": "An organization has a new goal to become more environmentally sustainable and is planning to take incremental steps to achieve this. The organization is planning to replace the packaging for its top-selling products with"
+  },
+  {
+    "question": "During a major project review, the project manager discovers that large groups of internal management issues are obstructing progress. The project manager reviews the risk management plan and discovers risk categories largely focused on technical and customer-related risks, not internal issues. The project still has several months before completion and the project manager wants to revise the risk management plan to account for internal risk areas.\n\nWho should the project manager collaborate with to revise the risk management plan at this stage of the project?",
+    "options": [
+      "Risk manager, technical manager, and customers",
+      "Project sponsor, product owner, and risk owners",
+      "Risk manager, product owner, and risk owners",
+      "Risk manager, risk owners, and project sponsor"
+    ],
+    "correct": 3,
+    "difficulty": "Expert",
+    "domain": "Risk Strategy and Planning",
+    "reference": "PMBOK® Guide 6th Ed. — Plan Risk Management; risk appetite/threshold/strategy tailoring.",
+    "explanation_en": "This is about risk strategy and planning; the best answer aligns the approach with stakeholder risk appetite/thresholds and governance: Risk manager, risk owners, and project sponsor",
+    "explanation_vi": "Câu này thuộc chiến lược & lập kế hoạch rủi ro (strategy & planning); đáp án đúng bám theo risk appetite/threshold và quản trị dự án: Risk manager, risk owners, and project sponsor",
+    "pmbok6_knowledge_area": "Project Risk Management",
+    "pmbok6_process_group": "Planning",
+    "short": "Chọn đáp án đúng liên quan đến người sở hữu rủi ro (risk owner) trong tình huống",
+    "summary": "During a major project review, the project manager discovers that large groups of internal management issues are obstructing progress. The project manager reviews the risk management plan and discovers risk categories la"
+  },
+  {
+    "question": "During a project review meeting the risk manager asks the team for updates on closed risks from the previous period and finds that they do not have a comprehensive understanding of the original trigger conditions.\n\nWhat should the risk manager do to address this?",
+    "options": [
+      "Disregard the issue and continue with the project review meeting since the closed risks are no longer relevant.",
+      "Identify the team members who are not properly documenting trigger conditions during the risk management process.",
+      "Ask the team to individually review their closed risks and report back with a written description of the trigger conditions.",
+      "Provide training to the team on the importance of identifying, documenting, and monitoring trigger conditions."
+    ],
+    "correct": 3,
+    "difficulty": "Difficult",
+    "domain": "Risk Strategy and Planning",
+    "reference": "PMBOK® Guide 6th Ed. — Plan Risk Management; risk appetite/threshold/strategy tailoring.",
+    "explanation_en": "This is about risk strategy and planning; the best answer aligns the approach with stakeholder risk appetite/thresholds and governance: Provide training to the team on the importance of identifying, documenting, and monitoring trigger conditions.",
+    "explanation_vi": "Câu này thuộc chiến lược & lập kế hoạch rủi ro (strategy & planning); đáp án đúng bám theo risk appetite/threshold và quản trị dự án: Provide training to the team on the importance of identifying, documenting, and monitoring trigger conditions.",
+    "pmbok6_knowledge_area": "Project Risk Management",
+    "pmbok6_process_group": "Planning",
+    "short": "Xác định hành động/bước tiếp theo phù hợp trong tình huống",
+    "summary": "During a project review meeting the risk manager asks the team for updates on closed risks from the previous period and finds that they do not have a comprehensive understanding of the original trigger conditions. What s"
+  },
+  {
+    "question": "A risk manager has finished a qualitative risk analysis with their team. The risk manager asked the team to update the relevant documents, but they only updated the risk register, issue log, and risk report. Which project document still needs to be updated based on this information?",
+    "options": [
+      "The lessons learned register",
+      "The change log",
+      "The assumption log",
+      "The project charter"
+    ],
+    "correct": 2,
+    "difficulty": "Difficult",
+    "domain": "Monitor and Close Risks",
+    "reference": "PMBOK® Guide 6th Ed. — Monitor Risks / Close Project or Phase (risk audits, lessons learned, reporting).",
+    "explanation_en": "This is about monitoring/closing risks and reporting; the best answer reflects the correct next step for control/closure: The assumption log",
+    "explanation_vi": "Câu này thuộc giám sát & đóng rủi ro (monitor/close); đáp án đúng thể hiện bước tiếp theo đúng để kiểm soát/đóng & báo cáo: The assumption log",
+    "pmbok6_knowledge_area": "Project Risk Management / Project Communications Management",
+    "pmbok6_process_group": "Monitoring and Controlling",
+    "short": "Chọn đáp án đúng liên quan đến sổ đăng ký rủi ro (risk register), bài học kinh nghiệm (lessons learned) trong tình huống",
+    "summary": "A risk manager has finished a qualitative risk analysis with their team. The risk manager asked the team to update the relevant documents, but they only updated the risk register, issue log, and risk report. Which projec"
+  },
+  {
+    "question": "A project is behind schedule by several weeks and it is discovered that the cause of this is that there were several holidays within several months of implementation.\n\nWhat should the project team have done to identify this risk and avoid this situation?",
+    "options": [
+      "Determined who is responsible for the preliminary document analysis.",
+      "Predicted the cascade effect of holiday schedules on project timelines.",
+      "Limited the amount of holiday time off during project implementation.",
+      "Delayed initiating the project until after the observed holidays pass."
+    ],
+    "correct": 1,
+    "difficulty": "Moderate",
+    "domain": "Risk Response",
+    "reference": "PMBOK® Guide 6th Ed. — Plan Risk Responses / Implement Risk Responses (avoid/transfer/mitigate/accept, contingency vs management reserve, workarounds).",
+    "explanation_en": "This focuses on selecting/implementing a response to threats/opportunities; the best answer matches PMI response strategy/reserve usage: Predicted the cascade effect of holiday schedules on project timelines.",
+    "explanation_vi": "Câu này thuộc ứng phó rủi ro (risk response); đáp án đúng phản ánh đúng chiến lược response/loại reserve theo PMI: Predicted the cascade effect of holiday schedules on project timelines.",
+    "pmbok6_knowledge_area": "Project Risk Management / Project Schedule Management",
+    "pmbok6_process_group": "Planning",
+    "short": "Xác định hành động/bước tiếp theo phù hợp trong tình huống",
+    "summary": "A project is behind schedule by several weeks and it is discovered that the cause of this is that there were several holidays within several months of implementation. What should the project team have done to identify th"
+  },
+  {
+    "question": "A project manager has just taken over an ongoing project from another project manager. During a review of the project management plan, the new project manager realizes that the cost variance and schedule variance are largely negative. Several reported issues have not been resolved, vendors have not been paid for work done, and risk mitigation is quickly depleting the budget.\n\nWhich action should the original project manager have taken to avoid this situation?",
+    "options": [
+      "Identified appropriate and comprehensive project handoff procedures.",
+      "Added a substantial contingency reserve budget to the project charter.",
+      "Identified high-level risks and responses in the project planning phase.",
+      "Ensured that governance controls were approved and implemented."
+    ],
+    "correct": 2,
+    "difficulty": "Expert",
+    "domain": "Risk Response",
+    "reference": "PMBOK® Guide 6th Ed. — Plan Risk Responses / Implement Risk Responses (avoid/transfer/mitigate/accept, contingency vs management reserve, workarounds).",
+    "explanation_en": "This focuses on selecting/implementing a response to threats/opportunities; the best answer matches PMI response strategy/reserve usage: Identified high-level risks and responses in the project planning phase.",
+    "explanation_vi": "Câu này thuộc ứng phó rủi ro (risk response); đáp án đúng phản ánh đúng chiến lược response/loại reserve theo PMI: Identified high-level risks and responses in the project planning phase.",
+    "pmbok6_knowledge_area": "Project Risk Management / Project Cost Management / Project Schedule Management / Project Communications Management / Project Procurement Management",
+    "pmbok6_process_group": "Planning",
+    "short": "Chọn đáp án đúng liên quan đến quỹ dự phòng (contingency reserve) trong tình huống",
+    "summary": "A project manager has just taken over an ongoing project from another project manager. During a review of the project management plan, the new project manager realizes that the cost variance and schedule variance are lar"
+  },
+  {
+    "question": "A race director is planning a marathon with US$80,000 in upfront costs that will be offset by race fees. The remainder of the funds will be donated to a national charity. State law mandates that all money paid by the participants must be refunded if the race is canceled for any reason.\n\nWhich of the following is the best example of a risk mitigation response?",
+    "options": [
+      "Inform the charity that they will not receive any donations if the race must be canceled.",
+      "Purchase an insurance policy to cover potential losses in the event the race is canceled.",
+      "Ensure that the runners know that the race will only be canceled in the event of an emergency.",
+      "Require runners to sign a contract to waive their right to a refund if the race is canceled."
+    ],
+    "correct": 1,
+    "difficulty": "Difficult",
+    "domain": "Risk Response",
+    "reference": "PMBOK® Guide 6th Ed. — Plan Risk Responses / Implement Risk Responses (avoid/transfer/mitigate/accept, contingency vs management reserve, workarounds).",
+    "explanation_en": "This focuses on selecting/implementing a response to threats/opportunities; the best answer matches PMI response strategy/reserve usage: Purchase an insurance policy to cover potential losses in the event the race is canceled.",
+    "explanation_vi": "Câu này thuộc ứng phó rủi ro (risk response); đáp án đúng phản ánh đúng chiến lược response/loại reserve theo PMI: Purchase an insurance policy to cover potential losses in the event the race is canceled.",
+    "pmbok6_knowledge_area": "Project Risk Management / Project Cost Management",
+    "pmbok6_process_group": "Planning",
+    "short": "Chọn lựa chọn phù hợp nhất trong tình huống",
+    "summary": "A race director is planning a marathon with US$80,000 in upfront costs that will be offset by race fees. The remainder of the funds will be donated to a national charity. State law mandates that all money paid by the par"
+  },
+  {
+    "question": "A project team is working on a critical project and one of the identified risks is approaching its risk threshold. This risk introduces potential delays due to unexpected changes in requirements.\n\nWho is ultimately responsible for monitoring the risk that is about to exceed its risk threshold?",
+    "options": [
+      "All project stakeholders",
+      "The customer",
+      "Senior management",
+      "The risk owner"
+    ],
+    "correct": 3,
+    "difficulty": "Moderate",
+    "domain": "Monitor and Close Risks",
+    "reference": "PMBOK® Guide 6th Ed. — Monitor Risks / Close Project or Phase (risk audits, lessons learned, reporting).",
+    "explanation_en": "This is about monitoring/closing risks and reporting; the best answer reflects the correct next step for control/closure: The risk owner",
+    "explanation_vi": "Câu này thuộc giám sát & đóng rủi ro (monitor/close); đáp án đúng thể hiện bước tiếp theo đúng để kiểm soát/đóng & báo cáo: The risk owner",
+    "pmbok6_knowledge_area": "Project Risk Management",
+    "pmbok6_process_group": "Monitoring and Controlling",
+    "short": "Chọn đáp án đúng liên quan đến ngưỡng rủi ro (risk threshold), người sở hữu rủi ro (risk owner) trong tình huống",
+    "summary": "A project team is working on a critical project and one of the identified risks is approaching its risk threshold. This risk introduces potential delays due to unexpected changes in requirements. Who is ultimately respon"
+  },
+  {
+    "question": "A risk manager is working with an experienced project team on a complex project. During production, a risk materializes and the team meets to discuss the implementation of the appropriate risk response strategy. Despite planning risk responses as a team, the risk manager notices that many of the team members seem extremely uncomfortable and are reluctant to implement the risk response.\n\nWhat should the risk manager have done in order to better understand how the team would react in this situation?",
+    "options": [
+      "Identified the team's risk attitude.",
+      "Devised a more precise response plan.",
+      "Explained that the project is risky.",
+      "Requested a more adaptable team."
+    ],
+    "correct": 0,
+    "difficulty": "Moderate",
+    "domain": "Risk Response",
+    "reference": "PMBOK® Guide 6th Ed. — Plan Risk Responses / Implement Risk Responses (avoid/transfer/mitigate/accept, contingency vs management reserve, workarounds).",
+    "explanation_en": "This focuses on selecting/implementing a response to threats/opportunities; the best answer matches PMI response strategy/reserve usage: Identified the team's risk attitude.",
+    "explanation_vi": "Câu này thuộc ứng phó rủi ro (risk response); đáp án đúng phản ánh đúng chiến lược response/loại reserve theo PMI: Identified the team's risk attitude.",
+    "pmbok6_knowledge_area": "Project Risk Management",
+    "pmbok6_process_group": "Planning",
+    "short": "Xác định hành động/bước tiếp theo phù hợp trong tình huống",
+    "summary": "A risk manager is working with an experienced project team on a complex project. During production, a risk materializes and the team meets to discuss the implementation of the appropriate risk response strategy. Despite"
+  },
+  {
+    "question": "After a risk review meeting, three key risks are identified as likely to be realized. The project manager requests a risk scenario be calculated to establish the impact on the budget.\n\nWhat forecasting methodology should the project manager request be utilized to calculate the impact?",
+    "options": [
+      "Estimate to complete (ETC)",
+      "Budget at completion (BAC)",
+      "Estimate risk completion (ERC)",
+      "Estimate at completion (EAC)"
+    ],
+    "correct": 3,
+    "difficulty": "Expert",
+    "domain": "Risk Strategy and Planning",
+    "reference": "PMBOK® Guide 6th Ed. — Plan Risk Management; risk appetite/threshold/strategy tailoring.",
+    "explanation_en": "This is about risk strategy and planning; the best answer aligns the approach with stakeholder risk appetite/thresholds and governance: Estimate at completion (EAC)",
+    "explanation_vi": "Câu này thuộc chiến lược & lập kế hoạch rủi ro (strategy & planning); đáp án đúng bám theo risk appetite/threshold và quản trị dự án: Estimate at completion (EAC)",
+    "pmbok6_knowledge_area": "Project Risk Management / Project Cost Management",
+    "pmbok6_process_group": "Planning",
+    "short": "Chọn đáp án đúng liên quan đến tác động (impact) trong tình huống",
+    "summary": "After a risk review meeting, three key risks are identified as likely to be realized. The project manager requests a risk scenario be calculated to establish the impact on the budget. What forecasting methodology should"
+  },
+  {
+    "question": "A risk manager on a large-scale development project has established detailed risk management procedures. The risk manager wants to ensure their effectiveness and is refining the risk monitoring practices to better track, record, and assess execution success.\n\nWhat metric would be most valuable to track and record the execution quality of risk-related procedures?",
+    "options": [
+      "The degree of variation from the established risk response strategy.",
+      "The number of risks that were identified and successfully mitigated.",
+      "The impact of realized risks on the project objectives and baselines.",
+      "The level of stakeholder satisfaction with the risk-related procedures."
+    ],
+    "correct": 1,
+    "difficulty": "Expert",
+    "domain": "Monitor and Close Risks",
+    "reference": "PMBOK® Guide 6th Ed. — Monitor Risks / Close Project or Phase (risk audits, lessons learned, reporting).",
+    "explanation_en": "This is about monitoring/closing risks and reporting; the best answer reflects the correct next step for control/closure: The number of risks that were identified and successfully mitigated.",
+    "explanation_vi": "Câu này thuộc giám sát & đóng rủi ro (monitor/close); đáp án đúng thể hiện bước tiếp theo đúng để kiểm soát/đóng & báo cáo: The number of risks that were identified and successfully mitigated.",
+    "pmbok6_knowledge_area": "Project Risk Management",
+    "pmbok6_process_group": "Monitoring and Controlling",
+    "short": "Chọn đáp án đúng liên quan đến tác động (impact) trong tình huống",
+    "summary": "A risk manager on a large-scale development project has established detailed risk management procedures. The risk manager wants to ensure their effectiveness and is refining the risk monitoring practices to better track,"
+  },
+  {
+    "question": "A heavy industrial design firm has over US$3 billion in current contract value. As a result of quantitative risk analysis of a geographically separated project, opportunities have been identified and assessed as high priorities for the project.\n\nWhat is the most effective method to capture these opportunities?",
+    "options": [
+      "Include them in the lessons learned.",
+      "Schedule a project team meeting.",
+      "Notify the project stakeholders.",
+      "Establish a contingency reserve."
+    ],
+    "correct": 3,
+    "difficulty": "Expert",
+    "domain": "Risk Analysis",
+    "reference": "PMBOK® Guide 6th Ed. — Perform Qualitative Risk Analysis / Perform Quantitative Risk Analysis (P-I matrix, EMV, Monte Carlo, decision tree).",
+    "explanation_en": "This question is about assessing/prioritizing risks using analysis techniques; the best answer is the option that correctly applies the appropriate analysis method: Establish a contingency reserve.",
+    "explanation_vi": "Câu này thuộc phân tích rủi ro (risk analysis); đáp án đúng là lựa chọn áp dụng đúng kỹ thuật/phương pháp phân tích theo PMI: Establish a contingency reserve.",
+    "pmbok6_knowledge_area": "Project Risk Management / Project Procurement Management",
+    "pmbok6_process_group": "Planning",
+    "short": "Xác định nội dung/khái niệm đúng liên quan đến quỹ dự phòng (contingency reserve), bài học kinh nghiệm (lessons learned) trong tình huống",
+    "summary": "A heavy industrial design firm has over US$3 billion in current contract value. As a result of quantitative risk analysis of a geographically separated project, opportunities have been identified and assessed as high pri"
+  },
+  {
+    "question": "A project manager identifies a risk in a multifunctional project and decides to take no action to address it. What should the risk manager do if the risk occurs and has a negative impact on the project?",
+    "options": [
+      "Escalate the issue to the sponsor.",
+      "Initiate a formal change request.",
+      "Implement a contingency plan.",
+      "Review the project management plan."
+    ],
+    "correct": 2,
+    "difficulty": "Expert",
+    "domain": "Risk Strategy and Planning",
+    "reference": "PMBOK® Guide 6th Ed. — Plan Risk Management; risk appetite/threshold/strategy tailoring.",
+    "explanation_en": "This is about risk strategy and planning; the best answer aligns the approach with stakeholder risk appetite/thresholds and governance: Implement a contingency plan.",
+    "explanation_vi": "Câu này thuộc chiến lược & lập kế hoạch rủi ro (strategy & planning); đáp án đúng bám theo risk appetite/threshold và quản trị dự án: Implement a contingency plan.",
+    "pmbok6_knowledge_area": "Project Risk Management",
+    "pmbok6_process_group": "Planning",
+    "short": "Xác định hành động/bước tiếp theo phù hợp liên quan đến tác động (impact), yêu cầu thay đổi (change request) trong tình huống",
+    "summary": "A project manager identifies a risk in a multifunctional project and decides to take no action to address it. What should the risk manager do if the risk occurs and has a negative impact on the project"
+  },
+  {
+    "question": "While planning a new project, a new project manager finds that the request for proposal (RFP) references several government regulations. However, the project manager discovers that compliance guidelines related to two specific regulations are being created and are not currently available. Senior management advises the project manager that the guidelines will be available when that stage of the project is reached and directs the project manager to continue working on the proposal.\n\nWhat should the project manager do?",
+    "options": [
+      "Delay the project and explain the consequences of non-compliance to senior management.",
+      "Document the interactions with senior management as assumptions in the assumption log.",
+      "Verify the requirements for the government regulations and establish a strategy for compliance.",
+      "Continue working on the proposal and update it as more compliance guidelines are understood."
+    ],
+    "correct": 1,
+    "difficulty": "Expert",
+    "domain": "Risk Strategy and Planning",
+    "reference": "PMBOK® Guide 6th Ed. — Plan Risk Management; risk appetite/threshold/strategy tailoring.",
+    "explanation_en": "This is about risk strategy and planning; the best answer aligns the approach with stakeholder risk appetite/thresholds and governance: Document the interactions with senior management as assumptions in the assumption log.",
+    "explanation_vi": "Câu này thuộc chiến lược & lập kế hoạch rủi ro (strategy & planning); đáp án đúng bám theo risk appetite/threshold và quản trị dự án: Document the interactions with senior management as assumptions in the assumption log.",
+    "pmbok6_knowledge_area": "Project Risk Management",
+    "pmbok6_process_group": "Planning",
+    "short": "Xác định hành động/bước tiếp theo phù hợp trong tình huống",
+    "summary": "While planning a new project, a new project manager finds that the request for proposal (RFP) references several government regulations. However, the project manager discovers that compliance guidelines related to two sp"
+  }
+]

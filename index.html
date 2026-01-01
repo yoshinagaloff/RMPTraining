@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>RMP MOCK TEST - Select Exams</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    .section { margin-top: 16px; }
+    .row { display:flex; gap:10px; flex-wrap: wrap; align-items:center; }
+    .btn {
+      cursor: pointer;
+      border: 0;
+      padding: 10px 14px;
+      border-radius: 10px;
+      font-weight: 700;
+    }
+    .btn-primary { background:#1976d2; color:#fff; }
+    .btn-danger { background:#c62828; color:#fff; }
+    .btn-ghost { background:#eef2f7; color:#223; }
+    .btn:disabled { opacity: .55; cursor:not-allowed; }
+    .hint { color:#555; font-size:.95em; line-height:1.35; }
+    .status { margin-top:10px; font-weight:700; white-space:pre-line; }
+    .status.ok { color: #1b5e20; }
+    .status.err { color: #c62828; }
+
+    .list {
+      margin-top: 10px;
+      border: 1px solid rgba(0,0,0,.08);
+      border-radius: 12px;
+      overflow: hidden;
+      background: #fff;
+    }
+    .list-header, .item {
+      display: grid;
+      grid-template-columns: 34px 1fr 44px; /* compact */
+      gap: 8px;
+      align-items: center;
+      padding: 6px 10px;
+    }
+    .list-header {
+      background: #f3f6fb;
+      font-weight: 800;
+      color: #334;
+      border-bottom: 1px solid rgba(0,0,0,.08);
+    }
+
+    /* zebra */
+    .item { border-bottom: 1px solid rgba(0,0,0,.05); }
+    .item:nth-child(odd) { background: #ffffff; }
+    .item:nth-child(even) { background: #fbfcff; }
+
+    /* hover */
+    .item:hover {
+      background: #eef6ff !important;
+    }
+
+    .item-title { font-weight: 800; }
+    .item-sub { font-size:.9em; color:#667; margin-top:2px; }
+
+    .tag {
+      display:inline-block;
+      font-size: .85em;
+      padding: 3px 8px;
+      border-radius: 999px;
+      background: #eef2f7;
+      color: #223;
+      font-weight: 700;
+      margin-left: 6px;
+    }
+
+    /* 3D red X button */
+    .xbtn {
+      width: 28px;
+      height: 28px;
+      border-radius: 8px;
+      border: 1px solid rgba(0,0,0,.12);
+      cursor: pointer;
+      font-weight: 900;
+      font-size: 16px;
+      line-height: 26px;
+      text-align: center;
+      user-select: none;
+
+      background: linear-gradient(180deg, #ffebee 0%, #ffcdd2 100%);
+      color: #b71c1c;
+      box-shadow:
+        0 2px 0 rgba(183,28,28,.35),
+        0 6px 16px rgba(183,28,28,.15);
+      transform: translateY(0);
+      transition: transform .08s ease, box-shadow .08s ease;
+    }
+    .xbtn:hover {
+      box-shadow:
+        0 2px 0 rgba(183,28,28,.35),
+        0 10px 22px rgba(183,28,28,.22);
+      transform: translateY(-1px);
+    }
+    .xbtn:active {
+      transform: translateY(1px);
+      box-shadow:
+        0 1px 0 rgba(183,28,28,.35),
+        0 4px 10px rgba(183,28,28,.18);
+    }
+
+    .pill {
+      display:inline-block;
+      margin-left: 8px;
+      padding: 2px 8px;
+      border-radius: 999px;
+      font-size: .8em;
+      font-weight: 800;
+      background:#e3f2fd;
+      color:#0d47a1;
+    }
+
+    input[type="file"] {
+      padding: 10px;
+      background:#fff;
+      border-radius: 12px;
+      border: 1px dashed rgba(0,0,0,.2);
+    }
+    .divider { height:1px; background: rgba(0,0,0,.08); margin: 14px 0; }
+  </style>
+</head>
+
+<body>
+  <div class="container" id="main-container">
+    <div class="icon-main">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="#2b7cff">
+        <circle cx="32" cy="32" r="30" stroke="#1976d2" stroke-width="4" fill="#e3f2fd"/>
+        <text x="32" y="42" text-anchor="middle" font-size="32" fill="#1976d2" font-family="Arial" font-weight="bold">?</text>
+      </svg>
+      <span>📚</span>
+    </div>
+
+    <div class="title">RMP MOCK TEST</div>
+
+    <div class="section">
+      <div class="hint">
+        Bạn có thể upload thêm đề (1 hoặc nhiều file .json). Chọn 1 hoặc nhiều đề, rồi nhấn <b>Load Tests</b>.
+      </div>
+    </div>
+
+    <div class="section row">
+      <button class="btn btn-ghost" id="btn-refresh">Refresh List</button>
+      <button class="btn btn-ghost" id="btn-select-all">Select All</button>
+      <button class="btn btn-ghost" id="btn-clear-select">Clear Selection</button>
+      <!-- per request: this button should be gray/normal -->
+      <button class="btn btn-ghost" id="btn-delete-selected">Delete Selected (from list)</button>
+    </div>
+
+    <div class="section">
+      <div class="list" id="exam-list">
+        <div class="list-header">
+          <div></div>
+          <div>Exam</div>
+          <div style="text-align:center;"> </div>
+        </div>
+        <div id="exam-items"></div>
+
+        <div id="add-more-row" style="padding:10px 12px; text-align:center; background:#f9fafc; border-top:1px dashed rgba(0,0,0,.15); cursor:pointer; font-weight:800; color:#1976d2;">
+          ＋ Add more
+        </div>
+      </div>
+
+      <input type="file" id="upload" accept=".json" multiple style="display:none;" />
+
+      <div class="status" id="status-msg"></div>
+    </div>
+
+    <div class="section row" style="justify-content:space-between;">
+      <div class="hint">
+        Selected exams: <b id="selected-count">0</b>
+        <span class="pill" id="selected-questions-pill" style="display:none;"></span>
+      </div>
+      <button class="btn btn-primary" id="btn-load-tests" disabled>Load Tests</button>
+    </div>
+  </div>
+
+  <script>
+    const MANIFEST_URL = "./manifest.json";
+
+    const LS_LIST_KEY = "rmp_exam_list_v1";
+    const LS_DELETED_KEY = "rmp_exam_deleted_v1";
+    const LS_UPLOAD_PREFIX = "rmp_exam_content::";
+    const LS_SELECTED_KEY = "rmp_exam_selected_v1";
+
+    const LOCALSTORAGE_SAFE_BYTES = 4_500_000; // 4.5MB safe margin
+
+    let exams = [];
+    let selectedIds = new Set();
+
+    // UI: add-more triggers hidden file picker (keep behavior unchanged)
+    document.addEventListener("click", (ev) => {
+      const el = ev.target.closest && ev.target.closest("#add-more-row");
+      if (!el) return;
+      const up = document.getElementById("upload");
+      if (up) up.click();
+    });
+
+    const $items = document.getElementById("exam-items");
+    const $status = document.getElementById("status-msg");
+    const $btnLoad = document.getElementById("btn-load-tests");
+    const $selectedCount = document.getElementById("selected-count");
+    const $selectedQuestionsPill = document.getElementById("selected-questions-pill");
+
+    function setStatus(msg, type) {
+      $status.textContent = msg || "";
+      $status.className = "status" + (type ? (" " + type) : "");
+    }
+
+    function safeJsonParse(str) {
+      try { return JSON.parse(str); } catch { return null; }
+    }
+
+    function escapeHtml(s) {
+      return String(s)
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;")
+        .replaceAll("'", "&#039;");
+    }
+
+    function normalizeName(name) {
+      return String(name || "").trim().toLowerCase();
+    }
+
+    function baseNameFromPath(path) {
+      if (!path) return "";
+      const p = String(path).split("?")[0].split("#")[0];
+      const seg = p.split("/").filter(Boolean);
+      return seg.length ? seg[seg.length - 1] : p;
+    }
+
+    function getNavType() {
+      try {
+        const nav = performance.getEntriesByType("navigation");
+        if (nav && nav.length) return nav[0].type; // navigate | reload | back_forward
+      } catch {}
+      return "navigate";
+    }
+
+    function clearAppStorageToDefault() {
+      localStorage.removeItem(LS_LIST_KEY);
+      localStorage.removeItem(LS_DELETED_KEY);
+      localStorage.removeItem(LS_SELECTED_KEY);
+      localStorage.removeItem("rmp_questions");
+      localStorage.removeItem("rmp_selected_exams_meta");
+
+      const keysToRemove = [];
+      for (let i = 0; i < localStorage.length; i++) {
+        const k = localStorage.key(i);
+        if (k && k.startsWith(LS_UPLOAD_PREFIX)) keysToRemove.push(k);
+      }
+      keysToRemove.forEach(k => localStorage.removeItem(k));
+    }
+
+    // Reset rule: only keep state if coming from browser Back
+    (function bootResetRule() {
+      const navType = getNavType();
+      if (navType !== "back_forward") {
+        clearAppStorageToDefault();
+      }
+    })();
+
+    function loadDeletedSet() {
+      const arr = safeJsonParse(localStorage.getItem(LS_DELETED_KEY)) || [];
+      return new Set(arr);
+    }
+
+    function saveDeletedSet(set) {
+      localStorage.setItem(LS_DELETED_KEY, JSON.stringify(Array.from(set)));
+    }
+
+    function loadSavedList() {
+      return safeJsonParse(localStorage.getItem(LS_LIST_KEY)) || [];
+    }
+
+    function saveList(list) {
+      localStorage.setItem(LS_LIST_KEY, JSON.stringify(list));
+    }
+
+    function loadSavedSelection() {
+      const arr = safeJsonParse(localStorage.getItem(LS_SELECTED_KEY)) || [];
+      return new Set(arr);
+    }
+
+    function saveSelection() {
+      localStorage.setItem(LS_SELECTED_KEY, JSON.stringify(Array.from(selectedIds)));
+    }
+
+    function normalizeExam(item) {
+      const id = (item && item.id) ? String(item.id) : ("exam_" + Math.random().toString(16).slice(2));
+      const title = (item && (item.title || item.name)) ? String(item.title || item.name) : id;
+      const src = item && item.src ? String(item.src) : null;
+      const type = item && item.type ? String(item.type) : (src ? "builtin" : "uploaded");
+      const addedAt = item && item.addedAt ? Number(item.addedAt) : Date.now();
+
+      const fileName = src ? baseNameFromPath(src) : (item && item.fileName ? String(item.fileName) : "");
+      const normKey = normalizeName(fileName || title);
+      const normSrc = src ? normalizeName(src) : "";
+
+      return { id, title, src, type, addedAt, fileName, normKey, normSrc };
+    }
+
+    function applyDeletedFilter(list) {
+      const deleted = loadDeletedSet();
+      return list.filter(x => !deleted.has(x.id));
+    }
+
+    function estimateBytesForString(str) {
+      return (str ? str.length : 0) * 2;
+    }
+
+    function renderList() {
+      $items.innerHTML = "";
+
+      if (exams.length === 0) {
+        $items.innerHTML = `
+          <div class="item">
+            <div></div>
+            <div>
+              <div class="item-title">No exams found</div>
+              <div class="item-sub">Kiểm tra manifest.json hoặc upload thêm file JSON.</div>
+            </div>
+            <div></div>
+          </div>
+        `;
+      } else {
+        for (const ex of exams) {
+          const checked = selectedIds.has(ex.id) ? "checked" : "";
+          const tag = ex.type === "builtin"
+            ? `<span class="tag">built-in</span>`
+            : `<span class="tag">uploaded</span>`;
+
+          const sub = ex.type === "builtin"
+            ? `Source: ${ex.src || ""}`
+            : `Source: ${ex.fileName || "localStorage"}`;
+
+          const row = document.createElement("div");
+          row.className = "item";
+          row.innerHTML = `
+            <div>
+              <input type="checkbox" class="chk" data-id="${escapeHtml(ex.id)}" ${checked} />
+            </div>
+            <div>
+              <div class="item-title">${escapeHtml(ex.title)} ${tag}</div>
+             <!-- <div class="item-sub">${escapeHtml(sub)}</div> -->
+            </div>
+            <div style="display:flex;justify-content:center;">
+              <button class="xbtn" title="Delete" data-action="xdelete" data-id="${escapeHtml(ex.id)}">✕</button>
+            </div>
+          `;
+          $items.appendChild(row);
+        }
+      }
+
+      updateSelectedUI();
+    }
+
+    function updateSelectedUI(extraTotalQuestions) {
+      $selectedCount.textContent = String(selectedIds.size);
+      $btnLoad.disabled = selectedIds.size === 0;
+
+      if (typeof extraTotalQuestions === "number") {
+        $selectedQuestionsPill.style.display = "inline-block";
+        $selectedQuestionsPill.textContent = `Total questions: ${extraTotalQuestions}`;
+      } else {
+        $selectedQuestionsPill.style.display = "none";
+        $selectedQuestionsPill.textContent = "";
+      }
+    }
+
+    function normalizeQuestions(parsed) {
+      if (!parsed) return [];
+      if (Array.isArray(parsed)) return parsed;
+      if (parsed && typeof parsed === "object") {
+        if (Array.isArray(parsed.questions)) return parsed.questions;
+        if (Array.isArray(parsed.data)) return parsed.data;
+        if (Array.isArray(parsed.items)) return parsed.items;
+      }
+      return [];
+    }
+
+    async function readExamQuestions(exam) {
+      if (exam.type === "uploaded") {
+        const raw = localStorage.getItem(LS_UPLOAD_PREFIX + exam.id);
+        const parsed = safeJsonParse(raw);
+        return normalizeQuestions(parsed);
+      } else {
+        if (!exam.src) return [];
+        const res = await fetch(exam.src, { cache: "no-store" });
+        if (!res.ok) throw new Error("cannot_fetch_exam");
+        const parsed = await res.json();
+        return normalizeQuestions(parsed);
+      }
+    }
+
+    function buildCombinedQuestions(selectedExams, questionsByExam) {
+      const combined = [];
+      for (const ex of selectedExams) {
+        const arr = questionsByExam.get(ex.id) || [];
+        for (const q of arr) {
+          if (q && typeof q === "object") {
+            combined.push({ ...q, __exam_id: ex.id, __exam_title: ex.title });
+          } else {
+            combined.push(q);
+          }
+        }
+      }
+      return combined;
+    }
+
+    function findDuplicate(existingList, candidate) {
+      const cSrc = candidate.normSrc || "";
+      const cKey = candidate.normKey || normalizeName(candidate.title);
+
+      for (const ex of existingList) {
+        if (cSrc && ex.normSrc && ex.normSrc === cSrc) return ex;
+        if (cKey && ex.normKey && ex.normKey === cKey) return ex;
+        if (normalizeName(ex.title) === normalizeName(candidate.title)) return ex;
+      }
+      return null;
+    }
+
+    function deleteExamById(examId) {
+      const ex = exams.find(x => x.id === examId);
+      if (!ex) return;
+
+      const deleted = loadDeletedSet();
+      deleted.add(examId);
+      saveDeletedSet(deleted);
+
+      if (ex.type === "uploaded") {
+        localStorage.removeItem(LS_UPLOAD_PREFIX + ex.id);
+        const saved = loadSavedList().map(normalizeExam).filter(x => x.id !== ex.id);
+        saveList(saved);
+      }
+
+      selectedIds.delete(examId);
+      saveSelection();
+      init();
+    }
+
+    async function estimateTotalQuestions() {
+      if (selectedIds.size === 0) {
+        updateSelectedUI();
+        return;
+      }
+      let total = 0;
+      for (const id of selectedIds) {
+        const ex = exams.find(x => x.id === id);
+        if (!ex) continue;
+        try {
+          const qs = await readExamQuestions(ex);
+          total += (qs || []).length;
+        } catch {}
+      }
+      updateSelectedUI(total);
+    }
+
+    async function fetchManifest() {
+      try {
+        const res = await fetch(MANIFEST_URL, { cache: "no-store" });
+        if (!res.ok) throw new Error("manifest_not_found");
+        const data = await res.json();
+        if (!Array.isArray(data)) throw new Error("manifest_invalid");
+        return data.map(d => normalizeExam({ ...d, type: "builtin" }));
+      } catch {
+        return null;
+      }
+    }
+
+    function mergeBuiltinAndSaved(builtinList, savedList) {
+      const combined = [
+        ...(builtinList || []),
+        ...(savedList || [])
+      ].map(normalizeExam);
+
+      combined.sort((a,b) => (a.addedAt || 0) - (b.addedAt || 0));
+      return combined;
+    }
+
+    async function init() {
+      setStatus("Loading exam list...", "");
+
+      const builtin = await fetchManifest();
+      const saved = loadSavedList().map(normalizeExam);
+
+      let combined = [];
+      if (builtin === null) {
+        combined = mergeBuiltinAndSaved([], saved);
+        exams = applyDeletedFilter(combined);
+
+        selectedIds = loadSavedSelection();
+        const existingIds = new Set(exams.map(e => e.id));
+        selectedIds = new Set(Array.from(selectedIds).filter(id => existingIds.has(id)));
+        saveSelection();
+
+        setStatus("Không tìm thấy manifest.json (hoặc file không hợp lệ). App chỉ hiển thị các đề đã upload trước đó.", "err");
+        renderList();
+        return;
+      }
+
+      combined = mergeBuiltinAndSaved(builtin, saved);
+      exams = applyDeletedFilter(combined);
+
+      saveList(saved);
+
+      selectedIds = loadSavedSelection();
+      const existingIds = new Set(exams.map(e => e.id));
+      selectedIds = new Set(Array.from(selectedIds).filter(id => existingIds.has(id)));
+      saveSelection();
+
+      setStatus("Ready. Select exams and click Load Tests.", "ok");
+      renderList();
+      if (selectedIds.size > 0) estimateTotalQuestions();
+    }
+
+    document.getElementById("btn-refresh").addEventListener("click", () => init());
+
+    document.getElementById("btn-select-all").addEventListener("click", () => {
+      selectedIds = new Set(exams.map(e => e.id));
+      saveSelection();
+      renderList();
+      estimateTotalQuestions();
+      setStatus("Selected all exams.", "ok");
+    });
+
+    document.getElementById("btn-clear-select").addEventListener("click", () => {
+      selectedIds.clear();
+      saveSelection();
+      renderList();
+      updateSelectedUI();
+      setStatus("", "");
+    });
+
+    document.getElementById("btn-delete-selected").addEventListener("click", () => {
+      if (selectedIds.size === 0) return;
+
+      const ids = Array.from(selectedIds);
+      for (const id of ids) deleteExamById(id);
+
+      selectedIds.clear();
+      saveSelection();
+      setStatus("Deleted selected exams from list.", "ok");
+      init();
+    });
+
+    document.getElementById("exam-items").addEventListener("change", (e) => {
+      const chk = e.target.closest(".chk");
+      if (!chk) return;
+      const id = chk.getAttribute("data-id");
+      if (!id) return;
+
+      if (chk.checked) selectedIds.add(id);
+      else selectedIds.delete(id);
+
+      saveSelection();
+      updateSelectedUI();
+      estimateTotalQuestions();
+    });
+
+    document.getElementById("exam-items").addEventListener("click", (e) => {
+      const x = e.target.closest(".xbtn");
+      if (!x) return;
+      const id = x.getAttribute("data-id");
+      if (!id) return;
+      deleteExamById(id);
+      setStatus("Deleted.", "ok");
+    });
+
+    document.getElementById("upload").addEventListener("change", async function (e) {
+      const files = Array.from(e.target.files || []);
+      if (files.length === 0) return;
+
+      setStatus(`Uploading ${files.length} file(s)...`, "");
+
+      const saved = loadSavedList().map(normalizeExam);
+
+      let addedCount = 0;
+      let overwroteCount = 0;
+
+      for (const file of files) {
+        const text = await file.text();
+        const parsed = safeJsonParse(text);
+
+        if (!parsed) {
+          setStatus(`Invalid JSON: ${file.name}`, "err");
+          continue;
+        }
+
+        const newId = "upload_" + Date.now() + "_" + Math.random().toString(16).slice(2);
+        const title = file.name.replace(/\.json$/i, "");
+        const candidate = normalizeExam({ id: newId, title, type:"uploaded", addedAt:Date.now(), fileName:file.name });
+
+        const dup = findDuplicate(exams, candidate);
+
+        if (dup) {
+          const dupName = dup.fileName || baseNameFromPath(dup.src) || dup.title || "unknown";
+          const ok = confirm(`Đã load rồi: ${dupName}\nBạn có muốn ghi đè không?`);
+          if (!ok) continue;
+
+          if (dup.type === "uploaded") {
+            localStorage.removeItem(LS_UPLOAD_PREFIX + dup.id);
+            for (let i = saved.length - 1; i >= 0; i--) {
+              if (saved[i].id === dup.id) saved.splice(i, 1);
+            }
+          } else {
+            const deleted = loadDeletedSet();
+            deleted.add(dup.id);
+            saveDeletedSet(deleted);
+            selectedIds.delete(dup.id);
+          }
+
+          try {
+            localStorage.setItem(LS_UPLOAD_PREFIX + newId, JSON.stringify(parsed));
+          } catch {
+            setStatus("Vượt bộ nhớ localStorage. Không thể lưu thêm đề.", "err");
+            break;
+          }
+
+          saved.push(candidate);
+          selectedIds.add(newId);
+          overwroteCount++;
+          continue;
+        }
+
+        try {
+          localStorage.setItem(LS_UPLOAD_PREFIX + newId, JSON.stringify(parsed));
+        } catch {
+          setStatus("Vượt bộ nhớ localStorage. Không thể lưu thêm đề.", "err");
+          break;
+        }
+
+        saved.push(candidate);
+        selectedIds.add(newId);
+        addedCount++;
+      }
+
+      saveList(saved);
+      saveSelection();
+      e.target.value = "";
+
+      await init();
+      renderList();
+
+      if (overwroteCount > 0 || addedCount > 0) {
+        setStatus(`Added: ${addedCount}, Overwrote: ${overwroteCount}. Auto-selected new items.`, "ok");
+      } else {
+        setStatus("No exams added.", "err");
+      }
+
+      estimateTotalQuestions();
+    });
+
+    document.getElementById("btn-load-tests").addEventListener("click", async () => {
+      if (selectedIds.size === 0) return;
+
+      const selected = exams.filter(e => selectedIds.has(e.id));
+      setStatus(`Loading ${selected.length} selected exam(s)...`, "");
+
+      try {
+        const questionsByExam = new Map();
+        let sampleBytes = 0;
+
+        for (const ex of selected) {
+          const qs = await readExamQuestions(ex);
+          questionsByExam.set(ex.id, qs);
+
+          const slice = (qs || []).slice(0, 10);
+          sampleBytes += estimateBytesForString(JSON.stringify(slice));
+        }
+
+        const combined = buildCombinedQuestions(selected, questionsByExam);
+        const combinedStr = JSON.stringify(combined);
+        const bytes = estimateBytesForString(combinedStr);
+
+        const sampleQCount = selected.reduce((acc, ex) => {
+          const qs = questionsByExam.get(ex.id) || [];
+          return acc + Math.min(10, qs.length);
+        }, 0);
+
+        let avgBytesPerQ = 3000;
+        if (sampleQCount > 0 && sampleBytes > 0) {
+          avgBytesPerQ = Math.max(1, Math.floor(sampleBytes / sampleQCount));
+        }
+
+        const maxQuestions = Math.floor(LOCALSTORAGE_SAFE_BYTES / avgBytesPerQ);
+
+        if (bytes > LOCALSTORAGE_SAFE_BYTES) {
+          setStatus(
+            `Vượt bộ nhớ localStorage vì đề dồn quá nhiều.\n` +
+            `Không vượt ~${maxQuestions} câu.\n` +
+            `Hãy chọn ít đề hơn.`,
+            "err"
+          );
+          return;
+        }
+
+        try {
+          localStorage.setItem("rmp_questions", combinedStr);
+          localStorage.setItem("rmp_selected_exams_meta", JSON.stringify(
+            selected.map(x => ({ id: x.id, title: x.title, type: x.type, src: x.src || null }))
+          ));
+        } catch {
+          setStatus(
+            `Vượt bộ nhớ localStorage vì đề dồn quá nhiều.\n` +
+            `Không vượt ~${maxQuestions} câu.\n` +
+            `Hãy chọn ít đề hơn.`,
+            "err"
+          );
+          return;
+        }
+
+        setStatus(`Success. Total questions loaded: ${combined.length}. Redirecting...`, "ok");
+        setTimeout(() => {
+          window.location.href = "questionsList.html";
+        }, 450);
+
+      } catch {
+        setStatus("Failed to load selected exams. Check manifest/src paths or JSON format.", "err");
+      }
+    });
+
+    init();
+  </script>
+</body>
+</html>

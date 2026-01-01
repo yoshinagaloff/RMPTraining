@@ -1,0 +1,182 @@
+[
+{
+  "question": "Which of the following demonstrates that a company's risk management process is successful?",
+  "options": [
+    "Projects deemed overly risky are given inflated timelines.",
+    "The number of identified risks has decreased each quarter.",
+    "Profitability has increased due to risk management strategies.",
+    "Additional resources were allocated to finish projects faster."
+  ],
+  "correct": 2,
+  "difficulty": "Moderate",
+  "domain": "Monitor and Close Risks",
+  "short": "Đánh giá dấu hiệu cho thấy quy trình quản lý rủi ro của công ty thành công.",
+  "reference": "PMI Risk Management (RMP) /// Monitoring & Controlling Risks (general)",
+  "explanation_en": "Increased profitability attributable to risk management strategies indicates effective risk decisions (reducing threats and enabling opportunities) that improve business outcomes. The other options do not necessarily reflect success and can be symptoms of poor planning or inefficient behavior.",
+  "explanation_vi": "Lợi nhuận tăng nhờ các chiến lược quản lý rủi ro cho thấy tổ chức ra quyết định tốt (giảm thiểu đe doạ và tận dụng cơ hội), tạo kết quả kinh doanh tích cực. Các lựa chọn khác không phản ánh trực tiếp sự thành công của quản lý rủi ro.",
+  "pmbok6_knowledge_area": "Project Risk Management",
+  "pmbok6_process_group": "Monitoring and Controlling"
+},
+{
+  "question": "A risk manager is monitoring and controlling risks in a project. The risk manager is preparing a status report for stakeholders, each with different interests in various components of the project's risk management plan.\n\nWhat should the risk manager do to create a succinct report that effectively summarizes the current status of each risk management activity?",
+  "options": [
+    "Categorize items in the project's risk register and ensure that a copy of the updates is appended to the status report.",
+    "Supply the stakeholders with notes from project review meetings to ensure that they can track the relevant components.",
+    "Ensure that project artifacts are available to stakeholders in a self-service database instead of regular status reporting.",
+    "Prepare a visual representation of active risk management efforts against baselines from the project management plan."
+  ],
+  "correct": 3,
+  "difficulty": "Moderate",
+  "domain": "Monitor and Close Risks",
+  "short": "Tạo báo cáo trạng thái rủi ro súc tích cho nhiều stakeholder: ưu tiên trực quan hóa so với baseline.",
+  "reference": "PMI Risk Reporting / Work Performance Reporting (general)",
+  "explanation_en": "A visual representation mapped against baselines succinctly communicates status and trends and supports transparency. Appending the entire risk register or meeting notes is not succinct; a self-service database shifts the burden to stakeholders and does not replace an effective status report.",
+  "explanation_vi": "Trực quan hóa nỗ lực quản lý rủi ro so với baseline giúp tóm tắt nhanh tình trạng hiện tại và xu hướng, tăng minh bạch. Đính kèm risk register hoặc meeting notes sẽ quá dài; cơ chế self-service không thay thế báo cáo trạng thái hiệu quả.",
+  "pmbok6_knowledge_area": "Project Risk Management / Project Communications Management",
+  "pmbok6_process_group": "Monitoring and Controlling"
+},
+{
+  "question": "A risk manager has identified and planned responses for all identified project risks. When preparing to close out several project risks, the risk manager realizes that some responses have not been fully implemented as planned.\n\nWhat should the risk manager do?",
+  "options": [
+    "Review why the risk responses have not been implemented and determine if they are still appropriate and effective.",
+    "Designate new risk owners to monitor response actions and identify emergent and secondary implementation risks.",
+    "Perform a series of interviews with subject matter experts (SMEs) to understand the current risk categorization.",
+    "Transfer the risks to the appropriate functional teams so that they can immediately identify alternate solutions."
+  ],
+  "correct": 0,
+  "difficulty": "Moderate",
+  "domain": "Monitor and Close Risks",
+  "short": "Khi chuẩn bị đóng rủi ro nhưng response chưa triển khai đầy đủ: xem nguyên nhân và đánh giá còn phù hợp/hiệu quả không.",
+  "reference": "PMI Risk Monitoring & Control: assess effectiveness of responses (general)",
+  "explanation_en": "Before closing risks, the risk manager should determine why actions were not completed and whether the planned responses remain valid. This supports corrective action or replanning and ensures risks are actually managed, not just administratively closed.",
+  "explanation_vi": "Trước khi đóng rủi ro, cần hiểu vì sao response chưa thực hiện và đánh giá response còn phù hợp/hiệu quả không. Từ đó mới có hành động khắc phục hoặc điều chỉnh kế hoạch, tránh đóng rủi ro “trên giấy”.",
+  "pmbok6_knowledge_area": "Project Risk Management",
+  "pmbok6_process_group": "Monitoring and Controlling"
+},
+{
+  "question": "The expected monetary value of a project is above US$1 million. The risk manager has performed an analysis to evaluate the degree of variation from the baseline.\n\nAfter completing the analysis, what should the risk manager do next?",
+  "options": [
+    "Meet with senior leadership and present the statistical data.",
+    "Initiate a formal change request to increase the project budget.",
+    "Document the results and update the risk management plan.",
+    "Update the issue log and communication management plan."
+  ],
+  "correct": 2,
+  "difficulty": "Moderate",
+  "domain": "Monitor and Close Risks",
+  "short": "Sau khi phân tích mức độ lệch so với baseline: ghi nhận kết quả và cập nhật risk management plan.",
+  "reference": "PMI: update plans/documents based on monitoring results (general)",
+  "explanation_en": "The immediate next step is to document findings and update the risk management plan so the project has an official, controlled record and guidance for next actions. Escalation or change requests may follow, but first the plan and records must be updated.",
+  "explanation_vi": "Bước tiếp theo nên là ghi nhận kết quả và cập nhật risk management plan để có tài liệu chính thức định hướng hành động tiếp theo. Việc báo cáo lãnh đạo hay tạo change request có thể làm sau, nhưng trước hết cần cập nhật kế hoạch/tài liệu.",
+  "pmbok6_knowledge_area": "Project Risk Management",
+  "pmbok6_process_group": "Monitoring and Controlling"
+},
+{
+  "question": "A risk manager has joined a project that is in progress and notices that several risk responses have cost more than expected and planned for.\n\nWhat should the risk manager do to address this?",
+  "options": [
+    "Identify the root cause of the cost overruns and develop a corrective action plan.",
+    "Review the risk response plan and revise it by adding additional funds for all responses.",
+    "Meet with the risk action owners for the risks that are over budget and reprimand them.",
+    "Review the risk responses for remaining risks and change risk response methodologies."
+  ],
+  "correct": 0,
+  "difficulty": "Moderate",
+  "domain": "Monitor and Close Risks",
+  "short": "Risk responses vượt chi phí: tìm nguyên nhân gốc và lập kế hoạch hành động khắc phục.",
+  "reference": "PMI: root cause analysis + corrective action (general)",
+  "explanation_en": "Root-cause analysis followed by a corrective action plan addresses the problem systematically. Adding funds everywhere is wasteful, reprimanding is not corrective, and changing methodologies without diagnosis is premature.",
+  "explanation_vi": "Phân tích nguyên nhân gốc rồi lập kế hoạch khắc phục là cách xử lý hệ thống. Cộng thêm ngân sách cho mọi response là lãng phí, khiển trách không giải quyết vấn đề, và đổi phương pháp khi chưa chẩn đoán là vội vàng.",
+  "pmbok6_knowledge_area": "Project Risk Management / Project Cost Management",
+  "pmbok6_process_group": "Monitoring and Controlling"
+},
+{
+  "question": "Which of the following techniques are most helpful when monitoring and controlling risks?",
+  "options": [
+    "Status review meetings, trend analysis, earned value analysis, McGregor's analysis, and defect inspection.",
+    "Status review meetings, variance analysis, trend analysis, earned value analysis, inspection, and control charts.",
+    "Status review meetings, control charts, Inspection, defect repair, Maslow's analysis, and trend analysis.",
+    "Variance analysis, trend analysis, earned value analysis, Maslow's analysis, control charts, and brainstorming."
+  ],
+  "correct": 1,
+  "difficulty": "Moderate",
+  "domain": "Monitor and Close Risks",
+  "short": "Các kỹ thuật hữu ích để monitor & control risks: status review, variance/trend/EVA, inspection, control charts.",
+  "reference": "PMI: Monitor Risks tools/techniques (general)",
+  "explanation_en": "Monitoring and controlling risks relies on reviews and performance analysis (variance/trend/EVM), plus inspection and control charts for integrity of reporting and detecting deviations. The other options include unrelated motivational theories or brainstorming (more for identification).",
+  "explanation_vi": "Giai đoạn monitor & control rủi ro cần status review và phân tích hiệu suất (variance/trend/EVM), kèm inspection và control charts để phát hiện lệch và đảm bảo tính tin cậy báo cáo. Các lựa chọn khác lẫn các mô hình động lực (Maslow/McGregor) hoặc brainstorming (nghiêng về identify).",
+  "pmbok6_knowledge_area": "Project Risk Management / Project Quality Management",
+  "pmbok6_process_group": "Monitoring and Controlling"
+},
+{
+  "question": "A risk manager is conducting a risk audit review at project completion. Which of the following represents the order in which steps should be performed to complete the full risk audit review?",
+  "options": [
+    "Identify participants, conduct risk status meetings, document findings, and update the risk management plan.",
+    "Arrange risk audit review, identify participants, prepare recommendations, and update risk management plan.",
+    "Identify participants, conduct risk audit reviews, prepare recommendations, and document the risk audit report.",
+    "Prepare recommendations, identify participants, conduct risk audit reviews, and document the risk audit report."
+  ],
+  "correct": 2,
+  "difficulty": "Moderate",
+  "domain": "Monitor and Close Risks",
+  "short": "Thứ tự thực hiện risk audit khi kết thúc dự án: xác định người tham gia → audit → khuyến nghị → báo cáo audit.",
+  "reference": "PMI: Risk audit and lessons learned (general)",
+  "explanation_en": "A complete risk audit at closeout should first identify participants, then perform the audit, then prepare recommendations based on findings, and finally document the audit report for organizational learning.",
+  "explanation_vi": "Risk audit đầy đủ cần: xác định người tham gia trước, sau đó thực hiện audit, rồi chuẩn bị khuyến nghị dựa trên kết quả, và cuối cùng lập báo cáo audit để phục vụ lessons learned/cải tiến quy trình.",
+  "pmbok6_knowledge_area": "Project Risk Management",
+  "pmbok6_process_group": "Closing"
+},
+{
+  "question": "Midway through project implementation, a risk manager realizes that some of the risk responses have not been timely and several unidentified risks have emerged. This is causing increased levels of risk exposure and the risk manager is concerned may exceed anticipated project risk exposure.\n\nWhat should the risk manager do?",
+  "options": [
+    "Meet with the team to identify what went wrong and increase the risk exposure threshold expectancy.",
+    "Revisit risk prioritization metrics and update them since the probability and impact must have changed.",
+    "Assess the likelihood and impact of each risk and determine if the current thresholds are still relevant.",
+    "Examine the planned risk responses and alter them to reflect the delay in response implementation."
+  ],
+  "correct": 2,
+  "difficulty": "Moderate",
+  "domain": "Monitor and Close Risks",
+  "short": "Giữa dự án: response chậm + rủi ro mới xuất hiện → đánh giá lại xác suất/tác động và xem thresholds còn phù hợp không.",
+  "reference": "PMI: reassess risk exposure and thresholds during monitoring (general)",
+  "explanation_en": "First reassess likelihood/impact and validate whether thresholds remain appropriate. That determines whether exposure truly exceeds tolerance and guides subsequent changes to prioritization or responses.",
+  "explanation_vi": "Cần đánh giá lại xác suất/tác động từng rủi ro và xác nhận thresholds còn phù hợp không. Đây là cơ sở để kết luận mức phơi nhiễm rủi ro có vượt ngưỡng hay không và quyết định bước tiếp theo (ưu tiên/response).",
+  "pmbok6_knowledge_area": "Project Risk Management",
+  "pmbok6_process_group": "Monitoring and Controlling"
+},
+{
+  "question": "While monitoring project risks for a large-scale construction project, the project team identifies that several events have caused the scope, schedule, and cost to increase substantially. This increase has a substantial impact on the project.\n\nWhat outputs must be updated and/or created to address the identified risks and their potential impact on the project?",
+  "options": [
+    "Project management plan, vendor contracts, and human resource plans",
+    "Change requests, project management plans, and project baselines",
+    "Bid Documents, budget management plans, and project risk documents",
+    "Enterprise environmental factors and the project management plan"
+  ],
+  "correct": 1,
+  "difficulty": "Moderate",
+  "domain": "Monitor and Close Risks",
+  "short": "Rủi ro làm tăng scope/schedule/cost đáng kể: cần tạo change request và cập nhật plans + baselines.",
+  "reference": "PMI: integrated change control + baseline updates (general)",
+  "explanation_en": "Significant impacts to scope/schedule/cost require formal change requests and subsequent updates to the project management plan and the affected baselines once approved. This ensures governance and alignment across the project.",
+  "explanation_vi": "Khi rủi ro làm thay đổi lớn scope/schedule/cost, cần lập change request và sau khi được duyệt thì cập nhật project management plan cùng các baselines liên quan để đảm bảo kiểm soát thay đổi và đồng bộ toàn dự án.",
+  "pmbok6_knowledge_area": "Project Risk Management / Project Integration Management",
+  "pmbok6_process_group": "Monitoring and Controlling"
+},
+{
+  "question": "A risk manager for a large-scale construction project received a call from the project owner who is concerned about not receiving the latest update on the project's risk exposure status.\n\nWhat should the risk manager do first?",
+  "options": [
+    "Analyze the root cause of this communication error.",
+    "Review and update the communications management plan.",
+    "Collect and analyze the work performance information.",
+    "Provide the project owner with the work performance report."
+  ],
+  "correct": 3,
+  "difficulty": "Moderate",
+  "domain": "Monitor and Close Risks",
+  "short": "Owner không nhận update mới nhất về risk exposure: bước đầu tiên là cung cấp work performance report ngay.",
+  "reference": "PMI: address immediate stakeholder information need first (general)",
+  "explanation_en": "First satisfy the immediate need by providing the latest work performance report/status. After that, investigate the communication breakdown and adjust the communications approach if needed.",
+  "explanation_vi": "Ưu tiên đầu tiên là đáp ứng nhu cầu thông tin ngay bằng cách cung cấp work performance report/trạng thái mới nhất. Sau đó mới phân tích nguyên nhân lỗi giao tiếp và cập nhật communications plan nếu cần.",
+  "pmbok6_knowledge_area": "Project Risk Management / Project Communications Management",
+  "pmbok6_process_group": "Monitoring and Controlling"
+}
+]

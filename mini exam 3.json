@@ -1,0 +1,192 @@
+[
+    {
+      "no": 1,
+      "question": "The engineering department offers the project manager some highly skilled resources for the same cost as those currently on the project team. What should the project manager do next to handle this situation?",
+      "options": [
+        "Initiate a change request to prevent a delay in getting the new resources onboarded.",
+        "Analyze the impact of replacing the resources and exploit the opportunity if appropriate.",
+        "Decline the offer to avoid changes in project team setup and stakeholder disruption.",
+        "Leverage the engineering department's resources to replace less experienced resources."
+      ],
+      "correct": 1,
+      "difficulty": "Easy",
+      "domain": "Risk Strategy / Opportunity",
+      "short": "Cơ hội có resource giỏi hơn cùng chi phí → phải phân tích tác động (team dynamics/transition/knowledge) rồi mới quyết định exploit hay không.",
+      "explanation_en": "This is an opportunity. The project manager should assess impacts (skills fit, knowledge transfer, disruption, schedule onboarding) and then exploit only if it improves outcomes without unacceptable disruption.",
+      "explanation_vi": "Đây là opportunity. PM cần đánh giá tác động (phù hợp kỹ năng, chuyển giao kiến thức, xáo trộn team, thời gian onboard) rồi mới quyết định có exploit không.",
+      "reference": "PMBOK 6/7: Risk responses for opportunities (exploit/enhance/share/accept); decision-making based on impact analysis.",
+      "pmbok6_knowledge_area": "Project Risk Management",
+      "pmbok6_process_group": "Planning / Monitoring and Controlling"
+    },
+    {
+      "no": 2,
+      "question": "When considering human factors of risk management, a project manager is concerned that a few members of the organization have the power to greatly influence risk attitudes relative to the risk process at individual and group levels. This could cause sudden shifts in organizational risk attitudes based on the personal perceptions and interests of only a few people.\n\nWhat should the project manager do to manage the influence these individuals have on the risk management process?",
+      "options": [
+        "Require all stakeholders and executive leadership to commit to a standardized organizational risk attitude.",
+        "Dedicate a team member to monitor changes in individual risk attitudes throughout the project lifecycle.",
+        "Facilitate a meeting with highly influential individuals and request that they do not share their risk attitudes.",
+        "Establish a collaborative and transparent approach to risk management that engages all stakeholders."
+      ],
+      "correct": 3,
+      "difficulty": "Moderate",
+      "domain": "Risk Culture / Stakeholder Engagement",
+      "short": "Giảm ảnh hưởng của vài cá nhân quyền lực bằng cách minh bạch + hợp tác + lôi kéo đầy đủ stakeholders vào risk process.",
+      "explanation_en": "A transparent, collaborative approach broadens participation, reduces dominance of a few voices, and stabilizes risk attitudes through shared understanding and governance.",
+      "explanation_vi": "Cách tốt nhất là tạo cơ chế minh bạch và hợp tác để mọi stakeholders cùng tham gia, tránh việc vài cá nhân chi phối thái độ rủi ro của cả tổ chức.",
+      "reference": "PMI risk culture concepts; Stakeholder engagement and communication planning (PMBOK 6/7).",
+      "pmbok6_knowledge_area": "Project Risk Management / Project Stakeholder Management / Project Communications Management",
+      "pmbok6_process_group": "Planning / Monitoring and Controlling"
+    },
+    {
+      "no": 3,
+      "question": "The risk manager of a medium-sized project is performing risk response planning with the project team. The proposed action for one specific, primary risk introduces a secondary risk.\n\nWhat should the risk manager and the risk owner of the primary risk do about this situation?",
+      "options": [
+        "Take no immediate action, as secondary risks are not important for the successful execution of a medium-sized project.",
+        "Inform the project manager about the occurrence of a secondary risk and propose to increase the management reserve.",
+        "Perform an analysis to calculate the estimated required budget for the secondary risk and propose to increase the management reserve accordingly.",
+        "Produce an agreed risk description, assess the probability and impacts, and select an appropriate response strategy for the secondary risk."
+      ],
+      "correct": 3,
+      "difficulty": "Easy",
+      "domain": "Secondary Risks",
+      "short": "Secondary risk do response gây ra → xử như risk bình thường: mô tả, đánh giá P/I, chọn response phù hợp.",
+      "explanation_en": "Secondary risks must be documented and evaluated (probability/impact) and then an appropriate response selected, just like any other risk.",
+      "explanation_vi": "Secondary risks cũng phải được ghi nhận và đánh giá (P/I) rồi chọn chiến lược response phù hợp như các risk khác.",
+      "reference": "PMBOK 6: Plan Risk Responses (secondary risks, residual risks, risk register updates).",
+      "pmbok6_knowledge_area": "Project Risk Management",
+      "pmbok6_process_group": "Planning"
+    },
+    {
+      "no": 4,
+      "question": "A project manager has received several complaints from stakeholders that they are confused by the complex risk-related data they are receiving. Stakeholders are having trouble determining the relative importance of risks and are concerned about risk prioritization.\n\nWhat tool can the project manager use to clarify this information?",
+      "options": [
+        "Risk regression analysis",
+        "Alternatives analysis",
+        "Probability and impact matrix",
+        "Assumption and constraint analysis"
+      ],
+      "correct": 2,
+      "difficulty": "Easy",
+      "domain": "Qualitative Risk Analysis",
+      "short": "Stakeholders rối vì dữ liệu risk phức tạp → dùng Probability & Impact Matrix để trực quan hóa và ưu tiên hóa.",
+      "explanation_en": "A probability and impact matrix provides a clear visual way to show relative priority of risks and supports consistent qualitative prioritization.",
+      "explanation_vi": "Ma trận xác suất–tác động giúp trực quan hóa mức ưu tiên rủi ro, làm rõ cái nào quan trọng hơn để stakeholders dễ hiểu.",
+      "reference": "PMBOK 6: Perform Qualitative Risk Analysis (Probability & Impact Matrix).",
+      "pmbok6_knowledge_area": "Project Risk Management",
+      "pmbok6_process_group": "Planning"
+    },
+    {
+      "no": 5,
+      "question": "A project team is preparing for an upcoming project and has identified project risks and developed risk response strategies to address risks should they materialize. What should the project team do next before finalizing the risk response planning process?",
+      "options": [
+        "Add the risk response strategies to the project management plan and document the predicted timeline and budget overage.",
+        "Ensure that the risk response plans are realistic, can be implemented successfully, and are agreed upon by all parties.",
+        "Compile a list of all relevant stakeholders and notify them that the team will be finalizing the risk response strategies.",
+        "Issue a change request to modify the scope, cost, and schedule baselines to support the newly identified response strategies."
+      ],
+      "correct": 1,
+      "difficulty": "Easy",
+      "domain": "Plan Risk Responses",
+      "short": "Trước khi finalize: kiểm chứng response có khả thi, thực tế, implement được và được các bên đồng thuận.",
+      "explanation_en": "Before finalizing, validate feasibility and stakeholder agreement; otherwise the response may not be executable when the risk occurs.",
+      "explanation_vi": "Trước khi chốt, phải đảm bảo response khả thi, thực tế, triển khai được và được các bên chấp nhận; nếu không thì khi risk xảy ra response sẽ “vô dụng”.",
+      "reference": "PMBOK 6: Plan Risk Responses (agree/approve response actions; ownership and feasibility).",
+      "pmbok6_knowledge_area": "Project Risk Management",
+      "pmbok6_process_group": "Planning"
+    },
+    {
+      "no": 6,
+      "question": "Company A sells a new machine to Company B. During the risk assessment, the stakeholders of Company A do not want the risk of transporting the machine from their facility. Instead, they want Company B to take responsibility and liability once the machine leaves Company A's facility.\nWhat strategy is Company A using to deal with the risk?",
+      "options": [
+        "Avoid",
+        "Transfer",
+        "Mitigate",
+        "Accept"
+      ],
+      "correct": 1,
+      "difficulty": "Easy",
+      "domain": "Threat Response Strategy",
+      "short": "Đẩy trách nhiệm & liability cho bên khác → Transfer.",
+      "explanation_en": "Transferring shifts impact and responsibility to a third party via contracts/agreements (here, Company B takes liability after shipment).",
+      "explanation_vi": "Transfer là chuyển giao tác động và trách nhiệm cho bên thứ ba qua thỏa thuận/hợp đồng (ở đây B chịu trách nhiệm sau khi rời nhà máy A).",
+      "reference": "PMBOK 6: Plan Risk Responses (threat strategies: avoid, transfer, mitigate, accept).",
+      "pmbok6_knowledge_area": "Project Risk Management",
+      "pmbok6_process_group": "Planning"
+    },
+    {
+      "no": 7,
+      "question": "The senior risk manager hears that critical deliverables are delayed because a key subject matter expert (SME) does not have enough time to allocate to the tasks. The risk manager sees this as an opportunity to coach the project manager.\n\nWhat should the risk manager review with the project manager?",
+      "options": [
+        "Scope reduction to reduce reliance on experts.",
+        "Implementing risk response strategies.",
+        "Risk identification process and participation.",
+        "Planned and approved project schedules."
+      ],
+      "correct": 2,
+      "difficulty": "Difficult",
+      "domain": "Risk Identification",
+      "short": "Delay vì SME thiếu thời gian thường là risk chưa được identify/không có participation đủ → coach về Risk Identification & participation.",
+      "explanation_en": "The situation indicates a likely missed resource-availability risk or insufficient ongoing identification/review participation. Coaching should focus on improving identification participation and cadence.",
+      "explanation_vi": "Tình huống cho thấy rủi ro về availability của SME có thể bị bỏ sót hoặc việc identify/review risk không đủ. Nên coaching về quy trình Identify Risks và mức độ tham gia/cadence.",
+      "reference": "PMBOK 6: Identify Risks (participation, iterative identification); Monitor Risks (ongoing identification).",
+      "pmbok6_knowledge_area": "Project Risk Management",
+      "pmbok6_process_group": "Planning / Monitoring and Controlling"
+    },
+    {
+      "no": 8,
+      "question": "During the execution of a multi-million dollar project, the project manager learns of the theft of important installation materials at one of the most time-critical sites. The project manager contacts the risk manager to discuss further steps, based on the risk register and the defined risk strategy for the risk of theft. However, the risk manager clarifies that the risk of theft was not identified in the risk management process.\n\nWhat should the project manager do next?",
+      "options": [
+        "Deal with the issue and instruct the risk manager to include the theft in the issue log.",
+        "Update the project schedule and inform the stakeholders about the project schedule delay.",
+        "Instruct the risk manager to transfer the risk of theft to an insurance company.",
+        "Make the risk manager responsible for the damage caused by the missing strategy for theft."
+      ],
+      "correct": 0,
+      "difficulty": "Moderate",
+      "domain": "Issue vs Risk",
+      "short": "Theft đã xảy ra và chưa từng identify → đây là issue → xử lý ngay và ghi vào issue log.",
+      "explanation_en": "Because the event already occurred and wasn't in the risk register, it is an issue to be addressed immediately and logged in the issue log (and then lessons learned/risk updates later).",
+      "explanation_vi": "Vì sự kiện đã xảy ra và trước đó không nhận diện, nó là issue. Cần xử lý ngay và ghi vào issue log (sau đó mới rút kinh nghiệm/cập nhật quy trình).",
+      "reference": "PMBOK 6: Monitor Risks (workarounds, issue log updates); issue vs risk distinction.",
+      "pmbok6_knowledge_area": "Project Risk Management / Project Integration Management",
+      "pmbok6_process_group": "Monitoring and Controlling"
+    },
+    {
+      "no": 9,
+      "question": "While creating the appropriate risk strategy, the project manager discovers that the project team lacks the necessary expertise to define the risk management plan. There is no time to initiate immediate training, but training will be provided before releasing the team.\n\nWhat should the project manager do to address the knowledge gap?",
+      "options": [
+        "Request qualified resource replacements.",
+        "Independently create the plan for the team.",
+        "Collaborate with subject matter experts.",
+        "Delay planning until after training is complete."
+      ],
+      "correct": 2,
+      "difficulty": "Moderate",
+      "domain": "Expert Judgment / SMEs",
+      "short": "Không đủ expertise và không kịp training ngay → dùng SME/expert judgment để bù knowledge gap.",
+      "explanation_en": "When the team lacks expertise and training is not immediately feasible, collaborate with SMEs to ensure the plan is correctly developed and to transfer knowledge.",
+      "explanation_vi": "Khi team thiếu năng lực và chưa kịp đào tạo, cách nhanh và đúng là phối hợp với SMEs để lập plan chuẩn và chuyển giao kiến thức.",
+      "reference": "PMBOK 6: Expert judgment as a tool; Plan Risk Management / Identify Risks.",
+      "pmbok6_knowledge_area": "Project Risk Management",
+      "pmbok6_process_group": "Planning"
+    },
+    {
+      "no": 10,
+      "question": "A cost analyst team member asks the project manager for the latest risk data for inclusion with the cost estimates for the project. Which tool should the cost analyst team member use to identify the probability of achieving specific cost targets?",
+      "options": [
+        "Monte Carlo analysis",
+        "Decision tree analysis",
+        "Analogous estimating",
+        "Brainstorming"
+      ],
+      "correct": 0,
+      "difficulty": "Moderate",
+      "domain": "Quantitative Risk Analysis",
+      "short": "Xác suất đạt cost target → chạy mô phỏng phân phối xác suất → Monte Carlo.",
+      "explanation_en": "Monte Carlo simulation runs many iterations using probability distributions to estimate likelihood of meeting cost targets.",
+      "explanation_vi": "Monte Carlo mô phỏng nhiều lần dựa trên phân phối xác suất để ước lượng khả năng đạt mục tiêu chi phí.",
+      "reference": "PMBOK 6: Perform Quantitative Risk Analysis (Monte Carlo simulation).",
+      "pmbok6_knowledge_area": "Project Risk Management / Project Cost Management",
+      "pmbok6_process_group": "Planning"
+    }
+  ]

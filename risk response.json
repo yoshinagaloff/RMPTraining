@@ -1,0 +1,182 @@
+[
+  {
+    "question": "During the development phase of a construction project, key stakeholders approved a project budget. The risk management team identified risks and appropriate risk responses. However, during project execution, an unexpected local health emergency halted and delayed work on the project. This event type was not identified as a risk or listed in the risk register. The team decides that this issue must be mitigated, which would incur additional costs.\n\nHow should the risk manager address this unforeseen budgetary overrun?",
+    "options": [
+      "Use the management reserve to cover the cost.",
+      "Identify potential ways to exploit the risk.",
+      "Use the contingency reserve to cover the cost.",
+      "Develop cost and performance baselines."
+    ],
+    "correct": 0,
+    "difficulty": "Moderate",
+    "domain": "Risk Response",
+    "short": "Sự kiện bất ngờ không có trong risk register → dùng management reserve (cho unknown-unknown) để bù chi phí mitigation.",
+    "reference": "PMBOK® Guide Sixth Edition / Determine Budget: Management reserve is outside the cost baseline for unforeseen work within scope; Contingency reserve is for known risks.",
+    "explanation_en": "Because the health emergency was not identified (an unknown risk), the appropriate funding source is the management reserve, which is held outside the performance measurement baseline for unforeseen work within the project scope. Contingency reserve is for known risks with planned responses. Exploit is for opportunities, and baselines do not fund overruns.",
+    "explanation_vi": "Vì tình huống khẩn cấp y tế là rủi ro không được nhận diện trước (unknown risk), nguồn phù hợp để chi trả là management reserve (nằm ngoài cost baseline, dùng cho công việc phát sinh không lường trước nhưng vẫn trong phạm vi scope). Contingency reserve dùng cho rủi ro đã biết có kế hoạch ứng phó. Exploit là cho cơ hội; còn baseline không phải nguồn tiền để bù vượt chi phí.",
+    "pmbok6_knowledge_area": "Project Cost Management / Project Risk Management",
+    "pmbok6_process_group": "Executing"
+  },
+  {
+    "question": "Two companies merge. The executive leadership team for the newly formed company hires a project risk manager to integrate both companies' technology platforms into a single global platform. Since the success of this integration project is critical for the new company, the project risk manager determines that risk management is vital. What are the primary factors of the risk response planning process that the team should consider?",
+    "options": [
+      "People, planning, and analysis",
+      "People, planning, and avoidance",
+      "Planning, acceptance, and analysis",
+      "People, mitigation, and analysis"
+    ],
+    "correct": 0,
+    "difficulty": "Moderate",
+    "domain": "Risk Response",
+    "short": "Risk response planning cần 3 yếu tố chính: People (vai trò/ownership), Planning (kế hoạch hành động), Analysis (phân tích để chọn response phù hợp).",
+    "reference": "PMI / Risk response planning: involves people (roles/owners), planning (actions/triggers), and analysis (selecting appropriate strategies).",
+    "explanation_en": "Risk response planning centers on people (assigning roles and ownership), planning (defining response actions, triggers, and integration into plans), and analysis (evaluating risks to select appropriate strategies). Avoidance/acceptance/mitigation are specific strategies—not the primary process factors.",
+    "explanation_vi": "Risk response planning tập trung vào: People (phân vai, chỉ định owner), Planning (lập kế hoạch hành động/trigger và tích hợp vào kế hoạch dự án), và Analysis (phân tích để chọn chiến lược phù hợp). Avoid/accept/mitigate là chiến lược ứng phó cụ thể chứ không phải “yếu tố chính” của quá trình lập kế hoạch ứng phó.",
+    "pmbok6_knowledge_area": "Project Risk Management",
+    "pmbok6_process_group": "Planning"
+  },
+  {
+    "question": "Some of the project's materials have been ordered from overseas. The supplier notifies the project team that the materials will not reach the site on time due to a customs clearance delay that will affect the critical path.\n\nWhat should the project manager do first?",
+    "options": [
+      "Ask the logistics team to arrange an expedited clearance.",
+      "Revisit the risk register and implement the respective risk response.",
+      "Identify the root cause of the delay and add it to the bid documents.",
+      "Ensure the suppliers cover any additional costs due to the delay."
+    ],
+    "correct": 1,
+    "difficulty": "Moderate",
+    "domain": "Risk Response",
+    "short": "Rủi ro đã có plan từ đầu → bước đầu tiên là xem risk register và triển khai risk response đã định.",
+    "reference": "PMBOK® Guide Sixth Edition / Implement Risk Responses: execute agreed response plans; Risk register contains planned responses and owners.",
+    "explanation_en": "The first action is to consult the risk register to confirm whether this risk was identified and what response was planned (owner, triggers, actions). Then implement the agreed response. Other options may be outcomes later but should not precede reviewing the documented plan.",
+    "explanation_vi": "Bước đầu tiên là xem lại risk register để xác nhận rủi ro này đã được nhận diện chưa và response plan là gì (owner/trigger/hành động), rồi triển khai đúng theo kế hoạch đã thống nhất. Các lựa chọn khác có thể là bước tiếp theo nhưng không nên làm trước khi kiểm tra kế hoạch rủi ro đã ghi nhận.",
+    "pmbok6_knowledge_area": "Project Risk Management / Project Procurement Management",
+    "pmbok6_process_group": "Executing"
+  },
+  {
+    "question": "What is the purpose of mitigating negative risks as a part of the risk response process?",
+    "options": [
+      "To transfer the probability of a risk happening to a third party to reduce the impact.",
+      "To reduce the probability of a risk happening and/or reduce the severity of the impact.",
+      "To accept the probability of a risk happening to reduce the severity of the impact.",
+      "To increase the probability of a risk happening, but reduce the severity of the impact."
+    ],
+    "correct": 1,
+    "difficulty": "Moderate",
+    "domain": "Risk Response",
+    "short": "Mitigate (threat) nhằm giảm xác suất xảy ra và/hoặc giảm mức độ tác động của rủi ro tiêu cực.",
+    "reference": "PMBOK® Guide Sixth Edition / Plan Risk Responses: Mitigate reduces probability and/or impact of a threat.",
+    "explanation_en": "Mitigation is used for threats to reduce the probability of occurrence and/or reduce the impact if the risk occurs. Transfer and acceptance are different strategies; increasing probability is not mitigation.",
+    "explanation_vi": "Mitigation áp dụng cho threat nhằm giảm xác suất xảy ra và/hoặc giảm tác động nếu rủi ro xảy ra. Transfer và acceptance là chiến lược khác; còn tăng xác suất không phải là mitigation.",
+    "pmbok6_knowledge_area": "Project Risk Management",
+    "pmbok6_process_group": "Planning"
+  },
+  {
+    "question": "Which of the following is an effective channel for risk mitigation assistance, project risk visibility, and risk escalation support?",
+    "options": [
+      "Project steering committee",
+      "Project management office (PMO)",
+      "Change control board (CCB)",
+      "Board of directors"
+    ],
+    "correct": 1,
+    "difficulty": "Moderate",
+    "domain": "Risk Response",
+    "short": "PMO hỗ trợ governance, chia sẻ phương pháp/công cụ/nguồn lực và giúp escalate/visibility rủi ro ở mức portfolio.",
+    "reference": "PMBOK® Guide Sixth Edition / PMO: standardizes governance and facilitates sharing resources, methodologies, tools and techniques across projects.",
+    "explanation_en": "A PMO provides standardized governance, tools, and support across the organization, improving risk visibility and enabling escalation and assistance for mitigation. Steering committees or CCB may help in certain cases, but the PMO is typically the most effective channel for broad support and visibility.",
+    "explanation_vi": "PMO chuẩn hóa governance và hỗ trợ chia sẻ nguồn lực/phương pháp/công cụ trên phạm vi tổ chức, giúp tăng visibility rủi ro và hỗ trợ escalation/mitigation hiệu quả. Steering committee hay CCB có thể liên quan, nhưng PMO thường là kênh hiệu quả nhất cho hỗ trợ rộng và tầm nhìn toàn danh mục.",
+    "pmbok6_knowledge_area": "Project Integration Management / Project Risk Management",
+    "pmbok6_process_group": "Executing"
+  },
+  {
+    "question": "While preparing for a project review meeting with leadership, the project team analyzes and checks its scope activities and discovers missing requirements. The project risk manager decides to hire a subcontractor to fulfill these newly discovered requirements. What risk strategy did the project risk manager use?",
+    "options": [
+      "Avoid",
+      "Transfer",
+      "Accept",
+      "Mitigate"
+    ],
+    "correct": 1,
+    "difficulty": "Moderate",
+    "domain": "Risk Response",
+    "short": "Thuê subcontractor để xử lý thiếu requirement là chuyển giao (transfer) một phần tác động/ trách nhiệm cho bên thứ ba.",
+    "reference": "PMBOK® Guide Sixth Edition / Plan Risk Responses: Transfer shifts impact of a threat to a third party along with ownership for the response.",
+    "explanation_en": "Transfer shifts the impact/ownership of a threat response to a third party (e.g., subcontracting). Avoid eliminates the threat, accept takes no proactive action, and mitigate reduces probability/impact without shifting ownership.",
+    "explanation_vi": "Transfer là chuyển giao tác động/ownership của response cho bên thứ ba (ví dụ thuê subcontractor). Avoid là loại bỏ threat; Accept là chấp nhận không hành động trước; Mitigate là giảm xác suất/tác động nhưng không chuyển ownership cho bên thứ ba.",
+    "pmbok6_knowledge_area": "Project Risk Management / Project Procurement Management",
+    "pmbok6_process_group": "Planning"
+  },
+  {
+    "question": "The risk manager organizes a stakeholder meeting to obtain an agreement on project risk response strategies. The risk manager must leave the meeting and will be out of the office for the next week. The risk manager reminds the team that at the conclusion of this meeting, risk response strategies should be which of the following?",
+    "options": [
+      "Scheduled, budgeted, and easy to understand.",
+      "Cost-effective and validated by Monte Carlo analysis.",
+      "Iterative, scaled to the project, and implemented.",
+      "Timely, cost-effective, agreed upon, and accepted."
+    ],
+    "correct": 3,
+    "difficulty": "Moderate",
+    "domain": "Risk Response",
+    "short": "Kết quả meeting về response: chiến lược phải timely, cost-effective, được đồng thuận và được chấp nhận/owned.",
+    "reference": "PMI / Risk response planning: responses should be timely, cost-effective, appropriate, agreed/accepted and assigned to owners.",
+    "explanation_en": "Effective risk responses should be timely, cost-effective, realistic for the project, agreed upon by stakeholders, accepted, and owned by responsible parties. Other options are incomplete or add constraints not universally required (e.g., Monte Carlo validation).",
+    "explanation_vi": "Risk response hiệu quả cần kịp thời, chi phí-hiệu quả, phù hợp bối cảnh dự án, được các bên đồng thuận và chấp nhận (có owner chịu trách nhiệm). Các lựa chọn khác thiếu yếu tố quan trọng hoặc thêm điều kiện không bắt buộc (như phải Monte Carlo).",
+    "pmbok6_knowledge_area": "Project Risk Management / Project Stakeholder Management",
+    "pmbok6_process_group": "Planning"
+  },
+  {
+    "question": "A project manager learned that the project deliverables will not meet the quality requirements unless a change is made to a component. After issuing a formal change request, the project manager emailed details of the change to all stakeholders. Most stakeholders received the information promptly and were fully aware of the change. However, the project manager found out that some stakeholders did not receive the email or did not read it.\n\nWhat could the project manager have done to prevent this?",
+    "options": [
+      "Reviewed the communications management plan.",
+      "Developed a detailed work performance report.",
+      "Met with the project sponsor to discuss communication.",
+      "Questioned the stakeholders about technological literacy."
+    ],
+    "correct": 0,
+    "difficulty": "Moderate",
+    "domain": "Risk Response",
+    "short": "Một số stakeholders không nhận/không đọc email → cần review communications management plan để chọn kênh phù hợp từng stakeholder.",
+    "reference": "PMBOK® Guide Sixth Edition / Plan Communications Management: defines how/when/by whom information is disseminated; tailor to stakeholder needs.",
+    "explanation_en": "The communications management plan defines stakeholder communication requirements and preferred channels. Reviewing it before broadcasting a change helps ensure the chosen medium reaches all stakeholders effectively and prevents missed communications.",
+    "explanation_vi": "Communications management plan mô tả nhu cầu và kênh truyền thông phù hợp cho từng stakeholder. Xem lại plan trước khi gửi thông báo change giúp chọn đúng phương tiện để tất cả stakeholders nhận được, tránh bị bỏ sót.",
+    "pmbok6_knowledge_area": "Project Communications Management / Project Stakeholder Management",
+    "pmbok6_process_group": "Planning"
+  },
+  {
+    "question": "The project manager has documented a new risk and its impact. If not resolved immediately, the risk will jeopardize the success of the project. The resources necessary to address the risk are currently working on another critical project.\nWhat should the project manager do?",
+    "options": [
+      "Seek to negotiate a solution with the functional manager and project sponsor.",
+      "Outsource third-party resources necessary to address the risk to project success.",
+      "Adjust the project schedule based on the highest three-point estimate of the impact.",
+      "Meet with the project sponsor to request more resources and a delay in the schedule."
+    ],
+    "correct": 0,
+    "difficulty": "Moderate",
+    "domain": "Risk Response",
+    "short": "Nguồn lực đang bận dự án khác (shared resources) → cần thương lượng với functional manager và sponsor để thống nhất phương án.",
+    "reference": "PMBOK® Guide Sixth Edition / Acquire Resources & Manage Stakeholder Engagement: negotiate for shared resources with functional manager; escalate with sponsor as needed.",
+    "explanation_en": "In a functional/matrix environment, the functional manager controls shared resources. The project manager should negotiate with the functional manager and sponsor to reach a solution (reassignment, reprioritization, substitute resources). Outsourcing or schedule changes may be outcomes later but not before negotiation.",
+    "explanation_vi": "Trong tổ chức functional/matrix, functional manager quản lý nguồn lực dùng chung. PM nên thương lượng với functional manager và sponsor để thống nhất giải pháp (điều phối lại, ưu tiên, thay thế nguồn lực). Outsource hay đổi lịch có thể là kết quả sau đó nhưng không nên làm trước khi thương lượng.",
+    "pmbok6_knowledge_area": "Project Resource Management / Project Stakeholder Management / Project Risk Management",
+    "pmbok6_process_group": "Executing"
+  },
+  {
+    "question": "A telecommunications company is planning to implement a new service network but is concerned about the risk of failure. The company decides to test a prototype before conducting full implementation on the entire network. What type of risk response strategy did the company choose?",
+    "options": [
+      "Transfer",
+      "Mitigate",
+      "Avoid",
+      "Accept"
+    ],
+    "correct": 1,
+    "difficulty": "Moderate",
+    "domain": "Risk Response",
+    "short": "Test prototype trước khi triển khai toàn mạng là mitigation: giảm xác suất/tác động lỗi trước khi rollout.",
+    "reference": "PMBOK® Guide Sixth Edition / Plan Risk Responses: Mitigate reduces probability and/or impact (e.g., prototyping, testing, piloting).",
+    "explanation_en": "Testing a prototype before full rollout is a mitigation strategy because it reduces the likelihood and/or impact of failure by uncovering issues early. It does not transfer ownership, eliminate the threat entirely, or simply accept it.",
+    "explanation_vi": "Thử nghiệm prototype trước khi triển khai toàn bộ là mitigation vì giúp phát hiện vấn đề sớm, giảm xác suất và/hoặc giảm tác động thất bại. Đây không phải transfer, không loại bỏ hoàn toàn threat (avoid), và cũng không phải accept (không hành động).",
+    "pmbok6_knowledge_area": "Project Risk Management / Project Quality Management",
+    "pmbok6_process_group": "Planning"
+  }
+]

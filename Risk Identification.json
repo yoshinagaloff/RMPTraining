@@ -1,0 +1,182 @@
+[
+  {
+    "question": "PESTLE, TECOP, and SPECTRUM are three examples of prompt lists that can be used during risk management activities. Prompt lists are used to do which of the following?",
+    "options": [
+      "Facilitate risk identification",
+      "Evaluate risks simultaneously",
+      "Identify the impact of risks",
+      "Achieve the relative weighting"
+    ],
+    "correct": 0,
+    "difficulty": "Moderate",
+    "domain": "Risk Identification",
+    "short": "Prompt lists (PESTLE/TECOP/SPECTRUM) dùng để hỗ trợ nhóm tạo ý tưởng và nhận diện rủi ro theo danh mục.",
+    "reference": "PMBOK® Guide Sixth Edition / Identify Risks: Risk Breakdown Structure (lowest level categories can be used as prompt lists); PMI risk prompt lists examples.",
+    "explanation_en": "Prompt lists such as PESTLE, TECOP, and SPECTRUM provide predefined risk categories to stimulate idea generation and facilitate risk identification. They do not evaluate risks, determine impacts directly, or perform relative weighting.",
+    "explanation_vi": "Prompt lists như PESTLE, TECOP, SPECTRUM cung cấp danh mục gợi ý để kích thích ý tưởng và hỗ trợ nhận diện rủi ro. Chúng không dùng để đánh giá rủi ro, xác định tác động cụ thể hay tính trọng số tương đối.",
+    "pmbok6_knowledge_area": "Project Risk Management",
+    "pmbok6_process_group": "Planning"
+  },
+  {
+    "question": "A risk manager has suggested that the project team copy the risk triggers and thresholds from a past project. What must the risk manager be sure is clearly understood by the team prior to commencing this exercise?",
+    "options": [
+      "The copied risk thresholds and triggers must be documented and should not be changed or altered.",
+      "The copied risk triggers and thresholds should be relevant and applicable to the current project.",
+      "The copied risk triggers and thresholds should be comprehensive and duplicated completely.",
+      "The copied risk thresholds and triggers can serve as inputs to be updated at project closure."
+    ],
+    "correct": 1,
+    "difficulty": "Moderate",
+    "domain": "Risk Identification",
+    "short": "Có thể tái sử dụng triggers/thresholds từ dự án cũ nhưng phải đảm bảo phù hợp và được tailor cho dự án hiện tại.",
+    "reference": "PMBOK® Guide Sixth Edition / Plan Risk Management: Organizational process assets (templates, lessons learned) must be tailored; Risk thresholds and triggers should align with current context and governance.",
+    "explanation_en": "Copied triggers and thresholds can be a helpful starting point, but they must be relevant and applicable to the current project and aligned with the organization’s risk strategy and governance. They should be reviewed and tailored rather than duplicated unchanged.",
+    "explanation_vi": "Triggers và thresholds từ dự án cũ có thể dùng làm điểm khởi đầu, nhưng phải đảm bảo phù hợp với dự án hiện tại và phù hợp chiến lược/governance của tổ chức. Cần rà soát và điều chỉnh chứ không sao chép nguyên trạng.",
+    "pmbok6_knowledge_area": "Project Risk Management",
+    "pmbok6_process_group": "Planning"
+  },
+  {
+    "question": "A project team is preparing for a routine project that is repeated annually. The team would like to identify potential risks and areas for improvement and establish a basis for measuring performance.\n\nWhat should the project team do to begin this process?",
+    "options": [
+      "Request that the project sponsor review the historical data and prepare a report.",
+      "Perform benchmarking by comparing the project to similar previous projects.",
+      "Initiate the project planning process as planned because the project is routine.",
+      "Integrate sophisticated reporting software to support cross-functional collaboration."
+    ],
+    "correct": 1,
+    "difficulty": "Moderate",
+    "domain": "Risk Identification",
+    "short": "Dự án lặp lại hàng năm: bắt đầu bằng benchmarking so với các dự án tương tự trước đó để tìm cải tiến và baseline đo hiệu suất.",
+    "reference": "PMBOK® Guide Sixth Edition / Plan Quality Management & Manage Quality: Benchmarking; Lessons learned and historical information for improvement and baselines.",
+    "explanation_en": "Benchmarking against similar previous projects helps identify best practices, improvement opportunities, and provides a baseline for performance measurement. Other options either delegate improperly, skip analysis, or add tools without addressing the goal.",
+    "explanation_vi": "Benchmarking với các dự án tương tự trước đây giúp tìm best practices, cơ hội cải tiến và tạo baseline để đo hiệu suất. Các lựa chọn khác либо giao sai vai trò, bỏ qua phân tích, hoặc thêm công cụ không trực tiếp đạt mục tiêu.",
+    "pmbok6_knowledge_area": "Project Quality Management / Project Risk Management",
+    "pmbok6_process_group": "Planning"
+  },
+  {
+    "question": "A risk manager works with the project team, senior management team, subject matter experts, and other stakeholders to identify the project risks. Which of the following can be used to identify risks based on project objectives by category?",
+    "options": [
+      "Affinity diagram",
+      "Risk breakdown structure (RBS)",
+      "Decision tree method",
+      "Work breakdown structure (WBS)"
+    ],
+    "correct": 1,
+    "difficulty": "Moderate",
+    "domain": "Risk Identification",
+    "short": "RBS là khung phân cấp nguồn rủi ro theo danh mục, hỗ trợ nhận diện rủi ro theo mục tiêu dự án.",
+    "reference": "PMBOK® Guide Sixth Edition / Identify Risks: Risk Breakdown Structure (RBS) as a hierarchical representation of potential risk sources.",
+    "explanation_en": "The Risk Breakdown Structure (RBS) categorizes potential risk sources in a hierarchical framework, helping identify risks by category aligned to project objectives. Other tools listed are useful for other purposes but not specifically for categorized risk identification.",
+    "explanation_vi": "Risk Breakdown Structure (RBS) phân loại nguồn rủi ro theo cấu trúc phân cấp, giúp nhận diện rủi ro theo danh mục gắn với mục tiêu dự án. Các công cụ khác không chuyên để nhận diện rủi ro theo danh mục mục tiêu.",
+    "pmbok6_knowledge_area": "Project Risk Management",
+    "pmbok6_process_group": "Planning"
+  },
+  {
+    "question": "What identification technique is used to help reduce the ambiguity of a risk statement?",
+    "options": [
+      "Driver, risk, outcome",
+      "Exploit, risk, accept",
+      "Probability, risk, impact",
+      "Cause, risk, effect"
+    ],
+    "correct": 3,
+    "difficulty": "Moderate",
+    "domain": "Risk Identification",
+    "short": "Cấu trúc Cause–Risk–Effect giúp viết risk statement rõ ràng, giảm mơ hồ khi nhận diện rủi ro.",
+    "reference": "PMBOK® Guide Sixth Edition / Identify Risks: risk statements often structured as cause–risk event–effect to improve clarity.",
+    "explanation_en": "Using the cause–risk–effect (or cause–event–impact) structure clarifies risk statements and reduces ambiguity. Other options relate more to analysis or response strategies rather than identification statement clarity.",
+    "explanation_vi": "Dùng cấu trúc Cause–Risk–Effect (nguyên nhân–sự kiện rủi ro–hệ quả) giúp câu mô tả rủi ro rõ ràng và giảm mơ hồ. Các lựa chọn khác thiên về phân tích hoặc chiến lược ứng phó hơn là kỹ thuật mô tả khi nhận diện.",
+    "pmbok6_knowledge_area": "Project Risk Management",
+    "pmbok6_process_group": "Planning"
+  },
+  {
+    "question": "A stakeholder is assigned as the risk owner for an identified risk. The stakeholder is unfamiliar with risk management and the role of a risk owner. The risk manager meets with the stakeholder to coach and mentor them on risk management.\n\nHow should the risk manager describe the role of a risk owner?",
+    "options": [
+      "Risk owners are responsible and accountable for managing risks.",
+      "Risk owners are responsible for creating a detailed description of a risk.",
+      "Risk owners are responsible for managing the risk management plan.",
+      "Risk owners are responsible for the identification of new risks."
+    ],
+    "correct": 0,
+    "difficulty": "Moderate",
+    "domain": "Risk Identification",
+    "short": "Risk owner chịu trách nhiệm và chịu trách nhiệm giải trình cho việc quản lý rủi ro được giao, gồm theo dõi và triển khai response.",
+    "reference": "PMBOK® Guide Sixth Edition / Plan Risk Responses & Monitor Risks: assign risk owners responsible for implementing agreed responses and monitoring.",
+    "explanation_en": "A risk owner is accountable and responsible for managing the assigned risk, including implementing response plans and monitoring the risk. They do not solely own risk description, the entire risk management plan, or all new risk identification.",
+    "explanation_vi": "Risk owner là người chịu trách nhiệm và chịu trách nhiệm giải trình cho rủi ro được giao, gồm triển khai kế hoạch ứng phó và theo dõi rủi ro. Họ không phải người duy nhất viết mô tả rủi ro, không quản lý toàn bộ risk management plan, và không chịu trách nhiệm duy nhất cho việc nhận diện rủi ro mới.",
+    "pmbok6_knowledge_area": "Project Risk Management",
+    "pmbok6_process_group": "Planning"
+  },
+  {
+    "question": "Project stakeholders have contributed to the risk identification process led by the risk manager. As the risk management process continues, they become less involved and start focusing on the project activities to ensure there is no schedule slippage.\n\nWhat should the risk manager do?",
+    "options": [
+      "Identify the stakeholders who remained engaged and continue the risk management process with this smaller group.",
+      "Discuss the matter with the project team and inform them that they may conduct identification without the stakeholders.",
+      "Notify stakeholders that risk management is a systematic process that should be applied throughout the project.",
+      "Record this matter in project records specifying the stakeholders involved and report the issue to the project sponsor."
+    ],
+    "correct": 2,
+    "difficulty": "Moderate",
+    "domain": "Risk Identification",
+    "short": "Stakeholder giảm tham gia: cần nhắc/communicate rằng risk management là quá trình xuyên suốt, cần duy trì engagement.",
+    "reference": "PMBOK® Guide Sixth Edition / Monitor Risks & Stakeholder Engagement: continuous risk management and communication to maintain engagement.",
+    "explanation_en": "Risk management is continuous throughout the project. The risk manager should remind stakeholders that ongoing participation is necessary to proactively manage threats and opportunities and maintain shared understanding and transparency. Other options are not proactive or reduce stakeholder input.",
+    "explanation_vi": "Quản lý rủi ro là quá trình xuyên suốt vòng đời dự án. Risk manager cần nhắc stakeholders rằng phải duy trì tham gia để chủ động quản lý threats/opportunities và đảm bảo minh bạch/đồng thuận. Các lựa chọn khác либо thụ động, либо làm giảm input từ stakeholders.",
+    "pmbok6_knowledge_area": "Project Risk Management / Project Stakeholder Management",
+    "pmbok6_process_group": "Monitoring & Controlling"
+  },
+  {
+    "question": "In an AI project to develop a machine learning algorithm for natural language processing, the project team is evaluating the project management information system (PMIS) process and data.\n\nWhat approach should the risk manager prioritize to evaluate the PMIS process and data?",
+    "options": [
+      "Conduct a thorough audit of the PMIS process and data to identify areas for improvement and ensure alignment with objectives.",
+      "Implement a project management software solution with advanced analytics capabilities to analyze the PMIS process and data.",
+      "Engage in regular project review meetings with key stakeholders to discuss the effectiveness of the PMIS process and data.",
+      "Appoint a dedicated data analyst to perform statistical analysis covering all processes and data components of the PMIS."
+    ],
+    "correct": 0,
+    "difficulty": "Moderate",
+    "domain": "Risk Identification",
+    "short": "Đánh giá PMIS process/data: ưu tiên audit toàn diện để tìm gap/weakness và đảm bảo align mục tiêu trước khi chọn giải pháp khác.",
+    "reference": "PMI (Risk Identification / Governance) /// Audit as a comprehensive, documented approach to evaluate processes and data for alignment and improvement.",
+    "explanation_en": "A thorough audit provides a comprehensive, documented assessment of PMIS processes and data to identify gaps and improvement opportunities and confirm alignment with objectives. Other options may help later but are not as comprehensive as an audit for initial evaluation.",
+    "explanation_vi": "Audit toàn diện giúp đánh giá đầy đủ và có tài liệu về quy trình và dữ liệu PMIS, xác định điểm yếu/khoảng trống và cơ hội cải tiến, đồng thời kiểm tra mức độ phù hợp với mục tiêu. Các phương án khác có thể hữu ích sau đó nhưng không toàn diện bằng audit cho bước đánh giá ưu tiên ban đầu.",
+    "pmbok6_knowledge_area": "Project Risk Management / Project Integration Management",
+    "pmbok6_process_group": "Monitoring & Controlling"
+  },
+  {
+    "question": "During initial project planning, a project manager was informed that a team member had been exclusively allocated to the project. Halfway through the project, the team member was assigned to another project.\n\nWhat should the project manager do?",
+    "options": [
+      "Discuss the impacts on project delivery with the functional manager and develop an appropriate course of action.",
+      "Document this as a risk in the risk register and implement the appropriate response strategy for the risk.",
+      "Ensure that all team members are cross-trained on all project tasks to decrease the impact on the project outcome.",
+      "Escalate this issue to the project sponsor and request that they secure the return of the team member."
+    ],
+    "correct": 0,
+    "difficulty": "Moderate",
+    "domain": "Risk Identification",
+    "short": "Nguồn lực bị điều chuyển giữa chừng là issue; bước đầu tiên là trao đổi với functional manager để hiểu lý do/tác động và chọn phương án.",
+    "reference": "PMBOK® Guide Sixth Edition / Manage Team & Control Resources: work with functional managers; issues require immediate management action, not retroactive risk entry.",
+    "explanation_en": "First discuss the reassignment and its impacts with the functional manager to understand the reason and agree on a course of action. This is an issue now (not a previously identified risk). Escalation may be premature without understanding context.",
+    "explanation_vi": "Trước hết cần trao đổi với functional manager về việc điều chuyển và tác động lên delivery để hiểu nguyên nhân và thống nhất hướng xử lý. Đây là issue đã xảy ra (không phải rủi ro đã nhận diện trước), nên việc “ghi vào risk register rồi xử lý theo response” không phù hợp ngay lúc này. Escalate lên sponsor có thể là quá sớm khi chưa hiểu bối cảnh.",
+    "pmbok6_knowledge_area": "Project Resource Management / Project Stakeholder Management",
+    "pmbok6_process_group": "Executing"
+  },
+  {
+    "question": "In addition to the risk management plan, what are the main outputs of the risk identification process?",
+    "options": [
+      "Lessons learned, risk report, and risk register",
+      "Risk report, risk register, and updated project documentation",
+      "Risk management plan, risk register, and risk responses",
+      "Risk report, issue log, and a probability and impact matrix"
+    ],
+    "correct": 1,
+    "difficulty": "Moderate",
+    "domain": "Risk Identification",
+    "short": "Output chính của Identify Risks: risk register + risk report + project document updates (ngoài risk management plan).",
+    "reference": "PMBOK® Guide Sixth Edition / Identify Risks: Outputs = Risk register, Risk report, Project documents updates.",
+    "explanation_en": "Identify Risks produces the risk register, risk report, and updates to relevant project documents. Items like probability/impact matrix and risk responses are developed during later risk analysis/response planning, not during identification.",
+    "explanation_vi": "Identify Risks tạo ra risk register, risk report và cập nhật các tài liệu dự án liên quan. Probability/impact matrix và risk responses thuộc các bước phân tích/hoạch định ứng phó về sau, không phải output chính của bước nhận diện.",
+    "pmbok6_knowledge_area": "Project Risk Management",
+    "pmbok6_process_group": "Planning"
+  }
+]

@@ -1,0 +1,182 @@
+[
+  {
+    "question": "A risk manager completed plans for a project and submitted all documents for approval from stakeholders and the CEO. There has been a delay in obtaining approvals, which is causing delays. The project team did not anticipate this issue and did not allocate time for delays in obtaining approvals.\n\nWhat should the risk manager do?",
+    "options": [
+      "Ask the risk owner to escalate the issue directly to the CEO to ensure that approvals are obtained immediately.",
+      "Investigate the cause and impact of the delay in obtaining approvals and develop a strategic response plan.",
+      "Adjust the project plans by lowering work completion estimates to show that work will be completed on time.",
+      "Perform a team inspection to determine which of the team members was responsible for obtaining approvals."
+    ],
+    "correct": 1,
+    "difficulty": "Moderate",
+    "domain": "Risk Analysis",
+    "short": "Chậm phê duyệt gây trễ tiến độ: cần phân tích nguyên nhân/tác động và lập response plan thay vì đổ lỗi hay điều chỉnh không minh bạch.",
+    "reference": "PMBOK® Guide Sixth Edition / Monitor Risks & Implement Risk Responses: analyze issue cause/impact and plan response; stakeholder engagement for approvals.",
+    "explanation_en": "The risk manager should first determine the root cause of the approval delay and assess its impact on schedule and budget. Then develop a strategic response (e.g., adjust schedule, reallocate resources, alternative approval path) and communicate it to stakeholders. Escalation alone, blame, or unethical plan manipulation are not appropriate.",
+    "explanation_vi": "Risk manager cần xác định nguyên nhân gốc rễ của việc chậm phê duyệt và đánh giá tác động lên lịch/cost, sau đó xây dựng kế hoạch ứng phó (điều chỉnh lịch, phân bổ nguồn lực, quy trình phê duyệt thay thế...) và truyền thông cho các bên. Chỉ leo thang, đổ lỗi hoặc chỉnh số liệu cho “đẹp” là không phù hợp/phi đạo đức.",
+    "pmbok6_knowledge_area": "Project Risk Management / Project Stakeholder Management",
+    "pmbok6_process_group": "Monitoring & Controlling"
+  },
+  {
+    "question": "Which is the process that the risk manager performs to prioritize individual project risks for further analysis or action by assessing their probability of occurrence and impact, as well as other characteristics?",
+    "options": [
+      "Quantitative risk analysis",
+      "Qualitative risk analysis",
+      "Identifying project risks",
+      "Planning risk management"
+    ],
+    "correct": 1,
+    "difficulty": "Moderate",
+    "domain": "Risk Analysis",
+    "short": "Ưu tiên rủi ro theo xác suất/tác động và đặc tính khác là Qualitative Risk Analysis.",
+    "reference": "PMBOK® Guide Sixth Edition / Perform Qualitative Risk Analysis: prioritize individual risks using probability, impact, urgency, manageability, etc.",
+    "explanation_en": "Qualitative risk analysis assesses probability and impact along with other characteristics (urgency, timing, manageability, relationships, common causes/effects) to prioritize individual risks for further analysis or action. Quantitative analysis focuses on numerical modeling of overall outcomes and is typically applied only to high-priority risks.",
+    "explanation_vi": "Qualitative risk analysis đánh giá xác suất/tác động và nhiều đặc tính khác (urgency, timing, manageability, quan hệ giữa rủi ro, nguyên nhân/hệ quả chung) để ưu tiên rủi ro cá nhân cho phân tích/hành động tiếp theo. Quantitative analysis dùng mô hình số để ước lượng kết quả tổng hợp và thường chỉ áp dụng cho rủi ro ưu tiên cao.",
+    "pmbok6_knowledge_area": "Project Risk Management",
+    "pmbok6_process_group": "Planning"
+  },
+  {
+    "question": "Which input could be utilized to perform quantitative risk analysis to reduce uncertainty?",
+    "options": [
+      "Risk categorization",
+      "Organizational process assets",
+      "Stakeholder register",
+      "Expert judgment"
+    ],
+    "correct": 1,
+    "difficulty": "Moderate",
+    "domain": "Risk Analysis",
+    "short": "Quantitative risk analysis cần dữ liệu/kinh nghiệm quá khứ; OPA là input quan trọng để giảm bất định.",
+    "reference": "PMBOK® Guide Sixth Edition / Perform Quantitative Risk Analysis: inputs include OPA (historical information, lessons learned, databases).",
+    "explanation_en": "Organizational process assets provide historical data, lessons learned, and best practices that can be used as inputs for quantitative risk analysis to reduce uncertainty. The other options are more commonly associated with qualitative analysis or are not the primary input emphasized in this question.",
+    "explanation_vi": "Organizational process assets (OPA) cung cấp dữ liệu lịch sử, lessons learned và best practices, là input quan trọng cho quantitative risk analysis nhằm giảm bất định. Các lựa chọn khác thường gắn với qualitative analysis hoặc không phải trọng tâm của câu hỏi này.",
+    "pmbok6_knowledge_area": "Project Risk Management",
+    "pmbok6_process_group": "Planning"
+  },
+  {
+    "question": "After years of experience, a project manager becomes the lead manager for a company and asks all project managers to use a specific technique when they perform qualitative risk analysis on their projects. This technique consists of achieving the relative weighting of the project's objectives in terms of priority to the stakeholders.\nWhat is the name of this technique?",
+    "options": [
+      "Critical path method (CPM)",
+      "Objectives stakeholders weighting (OSW)",
+      "Analytic hierarchy process (AHP)",
+      "Responsibility assignment matrix (RAM)"
+    ],
+    "correct": 2,
+    "difficulty": "Moderate",
+    "domain": "Risk Analysis",
+    "short": "Kỹ thuật xác định trọng số tương đối của mục tiêu theo ưu tiên stakeholder là AHP.",
+    "reference": "PMBOK® Guide Sixth Edition / Perform Qualitative Risk Analysis: Analytic Hierarchy Process (AHP) for relative weighting/prioritization.",
+    "explanation_en": "AHP (Analytic Hierarchy Process) breaks down complex decisions into a hierarchy and compares elements to derive relative weights, which can be used to weight project objectives based on stakeholder priorities. CPM and RAM are unrelated, and OSW is not a standard technique name in PMBOK.",
+    "explanation_vi": "AHP (Analytic Hierarchy Process) phân rã quyết định phức tạp thành cấu trúc phân cấp và so sánh cặp để tính trọng số tương đối, phù hợp để weight các mục tiêu dự án theo ưu tiên stakeholder. CPM và RAM không liên quan; OSW không phải tên kỹ thuật chuẩn trong PMBOK.",
+    "pmbok6_knowledge_area": "Project Risk Management",
+    "pmbok6_process_group": "Planning"
+  },
+  {
+    "question": "The company board is concerned about potential legal action from a high-risk project. What technique can be used to justify risk response decisions taken on this project?",
+    "options": [
+      "Interviews",
+      "Nominal group technique",
+      "Brainstorming",
+      "Decision tree analysis"
+    ],
+    "correct": 3,
+    "difficulty": "Moderate",
+    "domain": "Risk Analysis",
+    "short": "Dự án high-risk cần biện minh quyết định response: dùng Decision Tree Analysis để trình bày lựa chọn và kết quả dưới bất định.",
+    "reference": "PMBOK® Guide Sixth Edition / Perform Quantitative Risk Analysis: Decision tree analysis for evaluating options under uncertainty.",
+    "explanation_en": "Decision tree analysis evaluates alternative courses of action under uncertainty and shows options, probabilities, and outcomes in a visual and calculable form. This helps justify response decisions for high-risk situations. The other techniques may support information gathering but do not provide the same decision justification on their own.",
+    "explanation_vi": "Decision tree analysis giúp đánh giá các lựa chọn dưới điều kiện bất định và thể hiện trực quan các phương án, xác suất và kết quả (có thể tính toán). Vì vậy phù hợp để biện minh quyết định ứng phó trong dự án rủi ro cao. Các kỹ thuật khác chủ yếu hỗ trợ thu thập ý kiến nhưng không đủ để biện minh quyết định một cách định lượng/logic.",
+    "pmbok6_knowledge_area": "Project Risk Management",
+    "pmbok6_process_group": "Planning"
+  },
+  {
+    "question": "A project manager is working with a team of newly hired resources. The project manager requests that the team develop a probability and impact matrix. The team asks the project manager to explain why this is important. Which of the following best describes the strength of the probability and impact matrix for qualitative risk analysis?",
+    "options": [
+      "It is used as an input for a decision tree analysis.",
+      "It helps in handling factors like urgency and manageability.",
+      "It requires expert facilitators for quantitative risk analysis.",
+      "It reflects the organization's level of risk appetite."
+    ],
+    "correct": 3,
+    "difficulty": "Moderate",
+    "domain": "Risk Analysis",
+    "short": "P&I matrix trong qualitative analysis phản ánh risk appetite/tolerance của tổ chức thông qua ngưỡng phân loại mức độ rủi ro.",
+    "reference": "PMBOK® Guide Sixth Edition / Perform Qualitative Risk Analysis: Probability and impact matrix reflecting risk appetite/tolerance thresholds.",
+    "explanation_en": "A probability and impact matrix maps risk probability and impact to priority levels using defined thresholds, reflecting the organization’s risk appetite/tolerance. It is not an input for decision trees, does not require quantitative facilitators, and does not primarily handle urgency/manageability beyond what the matrix captures.",
+    "explanation_vi": "Ma trận xác suất–tác động (P&I matrix) ánh xạ xác suất/tác động thành mức ưu tiên theo các ngưỡng đã định nghĩa, từ đó phản ánh risk appetite/tolerance của tổ chức. Nó không phải input cho decision tree, không đòi hỏi facilitator cho định lượng, và không phải công cụ chính để xử lý urgency/manageability ngoài những gì ma trận thể hiện.",
+    "pmbok6_knowledge_area": "Project Risk Management",
+    "pmbok6_process_group": "Planning"
+  },
+  {
+    "question": "A change in the project objectives has occurred due to a change in regulatory requirements, which impacted the risks associated with the scope, schedule, and cost.\n\nWhat should the project team do to address the changes in the project environment?",
+    "options": [
+      "Withdraw the current risk management plan and initiate the planning process to rewrite it.",
+      "Close all risks on the current risk register and perform the risk identification procedures again.",
+      "Review the risk management plan for changes that should be reflected in organizational processes.",
+      "Ensure all risks that impact the baseline undergo qualitative analysis and/or quantitative analysis."
+    ],
+    "correct": 3,
+    "difficulty": "Moderate",
+    "domain": "Risk Analysis",
+    "short": "Regulatory change làm đổi objectives và ảnh hưởng baseline: cần (re)phân tích rủi ro tác động baseline bằng qualitative và/hoặc quantitative.",
+    "reference": "PMBOK® Guide Sixth Edition / Perform Qualitative & Quantitative Risk Analysis: analyze risks affecting baselines; integrated change control updates plans/docs.",
+    "explanation_en": "When objectives and regulatory context change, risks impacting baselines should be analyzed (qualitative for all, quantitative for selected/high-impact or combined effects). This supports identifying new/changed risks and informing change control and updates to plans and documentation. Withdrawing plans or closing all risks is inappropriate.",
+    "explanation_vi": "Khi objectives và bối cảnh pháp lý thay đổi, các rủi ro tác động baseline cần được (tái)phân tích: qualitative cho tất cả và quantitative cho rủi ro chọn lọc/ảnh hưởng lớn hoặc cần phân tích tổng hợp. Việc này giúp nhận diện rủi ro mới/thay đổi và hỗ trợ change control cùng cập nhật kế hoạch/tài liệu. Rút bỏ plan hoặc đóng hết rủi ro là không phù hợp.",
+    "pmbok6_knowledge_area": "Project Risk Management / Project Integration Management",
+    "pmbok6_process_group": "Planning"
+  },
+  {
+    "question": "A project team has decided to purchase off-the-shelf software for part of the project, but there is a risk that the software will need to be customized. The software costs $600,000, and customization would cost an additional $200,000. There is a 60% chance that the engineers will need to perform customization. What is the expected monetary value (EMV) of the risk?",
+    "options": [
+      "There is not enough information.",
+      "$840,000",
+      "$680,000",
+      "$720,000"
+    ],
+    "correct": 3,
+    "difficulty": "Moderate",
+    "domain": "Risk Analysis",
+    "short": "Bài EMV: 0.4*600k + 0.6*800k = 720k.",
+    "reference": "PMBOK® Guide Sixth Edition / Perform Quantitative Risk Analysis: Expected Monetary Value (EMV) technique.",
+    "explanation_en": "Two outcomes: no customization (40%) cost $600k; customization (60%) cost $800k. EMV = 0.4*600,000 + 0.6*800,000 = 720,000.",
+    "explanation_vi": "Có 2 kịch bản: không custom (40%) chi phí 600k; cần custom (60%) chi phí 800k. EMV = 0.4*600,000 + 0.6*800,000 = 720,000.",
+    "pmbok6_knowledge_area": "Project Risk Management / Project Cost Management",
+    "pmbok6_process_group": "Planning"
+  },
+  {
+    "question": "A risk manager assessed all project risks, and the team is now identifying common groupings of risks. What tool or technique is used to perform this risk assessment?",
+    "options": [
+      "Risk breakdown structure (RBS)",
+      "Risk probability and impact assessment",
+      "Risk register",
+      "Risk identification checklist"
+    ],
+    "correct": 0,
+    "difficulty": "Moderate",
+    "domain": "Risk Analysis",
+    "short": "Nhóm các rủi ro theo nguồn/nhóm chung dùng RBS (Risk Breakdown Structure).",
+    "reference": "PMBOK® Guide Sixth Edition / Identify Risks: RBS groups risks by categories/sources; supports further analysis.",
+    "explanation_en": "RBS provides a hierarchical categorization of potential risk sources and helps group identified risks into common categories. Other items are repositories or prioritization tools, not the primary technique for grouping risks by category.",
+    "explanation_vi": "RBS là cấu trúc phân cấp phân loại nguồn rủi ro, giúp nhóm các rủi ro đã nhận diện theo danh mục chung. Các lựa chọn khác là nơi lưu trữ (risk register), checklist, hoặc công cụ ưu tiên chứ không phải kỹ thuật nhóm rủi ro theo category.",
+    "pmbok6_knowledge_area": "Project Risk Management",
+    "pmbok6_process_group": "Planning"
+  },
+  {
+    "question": "Which of the following describes a difference between qualitative and quantitative risk analysis?",
+    "options": [
+      "Quantitative risk analysis addresses individual risks descriptively, while qualitative risk analysis predicts likely project outcomes based on the combined effects of risks.",
+      "Quantitative risk analysis is typically less time-consuming and resource-intensive, while qualitative risk analysis is more time-consuming, objective, and data-driven.",
+      "Quantitative risk analysis prioritizes individual risks for subsequent treatment, and qualitative risk analysis must be completed before quantitative risk analysis.",
+      "Qualitative risk analysis addresses individual risks descriptively; quantitative risk analysis predicts likely project outcomes based on the combined effects of risks."
+    ],
+    "correct": 3,
+    "difficulty": "Moderate",
+    "domain": "Risk Analysis",
+    "short": "Qualitative: mô tả/ưu tiên rủi ro cá nhân; Quantitative: dự báo kết quả dự án dựa trên tác động tổng hợp bằng kỹ thuật số liệu.",
+    "reference": "PMBOK® Guide Sixth Edition / Perform Qualitative Risk Analysis vs Perform Quantitative Risk Analysis: descriptive prioritization vs numerical modeling of combined effects.",
+    "explanation_en": "Qualitative analysis evaluates individual risks descriptively (probability/impact and other characteristics) to prioritize them. Quantitative analysis uses numerical techniques to analyze the combined effect of risks on project objectives and predict likely outcomes. Other options reverse the definitions or misstate effort/objectivity.",
+    "explanation_vi": "Qualitative analysis đánh giá rủi ro cá nhân theo cách mô tả/định tính để ưu tiên (xác suất/tác động và đặc tính khác). Quantitative analysis dùng kỹ thuật định lượng để phân tích tác động tổng hợp của rủi ro lên mục tiêu và dự báo kết quả. Các lựa chọn khác đảo ngược định nghĩa hoặc mô tả sai về mức độ tốn nguồn lực/tính khách quan.",
+    "pmbok6_knowledge_area": "Project Risk Management",
+    "pmbok6_process_group": "Planning"
+  }
+]

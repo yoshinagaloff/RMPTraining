@@ -1,0 +1,24 @@
+[
+
+{
+  "QuestionID": "RMP_ExamTopic_01",
+  "question": "What are common examples used to communicate risk probability and impact?",
+  "options": [
+    "Risk checklist, risk assessment, regression analysis, and assumption and constraint analysis",
+    "Monitor Risks process, multi-dimensional risk assessment, control chart, and Monte Carlo simulation",
+    "Probability distributions, sensitivity analysis, modeling and simulation, and probability and impact matrix",
+    "Monitor Risks process, assumption and constraint analysis, modeling and simulation, and risk register"
+  ],
+  "correct": [2],
+  "difficulty": "Moderate",
+  "domain": "Process – Risk Management",
+  "pmbok6_knowledge_area": "Project Risk Management",
+  "pmbok6_process": "Perform Qualitative Risk Analysis",
+  "pmbok6_process_group": "Planning",
+  "short": "Risk probability & impact → P-I matrix + simulation tools.",
+  "explanation_en": "Correct answer: C (Probability distributions, sensitivity analysis, modeling and simulation, and probability and impact matrix).\n\nRisk probability and impact are commonly communicated using both qualitative and quantitative techniques. The probability and impact matrix is a core qualitative tool used to prioritize risks, while probability distributions, sensitivity analysis, and modeling and simulation (such as Monte Carlo) are quantitative methods used to analyze uncertainty and communicate risk exposure more precisely.\n\nThese tools together provide a clear and structured way to communicate how likely a risk is to occur and how severe its impact could be on project objectives.",
+  "explanation_vi": "Đáp án đúng: **C. Probability distributions, sensitivity analysis, modeling and simulation, and probability and impact matrix**.\n\n📌 Giải thích:\nTrong quản lý rủi ro theo PMI, **xác suất (probability)** và **mức độ ảnh hưởng (impact)** của rủi ro được truyền đạt bằng cả công cụ **định tính** và **định lượng**:\n\n- **Probability & Impact Matrix**: công cụ cốt lõi để **xếp hạng và ưu tiên rủi ro**.\n- **Probability distributions**: mô tả mức độ bất định của rủi ro.\n- **Sensitivity analysis**: xác định rủi ro nào ảnh hưởng mạnh nhất.\n- **Modeling & simulation (ví dụ Monte Carlo)**: đánh giá tác động tổng hợp của rủi ro lên cost/schedule.\n\n🧠 Mẹo thi RMP:\n👉 Hễ thấy hỏi về **communicate probability & impact** → nghĩ ngay tới **P-I Matrix + Simulation / Distribution tools**.\n\n❌ Các đáp án khác sai vì:\n- A: Checklist và regression không phải công cụ truyền đạt probability & impact.\n- B, D: Nhầm **process** với **tools & techniques**.",
+  "reference": "PMBOK Guide 6th Edition – Perform Qualitative Risk Analysis & Perform Quantitative Risk Analysis"
+}
+
+]

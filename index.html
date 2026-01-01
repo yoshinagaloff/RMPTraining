@@ -259,10 +259,10 @@
   <script>
     const MANIFEST_URL = "./manifest.json";
 
-    const LS_LIST_KEY = "pmp_exam_list_v1";
-    const LS_DELETED_KEY = "pmp_exam_deleted_v1";
-    const LS_UPLOAD_PREFIX = "pmp_exam_content::";
-    const LS_SELECTED_KEY = "pmp_exam_selected_v1";
+    const LS_LIST_KEY = "rmp_exam_list_v1";
+    const LS_DELETED_KEY = "rmp_exam_deleted_v1";
+    const LS_UPLOAD_PREFIX = "rmp_exam_content::";
+    const LS_SELECTED_KEY = "rmp_exam_selected_v1";
 
     const LOCALSTORAGE_SAFE_BYTES = 4_500_000; // 4.5MB safe margin
 
@@ -328,8 +328,8 @@
       localStorage.removeItem(LS_LIST_KEY);
       localStorage.removeItem(LS_DELETED_KEY);
       localStorage.removeItem(LS_SELECTED_KEY);
-      localStorage.removeItem("pmp_questions");
-      localStorage.removeItem("pmp_selected_exams_meta");
+      localStorage.removeItem("rmp_questions");
+      localStorage.removeItem("rmp_selected_exams_meta");
 
       const keysToRemove = [];
       for (let i = 0; i < localStorage.length; i++) {
@@ -875,8 +875,8 @@
         }
 
         try {
-          localStorage.setItem("pmp_questions", combinedStr);
-          localStorage.setItem("pmp_selected_exams_meta", JSON.stringify(
+          localStorage.setItem("rmp_questions", combinedStr);
+          localStorage.setItem("rmp_selected_exams_meta", JSON.stringify(
             selected.map(x => ({ id: x.id, title: x.title, type: x.type, src: x.src || null }))
           ));
         } catch {

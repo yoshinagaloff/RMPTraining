@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>RMP MOCK TEST - Select Exams</title>
+  <title>PMP MOCK TEST - Select Exams</title>
   <link rel="stylesheet" href="style.css">
 
   <style>
@@ -16,9 +16,9 @@
       font-weight: 700;
     }
     .btn-primary { background:#1976d2; color:#fff; }
-    .btn-danger { background:#c62828; color:#fff; }
     .btn-ghost { background:#eef2f7; color:#223; }
     .btn:disabled { opacity: .55; cursor:not-allowed; }
+
     .hint { color:#555; font-size:.95em; line-height:1.35; }
     .status { margin-top:10px; font-weight:700; white-space:pre-line; }
     .status.ok { color: #1b5e20; }
@@ -31,6 +31,8 @@
       overflow: hidden;
       background: #fff;
     }
+
+    /* compact table */
     .list-header, .item {
       display: grid;
       grid-template-columns: 34px 1fr 44px; /* compact */
@@ -45,18 +47,13 @@
       border-bottom: 1px solid rgba(0,0,0,.08);
     }
 
-    /* zebra */
+    /* zebra + hover */
     .item { border-bottom: 1px solid rgba(0,0,0,.05); }
     .item:nth-child(odd) { background: #ffffff; }
     .item:nth-child(even) { background: #fbfcff; }
-
-    /* hover */
-    .item:hover {
-      background: #eef6ff !important;
-    }
+    .item:hover { background: #eef6ff !important; }
 
     .item-title { font-weight: 800; }
-    .item-sub { font-size:.9em; color:#667; margin-top:2px; }
 
     .tag {
       display:inline-block;
@@ -114,13 +111,17 @@
       color:#0d47a1;
     }
 
-    input[type="file"] {
-      padding: 10px;
-      background:#fff;
-      border-radius: 12px;
-      border: 1px dashed rgba(0,0,0,.2);
+    #add-more-row {
+      padding:10px 12px;
+      text-align:center;
+      background:#f9fafc;
+      border-top:1px dashed rgba(0,0,0,.15);
+      cursor:pointer;
+      font-weight:800;
+      color:#1976d2;
+      user-select:none;
     }
-    .divider { height:1px; background: rgba(0,0,0,.08); margin: 14px 0; }
+    #add-more-row:hover { background:#eef6ff; }
   </style>
 </head>
 
@@ -134,11 +135,11 @@
       <span>📚</span>
     </div>
 
-    <div class="title">RMP MOCK TEST</div>
+    <div class="title">PMP MOCK TEST</div>
 
     <div class="section">
       <div class="hint">
-        Bạn có thể upload thêm đề (1 hoặc nhiều file .json). Chọn 1 hoặc nhiều đề, rồi nhấn <b>Load Tests</b>.
+        Chọn 1 hoặc nhiều đề, rồi nhấn <b>Load Tests</b>. (Click row để chọn, double click để preview)
       </div>
     </div>
 
@@ -146,7 +147,6 @@
       <button class="btn btn-ghost" id="btn-refresh">Refresh List</button>
       <button class="btn btn-ghost" id="btn-select-all">Select All</button>
       <button class="btn btn-ghost" id="btn-clear-select">Clear Selection</button>
-      <!-- per request: this button should be gray/normal -->
       <button class="btn btn-ghost" id="btn-delete-selected">Delete Selected (from list)</button>
     </div>
 
@@ -155,15 +155,15 @@
         <div class="list-header">
           <div></div>
           <div>Exam</div>
-          <div style="text-align:center;"> </div>
+          <div style="text-align:center;"></div>
         </div>
+
         <div id="exam-items"></div>
 
-        <div id="add-more-row" style="padding:10px 12px; text-align:center; background:#f9fafc; border-top:1px dashed rgba(0,0,0,.15); cursor:pointer; font-weight:800; color:#1976d2;">
-          ＋ Add more
-        </div>
+        <div id="add-more-row">＋ Add more</div>
       </div>
 
+      <!-- hidden file input -->
       <input type="file" id="upload" accept=".json" multiple style="display:none;" />
 
       <div class="status" id="status-msg"></div>
@@ -181,29 +181,25 @@
   <script>
     const MANIFEST_URL = "./manifest.json";
 
-    const LS_LIST_KEY = "rmp_exam_list_v1";
-    const LS_DELETED_KEY = "rmp_exam_deleted_v1";
-    const LS_UPLOAD_PREFIX = "rmp_exam_content::";
-    const LS_SELECTED_KEY = "rmp_exam_selected_v1";
+    const LS_LIST_KEY = "pmp_exam_list_v1";
+    const LS_DELETED_KEY = "pmp_exam_deleted_v1";
+    const LS_UPLOAD_PREFIX = "pmp_exam_content::";
+    const LS_SELECTED_KEY = "pmp_exam_selected_v1";
 
     const LOCALSTORAGE_SAFE_BYTES = 4_500_000; // 4.5MB safe margin
 
     let exams = [];
     let selectedIds = new Set();
 
-    // UI: add-more triggers hidden file picker (keep behavior unchanged)
-    document.addEventListener("click", (ev) => {
-      const el = ev.target.closest && ev.target.closest("#add-more-row");
-      if (!el) return;
-      const up = document.getElementById("upload");
-      if (up) up.click();
-    });
-
     const $items = document.getElementById("exam-items");
     const $status = document.getElementById("status-msg");
     const $btnLoad = document.getElementById("btn-load-tests");
     const $selectedCount = document.getElementById("selected-count");
     const $selectedQuestionsPill = document.getElementById("selected-questions-pill");
+    const $upload = document.getElementById("upload");
+
+    // Add more -> open picker
+    document.getElementById("add-more-row").addEventListener("click", () => $upload.click());
 
     function setStatus(msg, type) {
       $status.textContent = msg || "";
@@ -246,8 +242,8 @@
       localStorage.removeItem(LS_LIST_KEY);
       localStorage.removeItem(LS_DELETED_KEY);
       localStorage.removeItem(LS_SELECTED_KEY);
-      localStorage.removeItem("rmp_questions");
-      localStorage.removeItem("rmp_selected_exams_meta");
+      localStorage.removeItem("pmp_questions");
+      localStorage.removeItem("pmp_selected_exams_meta");
 
       const keysToRemove = [];
       for (let i = 0; i < localStorage.length; i++) {
@@ -314,6 +310,20 @@
       return (str ? str.length : 0) * 2;
     }
 
+    // ✅ Preview (double click)
+    async function previewExam(examId) {
+      const ex = exams.find(x => x.id === examId);
+      if (!ex) return;
+
+      setStatus(`Preview: ${ex.title} ...`, "");
+      try {
+        const qs = await readExamQuestions(ex);
+        setStatus(`Preview OK: "${ex.title}" has ${qs.length} questions.`, "ok");
+      } catch {
+        setStatus(`Preview failed: cannot read "${ex.title}".`, "err");
+      }
+    }
+
     function renderList() {
       $items.innerHTML = "";
 
@@ -323,7 +333,6 @@
             <div></div>
             <div>
               <div class="item-title">No exams found</div>
-              <div class="item-sub">Kiểm tra manifest.json hoặc upload thêm file JSON.</div>
             </div>
             <div></div>
           </div>
@@ -335,19 +344,16 @@
             ? `<span class="tag">built-in</span>`
             : `<span class="tag">uploaded</span>`;
 
-          const sub = ex.type === "builtin"
-            ? `Source: ${ex.src || ""}`
-            : `Source: ${ex.fileName || "localStorage"}`;
-
           const row = document.createElement("div");
           row.className = "item";
+          row.setAttribute("data-id", ex.id); // ✅ for row click / dblclick
           row.innerHTML = `
             <div>
               <input type="checkbox" class="chk" data-id="${escapeHtml(ex.id)}" ${checked} />
             </div>
             <div>
               <div class="item-title">${escapeHtml(ex.title)} ${tag}</div>
-             <!-- <div class="item-sub">${escapeHtml(sub)}</div> -->
+              <!-- NOTE: Source line intentionally hidden to keep UI clean -->
             </div>
             <div style="display:flex;justify-content:center;">
               <button class="xbtn" title="Delete" data-action="xdelete" data-id="${escapeHtml(ex.id)}">✕</button>
@@ -499,7 +505,7 @@
         selectedIds = new Set(Array.from(selectedIds).filter(id => existingIds.has(id)));
         saveSelection();
 
-        setStatus("Không tìm thấy manifest.json (hoặc file không hợp lệ). App chỉ hiển thị các đề đã upload trước đó.", "err");
+        setStatus("manifest.json not found (or invalid). Showing uploaded exams only.", "err");
         renderList();
         return;
       }
@@ -514,11 +520,12 @@
       selectedIds = new Set(Array.from(selectedIds).filter(id => existingIds.has(id)));
       saveSelection();
 
-      setStatus("Ready. Select exams and click Load Tests.", "ok");
+      setStatus("Ready.", "ok");
       renderList();
       if (selectedIds.size > 0) estimateTotalQuestions();
     }
 
+    // Buttons
     document.getElementById("btn-refresh").addEventListener("click", () => init());
 
     document.getElementById("btn-select-all").addEventListener("click", () => {
@@ -549,6 +556,7 @@
       init();
     });
 
+    // Checkbox selection (kept)
     document.getElementById("exam-items").addEventListener("change", (e) => {
       const chk = e.target.closest(".chk");
       if (!chk) return;
@@ -563,6 +571,7 @@
       estimateTotalQuestions();
     });
 
+    // X delete button
     document.getElementById("exam-items").addEventListener("click", (e) => {
       const x = e.target.closest(".xbtn");
       if (!x) return;
@@ -572,6 +581,39 @@
       setStatus("Deleted.", "ok");
     });
 
+    // ✅ UX: click anywhere on row to toggle checkbox
+    document.getElementById("exam-items").addEventListener("click", (e) => {
+      const row = e.target.closest(".item");
+      if (!row) return;
+
+      // ignore when clicking checkbox or delete button
+      if (e.target.closest("input[type='checkbox']") || e.target.closest(".xbtn")) return;
+
+      const examId = row.getAttribute("data-id");
+      if (!examId) return;
+
+      const checkbox = row.querySelector("input[type='checkbox']");
+      if (!checkbox) return;
+
+      checkbox.checked = !checkbox.checked;
+      checkbox.dispatchEvent(new Event("change", { bubbles: true }));
+    });
+
+    // ✅ UX: double-click on row to preview exam
+    document.getElementById("exam-items").addEventListener("dblclick", (e) => {
+      const row = e.target.closest(".item");
+      if (!row) return;
+
+      // ignore when double-clicking checkbox or delete button
+      if (e.target.closest("input[type='checkbox']") || e.target.closest(".xbtn")) return;
+
+      const examId = row.getAttribute("data-id");
+      if (!examId) return;
+
+      previewExam(examId);
+    });
+
+    // Upload with duplicate confirm overwrite
     document.getElementById("upload").addEventListener("change", async function (e) {
       const files = Array.from(e.target.files || []);
       if (files.length === 0) return;
@@ -623,7 +665,7 @@
           }
 
           saved.push(candidate);
-          selectedIds.add(newId);
+          selectedIds.add(newId); // auto-select
           overwroteCount++;
           continue;
         }
@@ -636,7 +678,7 @@
         }
 
         saved.push(candidate);
-        selectedIds.add(newId);
+        selectedIds.add(newId); // auto-select
         addedCount++;
       }
 
@@ -656,6 +698,7 @@
       estimateTotalQuestions();
     });
 
+    // Load Tests: block if too big
     document.getElementById("btn-load-tests").addEventListener("click", async () => {
       if (selectedIds.size === 0) return;
 
@@ -701,8 +744,8 @@
         }
 
         try {
-          localStorage.setItem("rmp_questions", combinedStr);
-          localStorage.setItem("rmp_selected_exams_meta", JSON.stringify(
+          localStorage.setItem("pmp_questions", combinedStr);
+          localStorage.setItem("pmp_selected_exams_meta", JSON.stringify(
             selected.map(x => ({ id: x.id, title: x.title, type: x.type, src: x.src || null }))
           ));
         } catch {
@@ -725,6 +768,7 @@
       }
     });
 
+    // Boot
     init();
   </script>
 </body>

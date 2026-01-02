@@ -2,13 +2,14 @@
 
   {
   "QuestionID": "RMP_ExamTopic_51",
-  "question": "<img src='Images/ExamTopic102.jpg' class='question-image'> <br> During the initial risk planning process, the risk manager and project manager discuss ways to handle known risks. Which project reserve should the project manager use to budget for known risks?",
+  "question": "During the initial risk planning process, the risk manager and project manager discuss ways to handle known risks. Which project reserve should the project manager use to budget for known risks?",
   "options": [
     "Budget reserve",
     "Contingency reserve",
     "Change management reserve",
     "Risk reserve"
   ],
+  "image": "Images/ExamTopic102.jpg", 
   "correct": [1],
   "difficulty": "Moderate",
   "domain": "Process – Risk Management",

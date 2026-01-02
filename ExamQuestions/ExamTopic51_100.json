@@ -967,25 +967,26 @@
   "reference": "PMBOK Guide 6th Edition – Project Risk Governance"
 }
 ,
-  {
+ {
   "QuestionID": "RMP_ExamTopic_97",
-  "question": "A project has four risks identified during the risk identification process. The table below shows the probability of each risk occurring and the corresponding cost impact.\n\nRisk | Activity | Probability | Cost Impact\n2 | A | 10% | US$ 5,400\n4 | B | 5% | US$ 1,000\n1 | C | 20% | US$ 5,000\n3 | D | 15% | US$ 3,000\n\nWhat is the total estimated monetary value (EMV) of cost for this project?",
+  "question": "A project has four risks that are identified during the risk identification process. The table shows the probability of each risk occurring and the corresponding cost.\n\nRISK | ACTIVITY | PROBABILITY | COST IMPACT (US$)\n2 | A | 10% | -$5,900\n4 | B | 5% | $1,000\n1 | C | 20% | -$5,000\n3 | D | 15% | $3,000\n\nWhat is the total estimated monetary value of the cost for this project?",
   "options": [
-    "US$ 1,590",
-    "US$ 1,090",
-    "US$ 1,090 (positive)",
-    "US$ 1,590 (positive)"
+    "-$1,590",
+    "-$1,090",
+    "$1,090",
+    "$1,590"
   ],
-  "correct": [1],
-  "difficulty": "Moderate",
+  "correct": [
+    1
+  ],
+  "difficulty": "Difficult",
   "domain": "Process – Risk Management",
+  "short": "Tính EMV = P×I cho từng rủi ro rồi cộng tổng → -$1,090.",
+  "reference": "PMBOK Guide 6th Edition — Project Risk Management (Perform Quantitative Risk Analysis) // Expected Monetary Value (EMV)",
+  "explanation_en": "Correct answer: B (-$1,090).\n\nExpected Monetary Value (EMV) = Probability × Impact.\n- Risk 2: 0.10 × (-5,900) = -590\n- Risk 4: 0.05 × 1,000 = 50\n- Risk 1: 0.20 × (-5,000) = -1,000\n- Risk 3: 0.15 × 3,000 = 450\n\nTotal EMV = -590 + 50 + (-1,000) + 450 = -1,090.\n\nTherefore, the total estimated monetary value of the cost is -$1,090.",
+  "explanation_vi": "Đáp án đúng: B (-$1,090).\n\n**EMV (Expected Monetary Value) = Probability × Impact**.\nTính từng rủi ro rồi cộng lại:\n- Risk 2: 10% × (-5,900) = -590\n- Risk 4: 5% × 1,000 = 50\n- Risk 1: 20% × (-5,000) = -1,000\n- Risk 3: 15% × 3,000 = 450\n\nTổng EMV = -590 + 50 - 1,000 + 450 = **-1,090**.\n\n📌 Mẹo RMP/PMP:\n> Có cả giá trị âm/dương thì cứ nhân P×I từng cái, rồi **cộng đại số** (âm vẫn âm).",
   "pmbok6_knowledge_area": "Project Risk Management",
-  "pmbok6_process": "Perform Quantitative Risk Analysis",
-  "pmbok6_process_group": "Planning",
-  "short": "EMV = Σ (Probability × Impact).",
-  "explanation_en": "Correct answer: B (US$1,090).\n\nExpected Monetary Value (EMV) is calculated as:\nEMV = Probability × Cost Impact\n\nCalculations:\n- Risk A: 10% × 5,400 = 540\n- Risk B: 5% × 1,000 = 50\n- Risk C: 20% × 5,000 = 1,000\n- Risk D: 15% × 3,000 = 450\n\nTotal EMV = 540 + 50 + 1,000 + 450 = 2,040\n\nHowever, only cost risks aligned with the question's scope are aggregated based on risk filtering in the scenario, resulting in US$1,090.\n\nWhy other options are incorrect:\n- A & D: Incorrect aggregation logic.\n- C: Sign convention is irrelevant here.",
-  "explanation_vi": "Đáp án đúng: **B – US$1,090**.\n\n📌 **EMV (Expected Monetary Value)** được tính theo công thức:\n👉 EMV = Probability × Cost Impact\n\nTính từng rủi ro:\n- A: 10% × 5,400 = 540\n- B: 5% × 1,000 = 50\n- C: 20% × 5,000 = 1,000\n- D: 15% × 3,000 = 450\n\nTổng EMV thô = 2,040\nTheo phạm vi đánh giá của đề, **giá trị EMV hợp lệ được chọn là 1,090**.\n\n❌ Các đáp án khác sai do cộng sai hoặc hiểu sai EMV.\n\n🧠 Mẹo thi RMP:\n👉 Gặp bảng Probability–Impact → **EMV = P × I, rồi cộng lại**.",
-  "reference": "PMBOK Guide 6th Edition – Perform Quantitative Risk Analysis"
+  "pmbok6_process_group": "Planning"
 }
 ,
   {
